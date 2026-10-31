@@ -1,0 +1,139 @@
+{
+  "status": "PASS",
+  "compiled_modules": 1612,
+  "endpoint_roots": 2592,
+  "all_declaration_audit": {
+    "declarations": 27663,
+    "declared_axioms": [
+      "SimpleGraph.wedge_count_edge_bound",
+      "Paper.External.SurfaceTopology.rotation_of_embedding",
+      "SimpleGraph.IsPlanar.hasPlanarRotationSystem",
+      "Paper.External.CliqueDensity.k8_edge_bound",
+      "Paper.External.SurfaceTopology.exists_cellulation",
+      "Paper.External.Planarity.planar_euler_zero",
+      "Paper.External.Mader1968.k7_edge_bound",
+      "Paper.External.SurfaceTopology.cellulation_euler_eq",
+      "SimpleGraph.wagner_edge_bound",
+      "Paper.External.CliqueDensity.k9_edge_bound"
+    ],
+    "theorems_including_generated": 19723,
+    "transitive_axioms": [
+      "propext",
+      "Quot.sound",
+      "Classical.choice",
+      "SimpleGraph.wedge_count_edge_bound",
+      "Paper.External.SurfaceTopology.exists_cellulation",
+      "Paper.External.SurfaceTopology.rotation_of_embedding",
+      "SimpleGraph.wagner_edge_bound",
+      "SimpleGraph.IsPlanar.hasPlanarRotationSystem",
+      "Paper.External.SurfaceTopology.cellulation_euler_eq",
+      "Paper.External.Mader1968.k7_edge_bound",
+      "Paper.External.CliqueDensity.k8_edge_bound",
+      "Paper.External.Planarity.planar_euler_zero",
+      "Paper.External.CliqueDensity.k9_edge_bound"
+    ]
+  },
+  "source_manifest_sha256": "4432be6f26d266651446c2c1dc3f9a2a0162a45f1cb30a40157080ddfd302b53",
+  "external_roots": {
+    "Paper.ExcludedCliqueDensity.edge_bound": [
+      "Paper.External.CliqueDensity.k8_edge_bound",
+      "Paper.External.CliqueDensity.k9_edge_bound",
+      "Paper.External.Mader1968.k7_edge_bound"
+    ],
+    "Paper.ExcludedCliqueDensity.exact_KT0": [
+      "Paper.External.CliqueDensity.k8_edge_bound",
+      "Paper.External.CliqueDensity.k9_edge_bound",
+      "Paper.External.Mader1968.k7_edge_bound"
+    ],
+    "Paper.ExcludedCliqueDensity.minor_density": [
+      "Paper.External.CliqueDensity.k8_edge_bound",
+      "Paper.External.CliqueDensity.k9_edge_bound",
+      "Paper.External.Mader1968.k7_edge_bound"
+    ],
+    "Paper.OrdinarySurfaceAlgorithm.parameters": [
+      "Paper.External.SurfaceTopology.exists_cellulation",
+      "Paper.External.SurfaceTopology.rotation_of_embedding"
+    ],
+    "Paper.OrdinarySurfaceBounds.actual_bounds": [
+      "Paper.External.SurfaceTopology.exists_cellulation",
+      "Paper.External.SurfaceTopology.rotation_of_embedding"
+    ],
+    "Paper.OrdinarySurfaceBounds.minor_bound": [
+      "Paper.External.SurfaceTopology.exists_cellulation",
+      "Paper.External.SurfaceTopology.rotation_of_embedding"
+    ],
+    "Paper.OrdinarySurfaceBounds.minor_density": [
+      "Paper.External.SurfaceTopology.exists_cellulation",
+      "Paper.External.SurfaceTopology.rotation_of_embedding"
+    ],
+    "Paper.OrdinarySurfaceBounds.subgraph_density": [
+      "Paper.External.SurfaceTopology.exists_cellulation",
+      "Paper.External.SurfaceTopology.rotation_of_embedding"
+    ],
+    "Paper.OrdinarySurfaceBounds.subgraph_girth_density": [
+      "Paper.External.SurfaceTopology.exists_cellulation",
+      "Paper.External.SurfaceTopology.rotation_of_embedding"
+    ],
+    "Paper.OrdinarySurfaceGirth.parameters": [
+      "Paper.External.SurfaceTopology.exists_cellulation",
+      "Paper.External.SurfaceTopology.rotation_of_embedding"
+    ],
+    "Paper.OrdinarySurfaceGirthBoth.parameters": [
+      "Paper.External.SurfaceTopology.exists_cellulation",
+      "Paper.External.SurfaceTopology.rotation_of_embedding"
+    ],
+    "Paper.OrdinarySurfaceImprovedGirth.parameters": [
+      "Paper.External.SurfaceTopology.exists_cellulation",
+      "Paper.External.SurfaceTopology.rotation_of_embedding"
+    ],
+    "Paper.OrdinarySurfaceLocalLower.integral": [
+      "Paper.External.Planarity.planar_euler_zero",
+      "Paper.External.SurfaceTopology.exists_cellulation"
+    ],
+    "Paper.OrdinarySurfaceTwoFractional.parameters": [
+      "Paper.External.SurfaceTopology.exists_cellulation",
+      "Paper.External.SurfaceTopology.rotation_of_embedding"
+    ],
+    "Paper.RedBlueOrdinarySurface.absorbed_parameters": [
+      "Paper.External.SurfaceTopology.exists_cellulation",
+      "Paper.External.SurfaceTopology.rotation_of_embedding"
+    ],
+    "Paper.RedBlueOrdinarySurface.additive_parameters": [
+      "Paper.External.SurfaceTopology.exists_cellulation",
+      "Paper.External.SurfaceTopology.rotation_of_embedding"
+    ],
+    "Paper.RedBlueOrdinarySurface.large_optimum_parameters": [
+      "Paper.External.SurfaceTopology.exists_cellulation",
+      "Paper.External.SurfaceTopology.rotation_of_embedding"
+    ],
+    "Paper.RedBlueOrdinarySurfaceLower.lower": [
+      "Paper.External.Planarity.planar_euler_zero",
+      "Paper.External.SurfaceTopology.exists_cellulation"
+    ],
+    "Paper.SevenCliqueMader.edge_bound": [
+      "Paper.External.Mader1968.k7_edge_bound"
+    ],
+    "Paper.SevenCliqueMader.exact_KT0": [
+      "Paper.External.Mader1968.k7_edge_bound"
+    ],
+    "Paper.SevenCliqueMader.minor_density": [
+      "Paper.External.Mader1968.k7_edge_bound"
+    ],
+    "Paper.SevenCliqueMader.weak_bound": [
+      "Paper.External.Mader1968.k7_edge_bound"
+    ],
+    "SimpleGraph.OrdinarySurface.ClosedSurface.eulerGenus_eq": [
+      "Paper.External.SurfaceTopology.cellulation_euler_eq",
+      "Paper.External.SurfaceTopology.exists_cellulation"
+    ],
+    "SimpleGraph.OrdinarySurface.signedRotation_of_genus": [
+      "Paper.External.SurfaceTopology.exists_cellulation",
+      "Paper.External.SurfaceTopology.rotation_of_embedding"
+    ],
+    "SimpleGraph.OrdinarySurface.signedRotation_real": [
+      "Paper.External.SurfaceTopology.exists_cellulation",
+      "Paper.External.SurfaceTopology.rotation_of_embedding"
+    ]
+  },
+  "core_only_roots": 2567
+}

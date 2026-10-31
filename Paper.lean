@@ -1,0 +1,764 @@
+import Paper.Endpoints
+import Paper.Optimality
+import Paper.Solver
+import Paper.Certificates
+import Paper.Initialization
+import Paper.Owners
+import Paper.Partitions
+import Paper.Averaging
+
+import GraphTheory.Surfaces.SignedRotationDeletionFreshCorners
+
+import GraphTheory.Surfaces.SignedRotationDensity
+
+import GraphTheory.Surfaces.SignedRotationUntwisted
+
+import Paper.Optimality.Treewidth.CliqueEightCanonicalTransfer
+
+import Paper.Optimality.Treewidth.CliqueEightTriangleRemainder
+
+import Paper.Optimality.Treewidth.CliqueFiveCrossMatching
+
+import Paper.RedBlue.Benchmarks
+
+import Paper.Solver.Density.CappedCompletionResources
+
+import Paper.Solver.Density.CappedHalting
+
+import Paper.Solver.Density.CappedSilentOutput
+
+import Paper.Solver.Density.CappedStartupResources
+
+import Paper.Solver.Density.CappedUniformOutput
+
+import Paper.TotalDomination.NonintegerParameters
+
+import Paper.TotalDomination.Protocol
+
+import Paper.Solver.Density.CappedDensityEndpoint
+import Paper.TotalDomination.EncodedRounding
+import Paper.TotalDomination.FractionalSolver
+import Paper.TotalDomination.GainAccuracy
+import Paper.TotalDomination.GainParameters
+import Paper.TotalDomination.MaximumGain
+import Paper.TotalDomination.NonintegerEndpoint
+import Paper.TotalDomination.NonintegerSolver
+import Paper.TotalDomination.RealInputRounding
+import GraphTheory.Surfaces.SignedRotationGeneralDensity
+import Paper.Endpoints.Rounding.AdditiveAbsorptionObstruction
+import Paper.Endpoints.Rounding.ImprovedExcessGeometry
+import Paper.Endpoints.Rounding.ImprovedExcessParameters
+import Paper.Endpoints.Rounding.ImprovedExcessBounds
+import Paper.Endpoints.Rounding.ImprovedExcessRounding
+import Paper.Endpoints.Rounding.ImprovedExcessProgram
+import Paper.Endpoints.Rounding.ImprovedExcessEndpoint
+import Paper.Endpoints.Rounding.ImprovedExcessMaximumGain
+import Paper.Endpoints.Rounding.ImprovedExcessSolver
+import Paper.Endpoints.Girth.ImprovedGirth
+import GraphTheory.DominationDiameter
+import Paper.Communication.ComponentLocality
+import Paper.Communication.SubgraphBroadcast
+import Paper.Endpoints.Components.Acceptance
+import Paper.Endpoints.Components.ComponentContext
+import Paper.Endpoints.Components.ComponentDensity
+import Paper.Endpoints.Components.ComponentReplacement
+import Paper.Endpoints.Components.ComponentReplacementCost
+import Paper.Endpoints.Components.IncidenceDiameter
+import Paper.Endpoints.Components.IncidenceExecution
+import Paper.Endpoints.Components.IncidenceGraph
+import Paper.Endpoints.Components.IntegralCoverOptimum
+import Paper.Endpoints.Components.MinimumProvenance
+import Paper.Endpoints.Components.NormalizedComponentSearch
+import Paper.Endpoints.Components.OptimumAcceptance
+import Paper.Endpoints.Components.OptimumCertificate
+import Paper.Endpoints.Components.OriginalComponentSearch
+import Paper.Endpoints.Components.ParallelComponentSearch
+import Paper.Endpoints.Components.PhysicalAcceptance
+import Paper.Endpoints.Components.SmallComponentAcceptedContext
+import Paper.Endpoints.Components.SmallComponentAcceptedInput
+import Paper.Endpoints.Components.SmallComponentCompleteness
+import Paper.Endpoints.Components.SmallComponentDecode
+import Paper.Endpoints.Components.SmallComponentExactEndpoint
+import Paper.Endpoints.Components.SmallComponentOptimumDiameter
+import Paper.Endpoints.Components.SmallComponentPhysicalCorrectness
+import Paper.Endpoints.Components.SmallComponentPhysicalCost
+import Paper.Endpoints.Components.SmallComponentPortCorrectness
+import Paper.Endpoints.Components.SmallComponentProgram
+import Paper.Endpoints.Components.SmallComponentRealDensity
+import Paper.Endpoints.Components.SmallComponentSearchDecision
+import Paper.Endpoints.Components.SmallComponentSelectedCost
+import Paper.Endpoints.Components.SmallComponentSelectedOptimal
+import Paper.Endpoints.Components.SmallComponentSelectedWord
+import Paper.Endpoints.Components.SmallComponentSetDecision
+import Paper.Endpoints.Components.SmallComponentSolved
+import Paper.Endpoints.Components.SmallComponentSolvedCover
+import Paper.Endpoints.Rounding.AdditiveAbsorptionArithmetic
+import Paper.Endpoints.Rounding.AdditiveAbsorptionBound
+import Paper.Endpoints.Components.ActualComponentReplacement
+import Paper.Endpoints.Components.ActualComponentReplacementCost
+import Paper.Endpoints.Components.ActualReplacementGlobalCost
+import Paper.Endpoints.Components.AllSolvedGlobalOptimum
+import Paper.Endpoints.Components.ComponentGlobalOptimum
+import Paper.Endpoints.Components.ComponentOptimumCost
+import Paper.Endpoints.Components.ComponentReplacementOutputSet
+import Paper.Endpoints.Components.ComponentReplacementProgram
+import Paper.Endpoints.Components.CoverOptimumCost
+import Paper.Endpoints.Components.CoveringFractionalIntegral
+import Paper.Endpoints.Components.UnsolvedGlobalOptimum
+import Paper.Endpoints.Rounding.AbsorptionFamilies
+import Paper.Endpoints.Rounding.AbsorptionPhysicalEndpoint
+import Paper.Endpoints.Rounding.AbsorptionPortResources
+import Paper.Endpoints.Rounding.AbsorptionPublicParameters
+import Paper.Endpoints.Rounding.AbsorptionRuntimeBound
+import Paper.Endpoints.Rounding.UniformAbsorption
+import Paper.Endpoints.Girth.HighGirthAuxiliary
+import Paper.Endpoints.Girth.HighGirthBudget
+import Paper.Endpoints.Girth.HighGirthCheapDemands
+import Paper.Endpoints.Girth.HighGirthCostBounds
+import Paper.Endpoints.Girth.HighGirthCostThree
+import Paper.Endpoints.Girth.HighGirthFirstSelection
+import Paper.Endpoints.Girth.HighGirthFractionalBudget
+import Paper.Endpoints.Girth.HighGirthRestriction
+import Paper.Endpoints.Girth.HighGirthTransformation
+import Paper.Endpoints.Girth.HighGirthWeightedBudget
+import Paper.Endpoints.Girth.HighGirthCostDecomposition
+import Paper.Endpoints.Girth.HighGirthDensityExcess
+import Paper.Endpoints.Girth.HighGirthHighGeometry
+import Paper.Endpoints.Girth.HighGirthOtherGeometry
+import Paper.Endpoints.Girth.HighGirthOutput
+import Paper.Endpoints.Girth.HighGirthResidualMass
+import Paper.Endpoints.Girth.HighGirthRounding
+import Paper.Endpoints.Girth.HighGirthSaving
+import Paper.Endpoints.Girth.HighGirthSlack
+import Paper.Endpoints.Girth.HighGirthThresholdCost
+import Paper.Endpoints.Girth.HighGirthAccessCover
+import Paper.Endpoints.Girth.HighGirthAccessSets
+import Paper.Endpoints.Girth.HighGirthAttachmentCounts
+import Paper.Endpoints.Girth.HighGirthAttachmentEdges
+import Paper.Endpoints.Girth.HighGirthAttachments
+import Paper.Endpoints.Girth.HighGirthComponentAccess
+import Paper.Endpoints.Girth.HighGirthExteriorComponent
+import Paper.Endpoints.Girth.HighGirthInducedDegree
+import Paper.Endpoints.Girth.HighGirthInducedPaths
+import Paper.Endpoints.Girth.HighGirthLAccess
+import Paper.Endpoints.Girth.HighGirthPathCycle
+import Paper.Endpoints.Girth.HighGirthPathEdges
+import Paper.Endpoints.Girth.HighGirthPathInternal
+import Paper.Endpoints.Girth.HighGirthResidual
+import Paper.Endpoints.Girth.HighGirthResidualAttachments
+import Paper.Endpoints.Girth.HighGirthResidualComponents
+import Paper.Endpoints.Girth.HighGirthResidualDegree
+import Paper.Endpoints.Girth.HighGirthResidualPaths
+import Paper.Endpoints.Girth.HighGirthResidualSize
+import Paper.Endpoints.Girth.HighGirthShortAccess
+import Paper.Endpoints.Girth.HighGirthShortPaths
+import Paper.Endpoints.Girth.HighGirthSpanningPath
+import Paper.Endpoints.Girth.HighGirthUBall
+import Paper.Endpoints.Girth.HighGirthComponentNeighbors
+import Paper.Endpoints.Girth.HighGirthFree
+import Paper.Endpoints.Girth.HighGirthFreeAccess
+import Paper.Endpoints.Girth.HighGirthFreeAttachments
+import Paper.Endpoints.Girth.HighGirthFreeCoordinates
+import Paper.Endpoints.Girth.HighGirthFreeEndpoints
+import Paper.Endpoints.Girth.HighGirthFreeExternal
+import Paper.Endpoints.Girth.HighGirthFreeInner
+import Paper.Endpoints.Girth.HighGirthFreePaths
+import Paper.Endpoints.Girth.HighGirthPathNeighborCounts
+import Paper.Endpoints.Girth.HighGirthChargeMultiplicity
+import Paper.Endpoints.Girth.HighGirthChargePacking
+import Paper.Endpoints.Girth.HighGirthComponentAttachmentCounts
+import Paper.Endpoints.Girth.HighGirthComponentAttachments
+import Paper.Endpoints.Girth.HighGirthExcessPacking
+import Paper.Endpoints.Girth.HighGirthHalfCounting
+import Paper.Endpoints.Girth.HighGirthOneAttachment
+import Paper.Endpoints.Girth.HighGirthOneAttachmentCharge
+import Paper.Endpoints.Girth.HighGirthPathCharges
+import Paper.Endpoints.Girth.HighGirthSingletonCharge
+import Paper.Endpoints.Girth.HighGirthUnattachedEndpoint
+import Paper.Endpoints.Girth.HighGirthBranchAttachment
+import Paper.Endpoints.Girth.HighGirthAttachmentFibers
+import Paper.Endpoints.Girth.HighGirthBranchPathCharge
+import Paper.Endpoints.Girth.HighGirthAttachmentVertices
+import Paper.Endpoints.Girth.HighGirthTwoBranchAttachments
+import Paper.Endpoints.Girth.HighGirthMetricAccess
+import Paper.Endpoints.Girth.HighGirthDistanceFiveBranches
+import Paper.Endpoints.Girth.HighGirthFewAttachments
+import Paper.Endpoints.Girth.HighGirthSelectedCount
+import Paper.Endpoints.Girth.HighGirthComponentCounting
+import Paper.Endpoints.Girth.HighGirthMiddleMultiplicity
+import Paper.Endpoints.Girth.HighGirthPathComponentCount
+import Paper.Endpoints.Girth.HighGirthAttachmentBudget
+import Paper.Endpoints.Girth.HighGirthFreeAttachmentClasses
+import Paper.Endpoints.Girth.HighGirthFreeClassBounds
+import Paper.Endpoints.Girth.HighGirthPathTree
+import Paper.Endpoints.Girth.HighGirthPathMetric
+import Paper.Endpoints.Girth.HighGirthPathIndices
+import Paper.Endpoints.Girth.HighGirthAttachmentGap
+import Paper.Endpoints.Girth.HighGirthAttachmentPositions
+import Paper.Endpoints.Girth.HighGirthAttachmentPositionCount
+import Paper.Endpoints.Girth.HighGirthFiniteGapSpan
+import Paper.Endpoints.Girth.HighGirthTrimmedPath
+import Paper.Endpoints.Girth.HighGirthTrimmedSize
+import Paper.Endpoints.Girth.HighGirthTrimmedSupport
+import Paper.Endpoints.Girth.HighGirthTrimmedConnected
+import Paper.Endpoints.Girth.HighGirthTrimmedTwoAttachments
+import Paper.Endpoints.Girth.HighGirthFreeTrim
+import Paper.Endpoints.Girth.HighGirthRetainedParts
+import Paper.Endpoints.Girth.HighGirthRetainedSet
+import Paper.Endpoints.Girth.HighGirthRetainedPartition
+import Paper.Endpoints.Girth.HighGirthComponentBalls
+import Paper.Endpoints.Girth.HighGirthNonfreeRegion
+import Paper.Endpoints.Girth.HighGirthNonfreeSize
+import Paper.Endpoints.Girth.HighGirthSplitAttachmentBudget
+import Paper.Endpoints.Girth.HighGirthRetainedSize
+import Paper.Endpoints.Girth.HighGirthRetainedPathEdges
+import Paper.Endpoints.Girth.HighGirthSpanningCycleEdges
+import Paper.Endpoints.Girth.HighGirthRetainedCycleEdges
+import Paper.Endpoints.Girth.HighGirthInducedEdgeSets
+import Paper.Endpoints.Girth.HighGirthRetainedEdgeSum
+import Paper.Endpoints.Girth.HighGirthRetainedEdgeCount
+import Paper.Endpoints.Girth.HighGirthRetainedDensity
+import Paper.Endpoints.Girth.HighGirthCountEndpoint
+import Paper.Endpoints.Girth.HighGirthCountEnvelope
+import Paper.Endpoints.Girth.HighGirthRoundingSlack
+import Paper.Endpoints.Girth.HighGirthSlackParameter
+import Paper.Endpoints.Girth.HighGirthStaticThree
+import Paper.Endpoints.Girth.HighGirthPortObservation
+import Paper.Endpoints.Girth.HighGirthPortObservationCorrect
+import Paper.Endpoints.Girth.HighGirthSelectionProgram
+import Paper.Endpoints.Girth.HighGirthSelectionCorrect
+import Paper.Endpoints.Girth.HighGirthInitializationProgram
+import Paper.Endpoints.Girth.HighGirthInitializationCorrect
+import Paper.Endpoints.Girth.HighGirthFullProgram
+import Paper.Endpoints.Girth.HighGirthThreeEndpoint
+import Paper.Endpoints.Girth.HighGirthMaskedInput
+import Paper.Endpoints.Girth.HighGirthMaskedCap
+import Paper.Endpoints.Girth.HighGirthMaskedLPBridge
+import Paper.Endpoints.Girth.HighGirthMaskedOptimum
+import Paper.Endpoints.Girth.HighGirthNearOptimalInput
+import Paper.Endpoints.Girth.HighGirthSolverParameters
+import Paper.Endpoints.Girth.HighGirthPhysicalSolver
+import Paper.Endpoints.Girth.HighGirthPhysicalSolverCorrect
+import Paper.Endpoints.Girth.HighGirthPhysicalRounding
+import Paper.Endpoints.Girth.HighGirthFullOutput
+import Paper.Endpoints.Girth.HighGirthPhysicalRoundingCorrect
+import Paper.Endpoints.Girth.HighGirthPlanar17Program
+import Paper.Endpoints.Girth.HighGirthPlanar17Upper
+import Paper.Endpoints.Girth.HighGirthPathFamily
+import Paper.Endpoints.Girth.HighGirthPlanar17Lower
+import Paper.Endpoints.Girth.HighGirthMinorPaths
+import Paper.Endpoints.Girth.HighGirthMinorLower
+import Paper.Endpoints.Girth.HighGirthMinorParameters
+import Paper.Endpoints.Girth.HighGirthCenters
+import Paper.Endpoints.Girth.HighGirthVoronoi
+import Paper.Endpoints.Girth.HighGirthClusterSize
+import Paper.Endpoints.Girth.HighGirthRadiusTree
+import Paper.Endpoints.Girth.HighGirthClusterTree
+import Paper.Endpoints.Girth.HighGirthDisjointPaths
+import Paper.Endpoints.Girth.HighGirthClusterCross
+import Paper.Endpoints.Girth.HighGirthClusterMinor
+import Paper.Endpoints.Girth.HighGirthDilutionConnected
+import Paper.Endpoints.Girth.HighGirthDensityPartitions
+import Paper.Endpoints.Girth.HighGirthDilution
+import Paper.Endpoints.Girth.HighGirthMinorUpper
+import Paper.Endpoints.Girth.HighGirthProperClass
+import Paper.Endpoints.Girth.HighGirthClassEndpoints
+
+import Paper.Certificates.Counting.HallWithOverflow
+
+import Paper.Certificates.Counting.ApproximateOrientation
+
+import Paper.Certificates.Counting.OrientationShares
+
+import Paper.Certificates.Counting.FractionalCharging
+
+import Paper.Endpoints.Rounding.AdditiveThresholdGeometry
+
+import Paper.Endpoints.Rounding.AdditiveThresholdCount
+
+import Paper.Communication.AdditiveThresholdProgram
+
+import Paper.TotalDomination.InitialSelection
+
+import Paper.TotalDomination.InitialCosts
+
+import Paper.TotalDomination.InitialBudget
+
+import Paper.TotalDomination.IntegerSetup
+
+import Paper.TotalDomination.IntegerLinkedPenalty
+
+import Paper.TotalDomination.IntegerLowCoverage
+
+import Paper.Certificates.Counting.DisjointIncidence
+
+import Paper.TotalDomination.IntegerCountGeometry
+
+import Paper.TotalDomination.OversupplyMass
+
+import Paper.TotalDomination.IntegerOversupply
+
+import Paper.Preliminaries.RadiusThree
+
+import Paper.Preliminaries.ResidualWalkDefects
+
+import Paper.TotalDomination.IntegerSelectedCount
+
+import Paper.TotalDomination.IntegerCountObstruction
+
+import Paper.TotalDomination.IntegerMinorDefects
+
+import Paper.TotalDomination.IntegerSaving
+
+import Paper.TotalDomination.IntegerSlack
+
+import Paper.TotalDomination.IntegerMathematicalEndpoint
+
+import Paper.TotalDomination.IntegerStartup
+
+import Paper.TotalDomination.IntegerResidualSolver
+
+import Paper.TotalDomination.IntegerEncodedRounding
+
+import Paper.TotalDomination.IntegerSolver
+
+import Paper.TotalDomination.ExactEndpoint
+
+import Paper.Endpoints.Girth.MarkedDefectCharge
+
+import Paper.Preliminaries.StarMinorGirth
+
+import Paper.TotalDomination.IntegerPlanarDefects
+
+import Paper.TotalDomination.IntegerDefectSolver
+
+import Paper.TotalDomination.PlanarGirthEndpoint
+
+import Paper.TotalDomination.TreewidthEndpoint
+
+import Paper.TotalDomination.FractionalRepair
+
+import Paper.Preliminaries.PathPowerTotalGeometry
+
+import Paper.TotalDomination.PathPowerFractional
+
+import Paper.TotalDomination.PathPowerGap
+
+import Paper.TotalDomination.TreewidthFractionalLower
+
+import Paper.TotalDomination.PathTotalIntegral
+
+import Paper.TotalDomination.PathTotalIntegralGap
+
+import Paper.TotalDomination.TreewidthIntegralLower
+import Paper.TotalDomination.PlanarGainArithmetic
+import Paper.TotalDomination.PlanarGainEndpoint
+import Paper.TotalDomination.HighGirthSelection
+import Paper.TotalDomination.HighGirthCosts
+import Paper.TotalDomination.HighGirthBudget
+import Paper.TotalDomination.HighGirthSetup
+import Paper.TotalDomination.HighGirthSavingArithmetic
+import Paper.TotalDomination.HighGirthSaving
+import Paper.Preliminaries.DegreeTwoBalls
+import Paper.TotalDomination.HighGirthResidualGeometry
+import Paper.TotalDomination.HighGirthResidualAccess
+import Paper.TotalDomination.HighGirthResidualSize
+import Paper.TotalDomination.HighGirthResidualEndpoint
+import Paper.TotalDomination.HighGirthFreeComponents
+import Paper.TotalDomination.HighGirthFreeAccess
+import Paper.TotalDomination.HighGirthFreePathEnds
+import Paper.TotalDomination.HighGirthBadArithmetic
+import Paper.TotalDomination.HighGirthChargePacking
+import Paper.TotalDomination.HighGirthSingleton
+import Paper.TotalDomination.HighGirthExceptionalCount
+import Paper.TotalDomination.HighGirthPathMetric
+import Paper.TotalDomination.HighGirthPathCoordinates
+import Paper.TotalDomination.HighGirthPathCharges
+import Paper.TotalDomination.HighGirthPathBoundary
+import Paper.TotalDomination.HighGirthAttachmentGeometry
+import Paper.TotalDomination.HighGirthOneAttachmentGeometry
+import Paper.TotalDomination.HighGirthOneAttachmentCharge
+import Paper.TotalDomination.HighGirthBadPaths
+import Paper.TotalDomination.HighGirthSelectedCount
+import Paper.TotalDomination.HighGirthAttachmentPositions
+import Paper.TotalDomination.HighGirthAttachmentGap
+import Paper.TotalDomination.HighGirthSpan
+import Paper.TotalDomination.HighGirthTrimmedPath
+
+import Paper.TotalDomination.HighGirthRetainedParts
+
+import Paper.TotalDomination.HighGirthNonfreeSize
+
+import Paper.TotalDomination.HighGirthSplitAttachmentBudget
+
+import Paper.TotalDomination.HighGirthRetainedSize
+
+import Paper.TotalDomination.HighGirthComponentCount
+
+import Paper.TotalDomination.HighGirthRetainedEdges
+
+import Paper.TotalDomination.HighGirthRetainedDensity
+
+import Paper.TotalDomination.HighGirthCountArithmetic
+
+import Paper.TotalDomination.HighGirthCountEndpoint
+
+import Paper.TotalDomination.HighGirthSlackArithmetic
+
+import Paper.TotalDomination.HighGirthMathematicalEndpoint
+
+import Paper.TotalDomination.HighGirthStartup
+
+import Paper.TotalDomination.HighGirthProtocol
+
+import Paper.TotalDomination.HighGirthEncodedRounding
+
+import Paper.TotalDomination.HighGirthResidualSolver
+
+import Paper.TotalDomination.HighGirthSolver
+
+import Paper.TotalDomination.HighGirthEndpoint
+
+import Paper.TotalDomination.HighGirthOptimality
+
+import Paper.TotalDomination.HighGirthVectorRounding
+
+import Paper.TotalDomination.HighGirthMinorParameters
+
+import Paper.TotalDomination.HighGirthMinorEndpoint
+
+import Paper.Endpoints.Rounding.SurfaceShell
+
+import Paper.Endpoints.Rounding.SurfaceIncidence
+
+import Paper.Endpoints.Rounding.SurfaceCount
+
+import Paper.Preliminaries.OddPathPower
+
+import Paper.Optimality.LowerBounds.OddPortCompiler
+
+import Paper.Preliminaries.OddPathGeometry
+
+import Paper.Preliminaries.OddPathGap
+
+import Paper.TotalDomination.PlanarTotalLower
+
+import Paper.Preliminaries.OddPathDominatingCode
+
+import Paper.Preliminaries.OddOrdinaryGap
+
+import Paper.Optimality.LowerBounds.OrdinaryPlanarLower
+
+import Paper.Optimality.LowerBounds.BipartiteTwin
+
+import Paper.Preliminaries.OddPathDegree
+
+import Paper.RedBlue.OddRedBlueCode
+
+import Paper.RedBlue.OddRedBlueOptima
+
+import Paper.Preliminaries.OddPairedGap
+
+import Paper.RedBlue.OddRedBlueLocal
+
+import Paper.RedBlue.OddRedBlueLower
+
+import Paper.Preliminaries.LatticeBlockGeometry
+
+import Paper.Preliminaries.LatticeBlockCounting
+
+import Paper.Preliminaries.LatticeBlockPorts
+
+import Paper.Preliminaries.LatticeBlockWalks
+
+import Paper.Preliminaries.LatticeLocality
+
+import Paper.Optimality.LowerBounds.PortContextTransport
+
+import Paper.Preliminaries.LatticeBlockTransport
+
+import Paper.Preliminaries.LatticeBlockContext
+
+import Paper.Preliminaries.LatticeBlockSimulation
+
+import Paper.Preliminaries.LexCube
+
+import Paper.Preliminaries.LatticeBlockLabels
+
+import Paper.Preliminaries.LatticeWindowRule
+
+import Paper.Preliminaries.LatticeBlockHomogeneous
+
+import Paper.Preliminaries.LatticeBlockSelection
+
+import Paper.Preliminaries.LatticeBlockSelectedCount
+
+import Paper.Preliminaries.LatticeForcedSelection
+
+import Paper.Preliminaries.LatticeTotalForced
+
+import Paper.Endpoints.Rounding.SurfaceResidualBudget
+
+import Paper.Endpoints.Rounding.SurfaceTwoBudget
+import Paper.Endpoints.Components.SurfaceComponentCases
+import Paper.Communication.SurfaceResidualInput
+
+import Paper.Endpoints.Components.SurfacePreparedCases
+import Paper.Communication.SurfaceResidualRounding
+import Paper.Endpoints.Rounding.SurfaceSolverDensity
+import Paper.Endpoints.Components.SurfaceIncidenceDensity
+
+import Paper.Endpoints.Rounding.SurfaceProgramBound
+
+import Paper.Endpoints.Components.SurfacePublicParameters
+
+import Paper.Communication.SurfaceFinalProgram
+
+import Paper.Communication.SurfaceResidualSolver
+
+import Paper.Communication.SurfaceDensityAlgorithm
+
+import Paper.Communication.SurfaceResourceBound
+
+import Paper.Communication.SurfacePortParameters
+
+import GraphTheory.Surfaces.FaceMergeCard
+
+import GraphTheory.Surfaces.SignedRotationDeletionFaceMap
+
+import GraphTheory.Surfaces.SignedRotationDeletionFaceCount
+
+import GraphTheory.Surfaces.SignedRotationLeafDeletion
+
+import GraphTheory.Surfaces.SignedRotationBridgeDeletion
+
+import GraphTheory.Surfaces.SignedRotationAssembly
+
+import GraphTheory.Surfaces.SignedRotationConnectedDeletion
+
+import GraphTheory.Surfaces.SignedRotationPartitionAssembly
+
+import GraphTheory.Surfaces.SignedRotationPartitionFaces
+
+import GraphTheory.Surfaces.SignedRotationPartitionComponents
+
+import GraphTheory.Surfaces.SignedRotationPartitionGenus
+
+import GraphTheory.Surfaces.SignedRotationGeneralDeletion
+
+import GraphTheory.Surfaces.SignedRotationSubgraphGenus
+
+import GraphTheory.Surfaces.SignedRotationSwitch
+
+import GraphTheory.Surfaces.SignedRotationContractionSplice
+
+import GraphTheory.Surfaces.SignedRotationContractRotation
+import GraphTheory.Surfaces.SignedRotationContractionReduction
+
+import GraphTheory.Surfaces.SignedRotationContractionFaces
+
+import GraphTheory.Surfaces.SignedRotationConnectedContraction
+
+import GraphTheory.Surfaces.SignedRotationContractionComponents
+
+import GraphTheory.Surfaces.SignedRotationContractionSupport
+
+import GraphTheory.Surfaces.SignedRotationContractionGenus
+
+import GraphTheory.Surfaces.SignedRotationDartTransport
+import GraphTheory.Surfaces.SignedRotationGeneralContraction
+
+import GraphTheory.Surfaces.SignedRotationCopyTransport
+
+import GraphTheory.SimpleGraph.Minor.BranchContraction
+
+import GraphTheory.Surfaces.SignedRotationMinorGenus
+import Paper.Endpoints.Rounding.SurfaceRotationMinorBound
+
+import Paper.Communication.SurfaceRotationPort
+
+import GraphTheory.Surfaces.SignedRotationFaceWalk
+
+import GraphTheory.Surfaces.SignedRotationGirthFaces
+
+import GraphTheory.Surfaces.SignedRotationGirthDensity
+
+import Paper.Endpoints.Rounding.SurfaceRotationDensityClass
+
+import Paper.Communication.SurfaceGirthThreshold
+
+import Paper.Communication.SurfaceGirthSolver
+import Paper.Endpoints.Rounding.OrdinaryAbsorption
+import Paper.Communication.SurfaceGirthAbsorbed
+
+import Paper.Communication.OrdinaryAbsorptionPort
+
+import Paper.Communication.SurfaceGirthResources
+import Paper.Communication.SurfaceGirthPortParameters
+import Paper.Endpoints.Rounding.ImprovedExcessGeneralSolver
+
+import Paper.Communication.SurfaceImprovedGirth
+
+import Paper.RedBlue.RequestCharge
+import Paper.RedBlue.SurfaceDensity
+import Paper.RedBlue.OrientedCharge
+import Paper.RedBlue.SurfaceCost
+import Paper.RedBlue.SurfaceRounding
+
+import Paper.RedBlue.SurfaceFractional
+import Paper.RedBlue.SurfaceIntegral
+import Paper.RedBlue.SurfaceResources
+import Paper.RedBlue.LocalPreparation
+
+import Paper.RedBlue.SurfacePort
+import Paper.RedBlue.SurfaceAbsorption
+import Paper.RedBlue.AbsorbedPort
+
+import Paper.Endpoints.Rounding.SurfaceTwoFractional
+import Paper.Optimality.Treewidth.CliqueEightThreeJoin
+import Paper.Optimality.Treewidth.CliqueEightJoinWitness
+import Paper.Optimality.Treewidth.CliqueEightMinFive
+import Paper.Optimality.Treewidth.SevenCliqueEightNeighbors
+
+import Paper.Optimality.Treewidth.SevenCliqueEightComponents
+import Paper.Optimality.Treewidth.CliqueAffineBoundaryBudget
+import Paper.Optimality.Treewidth.SevenCliqueEightBoundaryUpper
+
+import Paper.Optimality.Treewidth.CliqueExteriorContactCount
+import Paper.Optimality.Treewidth.SevenCliqueEightExteriorSize
+
+import Paper.Optimality.Treewidth.SevenCliqueNineSmallOrder
+import Paper.Optimality.Treewidth.SevenCliqueTwelveVertices
+
+import Paper.Optimality.Treewidth.CliqueConnectedApex
+import Paper.Optimality.Treewidth.CliqueTwoVertexBoundary
+
+import Paper.Optimality.Treewidth.CliquePairedApices
+import Paper.Optimality.Treewidth.CliqueTwoDeletion
+import Paper.Optimality.Treewidth.CliqueTwoVertexEdge
+import Paper.Optimality.Treewidth.SevenCliqueTwoExterior
+
+import Paper.Optimality.Treewidth.SevenCliqueNineOrder
+import Paper.Optimality.Treewidth.SevenCliqueFourteenVertices
+import Paper.Optimality.Treewidth.CliqueSaturatedBoundary
+import Paper.Optimality.Treewidth.CliqueInducedLoss
+import Paper.Optimality.Treewidth.CliqueTriangleApices
+import Paper.Optimality.Treewidth.SevenCliqueThreeBoundary
+
+import Paper.Optimality.Treewidth.CliqueRegionCount
+import Paper.Optimality.Treewidth.SevenCliqueSixComponent
+import Paper.Optimality.Treewidth.SevenCliqueTwentyVertices
+
+import Paper.Optimality.Treewidth.CliqueRegionSeven
+import Paper.Optimality.Treewidth.SevenCliqueSevenComponent
+import Paper.Optimality.Treewidth.SevenCliqueTwentyTwoVertices
+import Paper.Optimality.Treewidth.CliqueRegionBalance
+
+import Paper.Optimality.Treewidth.SevenCliqueSevenDense
+import Paper.Optimality.Treewidth.SevenCliqueEightComponent
+import Paper.Optimality.Treewidth.SevenCliqueTwentyFourVertices
+import Paper.Optimality.Treewidth.CliqueRegionEight
+import Paper.Optimality.Treewidth.SevenCliqueEightExact
+
+import Paper.Optimality.Treewidth.CliqueNoCrossCount
+import Paper.Optimality.Treewidth.SevenCliqueTwentyFiveCore
+import Paper.Optimality.Treewidth.SevenCliqueTwentyFiveVertices
+
+import Paper.Optimality.Treewidth.CliqueRegionEightDegree
+import Paper.Optimality.Treewidth.SevenCliqueEightRegular
+import Paper.Optimality.Treewidth.CliqueEightSixFreeDegree
+import Paper.Optimality.Treewidth.SevenCliqueEightContacts
+
+import Paper.Optimality.Treewidth.CliqueClosedEdgeCount
+import Paper.Optimality.Treewidth.SevenCliqueEightNeighborhood
+import Paper.Optimality.Treewidth.CliqueSixExtremalLocal
+
+import Paper.Optimality.Treewidth.CliqueBalancedFourRows
+import Paper.Optimality.Treewidth.CliqueCompleteTwoContractions
+import Paper.Optimality.Treewidth.CliqueTwoFourCliques
+import Paper.Optimality.Treewidth.CliqueEightRegularFour
+
+import Paper.Optimality.Treewidth.SevenCliqueTwentySixNeighborhood
+import Paper.Optimality.Treewidth.SevenCliqueTwentySixInterior
+
+import Paper.Optimality.Treewidth.CliqueFiveMissingMatching
+import Paper.Optimality.Treewidth.SevenCliqueTwentySixFivePattern
+
+import Paper.Optimality.Treewidth.CliqueEightResidualTemplates
+
+import Paper.Optimality.Treewidth.CliqueEightComplement
+
+import Paper.Optimality.Treewidth.CliqueEightComplementCounts
+
+import Paper.Optimality.Treewidth.CliqueEightLabeling
+
+import Paper.Optimality.Treewidth.CliqueEightResidualRows
+
+import Paper.Optimality.Treewidth.CliqueEightActualTemplate
+import Paper.Optimality.Treewidth.SevenCliqueTwentySixClassification
+
+import Paper.Optimality.Treewidth.SevenCliqueUniversalContact
+import Paper.Optimality.Treewidth.CliqueForcedExteriorContact
+import Paper.Optimality.Treewidth.SevenCliqueForcedContacts
+import Paper.Optimality.Treewidth.SevenCliqueResidualDegreeDistribution
+
+import Paper.Optimality.Treewidth.CliqueContactDegree
+import Paper.Optimality.Treewidth.SevenCliqueHighDegreeContact
+import Paper.Optimality.Treewidth.SevenCliqueCoreDegreeBudget
+
+import Paper.Optimality.Treewidth.CliqueResidualCanonical
+import Paper.Optimality.Treewidth.CliqueTwoOutsideForced
+import Paper.Optimality.Treewidth.CliqueCommonTransport
+
+import Paper.Optimality.Treewidth.CliqueResidualBoundaryThree
+import Paper.Optimality.Treewidth.SevenCliqueTwentySixExclusion
+import Paper.Optimality.Treewidth.SevenCliqueTwentySixVertices
+
+import Paper.Optimality.Treewidth.CliqueExteriorComplementConnected
+
+import Paper.Optimality.Treewidth.CliqueRegionNine
+import Paper.Optimality.Treewidth.SevenCliqueNineExact
+import Paper.Optimality.Treewidth.CliqueRegionNineDegree
+import Paper.Optimality.Treewidth.CliqueDegreeExcessCount
+import Paper.Optimality.Treewidth.SevenCliqueNineDegree
+
+import Paper.Optimality.Treewidth.CliqueSixExtremalGeneral
+
+import Paper.Optimality.Treewidth.CliqueThreeConnectedOrIsolated
+import Paper.Optimality.Treewidth.CliqueEightFullFiveClique
+import Paper.Optimality.Treewidth.CliqueEightExtremalClassification
+import Paper.Optimality.Treewidth.SevenCliqueNineLocal
+
+import Paper.Optimality.Treewidth.CliqueNineTwoLow
+import Paper.Optimality.Treewidth.SevenCliqueNineOrdinaryRoot
+
+import Paper.Optimality.Treewidth.CliqueExteriorSmallDeletion
+import Paper.Optimality.Treewidth.CliqueLargeComponentsConnected
+import Paper.Optimality.Treewidth.CliqueExteriorFiveImpossible
+
+import Paper.External.Mader1968
+import Paper.Optimality.Treewidth.SevenCliqueMader
+
+import Paper.External.CliqueDensity
+import Paper.Optimality.Treewidth.ExcludedCliqueDensity
+
+import GraphTheory.Topology.GraphRealization
+
+import Paper.RedBlue.SurfacePortLargeOptimum
+
+import GraphTheory.Topology.ClosedSurface
+import Paper.External.SurfaceTopology
+import GraphTheory.Surfaces.OrdinarySurface
+import Paper.Communication.OrdinarySurfacePort
+
+import Paper.Endpoints.Rounding.OrdinarySurfaceBounds
+import Paper.Communication.OrdinarySurfaceGirth
+import Paper.Communication.OrdinarySurfaceImprovedGirth
+import Paper.RedBlue.OrdinarySurface
+import Paper.Endpoints.Rounding.OrdinarySurfaceTwoFractional
+
+import Paper.External.Planarity
+import Paper.Optimality.LowerBounds.OrdinarySurfaceLocalLower
+import Paper.Communication.OrdinarySurfaceGirthBoth
+
+import Paper.RedBlue.OrdinarySurfaceLower

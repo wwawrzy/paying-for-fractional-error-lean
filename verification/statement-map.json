@@ -1,0 +1,2562 @@
+{
+  "scope": "Paper result labels linked to Lean declarations, source fingerprints and axiom dependencies. Matching the formal statements to the paper requires mathematical review.",
+  "total_statements": 81,
+  "core_only_statements": 73,
+  "external_dependent_statements": 8,
+  "supplemental": {
+    "file": "verification/Proposition2Planar.lean",
+    "axiom_log": "verification/proposition2-planar-axioms.txt",
+    "axiom_log_sha256": "0976521b264aeb8f493e755ab4ba8a1504d0fa6a0682c72c1b77a7e32addb58a",
+    "transitive_axioms": [
+      "Classical.choice",
+      "Quot.sound",
+      "propext"
+    ],
+    "source_sha256": "9a98906d848f4f63d5ee80d5ab29f86e575e71154d766dbb09db2052a518e201",
+    "audited_lean_body_sha256": "9a98906d848f4f63d5ee80d5ab29f86e575e71154d766dbb09db2052a518e201"
+  },
+  "items": [
+    {
+      "inventory_id": "sc:thmA",
+      "lean": [
+        {
+          "declaration": "Paper.GeneralCoveringFractionalEndpoint.parameters",
+          "file": "Paper/Solver/LocalSearch/GeneralCoveringFractionalEndpoint.lean",
+          "source_sha256": "a94ac12208bda78ba75aad36001cef45906a9009808b61be07e5f7339ab0a772"
+        },
+        {
+          "declaration": "Paper.GeneralCoveringFractionalEndpoint.rounds",
+          "file": "Paper/Solver/LocalSearch/GeneralCoveringFractionalEndpoint.lean",
+          "source_sha256": "a94ac12208bda78ba75aad36001cef45906a9009808b61be07e5f7339ab0a772"
+        },
+        {
+          "declaration": "Paper.GeneralCoveringFractionalEndpoint.logarithmic_bits",
+          "file": "Paper/Solver/LocalSearch/GeneralCoveringFractionalEndpoint.lean",
+          "source_sha256": "a94ac12208bda78ba75aad36001cef45906a9009808b61be07e5f7339ab0a772"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "sc:thmB",
+      "lean": [
+        {
+          "declaration": "Paper.CurrentTheoremB.pays_for_fractional_error",
+          "file": "Paper/Endpoints/Bounds/CurrentTheoremB.lean",
+          "source_sha256": "e075e2e03a9dce96ec1a2398eba174d210cb046892e7c1f4ce265df368b814bf"
+        },
+        {
+          "declaration": "Paper.CurrentTheoremB.integer_branch",
+          "file": "Paper/Endpoints/Bounds/CurrentTheoremB.lean",
+          "source_sha256": "e075e2e03a9dce96ec1a2398eba174d210cb046892e7c1f4ce265df368b814bf"
+        },
+        {
+          "declaration": "Paper.CurrentTheoremB.noninteger_branch",
+          "file": "Paper/Endpoints/Bounds/CurrentTheoremB.lean",
+          "source_sha256": "e075e2e03a9dce96ec1a2398eba174d210cb046892e7c1f4ce265df368b814bf"
+        },
+        {
+          "declaration": "Paper.CurrentTheoremB.noninteger_encoded_correct",
+          "file": "Paper/Endpoints/Bounds/CurrentTheoremB.lean",
+          "source_sha256": "e075e2e03a9dce96ec1a2398eba174d210cb046892e7c1f4ce265df368b814bf"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "sc:thmC",
+      "lean": [
+        {
+          "declaration": "Paper.MinorDensityKT0.exact_minor_density",
+          "file": "Paper/Endpoints/Rounding/MinorDensityKT0.lean",
+          "source_sha256": "978de312ca285f86ef73eabf0814ce5039747f5a2df15eebd6962129c721c01a"
+        },
+        {
+          "declaration": "Paper.MinorDensityKT0.exact_planar",
+          "file": "Paper/Endpoints/Rounding/MinorDensityKT0.lean",
+          "source_sha256": "978de312ca285f86ef73eabf0814ce5039747f5a2df15eebd6962129c721c01a"
+        },
+        {
+          "declaration": "Paper.SeparateDensities.exact_separate_densities",
+          "file": "Paper/Endpoints/Bounds/SeparateDensities.lean",
+          "source_sha256": "401a68451d58231c054cd2b3d1f6f06fd1ee86cebd389a06ab119005d9631529"
+        },
+        {
+          "declaration": "Paper.CurrentGirthKT0.parameters",
+          "file": "Paper/Endpoints/Bounds/CurrentGirthKT0.lean",
+          "source_sha256": "2a6bfe36f5b1e4d7b0e9626ccbde93945d71c8f9c041eb504ee8e5646effb55a"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "sc:optimal",
+      "lean": [
+        {
+          "file": "Paper/Endpoints/Rounding/MinorDensityKT0.lean",
+          "declaration": "Paper.MinorDensityKT0.exact_planar",
+          "source_sha256": "978de312ca285f86ef73eabf0814ce5039747f5a2df15eebd6962129c721c01a"
+        },
+        {
+          "file": "Paper/Endpoints/Bounds/CurrentGirthKT0.lean",
+          "declaration": "Paper.CurrentGirthKT0.parameters",
+          "source_sha256": "2a6bfe36f5b1e4d7b0e9626ccbde93945d71c8f9c041eb504ee8e5646effb55a"
+        },
+        {
+          "file": "Paper/Optimality/LowerBounds/OrdinaryPlanarLower.lean",
+          "declaration": "Paper.OrdinaryPlanarLower.triangle_free",
+          "source_sha256": "ed3d921078a193c19fda5780554130dd0d096c0e504c6cee7aa68fa0c48a38a0"
+        },
+        {
+          "file": "Paper/Optimality/LowerBounds/PlanarLocalLower.lean",
+          "declaration": "Paper.PlanarLocalLower.integral",
+          "source_sha256": "4583b7c9841e9a64878b7ba355939b7e85f8d34ac354fab5b512f83d1cda0c31"
+        },
+        {
+          "file": "Paper/Optimality/Treewidth/TreewidthBroadcast.lean",
+          "declaration": "Paper.TreewidthBroadcast.exact_KT0",
+          "source_sha256": "9c62695679cd06501a6d302b271e47b852dd2e53ab2000bee92b2e3fe16d2d33"
+        },
+        {
+          "file": "Paper/Optimality/Treewidth/PathwidthBroadcast.lean",
+          "declaration": "Paper.PathwidthBroadcast.exact_KT0",
+          "source_sha256": "ec28ad7e955f69c0206b316f9f4d8676a46689d5190a2beffe5e63e2937dcccf"
+        },
+        {
+          "file": "Paper/Optimality/LowerBounds/ClassLocalLower.lean",
+          "declaration": "Paper.ClassLocalLower.pathwidth",
+          "source_sha256": "fb12ff5ca855dcbef8d99ad88d82e8defccb12eee544d301655bfd16f6ccbd09"
+        },
+        {
+          "file": "Paper/Optimality/LowerBounds/TreewidthLocalLower.lean",
+          "declaration": "Paper.TreewidthLocalLower.exact_lower",
+          "source_sha256": "e79c3c1bd34ade59cb62065f8c1629413522c4f944923d14d7de155aa9b9c3aa"
+        },
+        {
+          "file": "Paper/Optimality/LowerBounds/ClassLocalLower.lean",
+          "declaration": "Paper.ClassLocalLower.excluded_clique",
+          "source_sha256": "fb12ff5ca855dcbef8d99ad88d82e8defccb12eee544d301655bfd16f6ccbd09"
+        },
+        {
+          "file": "Paper/Optimality/Treewidth/ExcludedCliqueDensity.lean",
+          "declaration": "Paper.ExcludedCliqueDensity.exact_KT0",
+          "source_sha256": "a96c736f1bae2852809b86a3a939217ca3a5818ffa59a6e05796f13e7bfb0b05"
+        },
+        {
+          "file": "Paper/Endpoints/Rounding/OrdinarySurfaceTwoFractional.lean",
+          "declaration": "Paper.OrdinarySurfaceTwoFractional.parameters",
+          "source_sha256": "f2dbe3ef3a338f44e450ad9c902ef956c8d4ab86dae9e4398298b3f9daf0d437"
+        },
+        {
+          "file": "Paper/Optimality/LowerBounds/OrdinarySurfaceLocalLower.lean",
+          "declaration": "Paper.OrdinarySurfaceLocalLower.integral",
+          "source_sha256": "3f912fcee6c3fbf414fafc6f02042dc80f4798900287b091fdcf5729c6181eab"
+        },
+        {
+          "file": "GraphTheory/Surfaces/OrdinarySurface.lean",
+          "declaration": "SimpleGraph.OrdinarySurface.ClosedSurface.eulerGenus_eq",
+          "source_sha256": "e46c26b71f46accc0868fa5ed7f50a26ddc10fa2e24a5da2206c07d26e0ffd47"
+        }
+      ],
+      "external_axioms": [
+        "Paper.External.CliqueDensity.k8_edge_bound",
+        "Paper.External.CliqueDensity.k9_edge_bound",
+        "Paper.External.Mader1968.k7_edge_bound",
+        "Paper.External.Planarity.planar_euler_zero",
+        "Paper.External.SurfaceTopology.cellulation_euler_eq",
+        "Paper.External.SurfaceTopology.exists_cellulation",
+        "Paper.External.SurfaceTopology.rotation_of_embedding"
+      ]
+    },
+    {
+      "inventory_id": "sc:thmD",
+      "lean": [
+        {
+          "declaration": "Paper.GeneralCoveringRandomIntegralApproximation.randomized_scheme",
+          "file": "Paper/Solver/LocalSearch/GeneralCoveringRandomIntegralApproximation.lean",
+          "source_sha256": "fee8edf3e463d54148bd4c635718d5711d66f98511153e6af94fd9c27e3aa41f"
+        },
+        {
+          "declaration": "Paper.GeneralCoveringDeterministicApproximation.deterministic_scheme",
+          "file": "Paper/Solver/LocalSearch/GeneralCoveringDeterministicApproximation.lean",
+          "source_sha256": "2d2a59312d5fd5de05c47391210c2f87249b46cfeeb6fd07a5dce650e5fa346f"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "fv:thmE",
+      "lean": [
+        {
+          "file": "Paper/Communication/OrdinarySurfacePort.lean",
+          "declaration": "Paper.OrdinarySurfaceAlgorithm.parameters",
+          "source_sha256": "af71384fd0e87d8468e1bd89eab228dc1e319586683eaa16abd25ea13b4ac2f4"
+        },
+        {
+          "file": "GraphTheory/Surfaces/OrdinarySurface.lean",
+          "declaration": "SimpleGraph.OrdinarySurface.ClosedSurface.eulerGenus_eq",
+          "source_sha256": "e46c26b71f46accc0868fa5ed7f50a26ddc10fa2e24a5da2206c07d26e0ffd47"
+        }
+      ],
+      "external_axioms": [
+        "Paper.External.SurfaceTopology.cellulation_euler_eq",
+        "Paper.External.SurfaceTopology.exists_cellulation",
+        "Paper.External.SurfaceTopology.rotation_of_embedding"
+      ]
+    },
+    {
+      "inventory_id": "simp:orientation",
+      "lean": [
+        {
+          "declaration": "Paper.HallOrientation.exists_orientation",
+          "file": "Paper/Certificates/Counting/HallOrientation.lean",
+          "source_sha256": "aebafa52d1dfc485481f8082397b2498ed7f6f5b9764f2ec41f39cbc3c575ab7"
+        },
+        {
+          "declaration": "Paper.HallOrientation.outEdges_card_le",
+          "file": "Paper/Certificates/Counting/HallOrientation.lean",
+          "source_sha256": "aebafa52d1dfc485481f8082397b2498ed7f6f5b9764f2ec41f39cbc3c575ab7"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "sc:principle",
+      "lean": [
+        {
+          "declaration": "Paper.Slack.pays_for_error",
+          "file": "Paper/Endpoints/Rounding/Slack.lean",
+          "source_sha256": "97ca0513674c83bdb2e87136a76c22ebc0c4528fc607061270e7a91a9cfc3bf1"
+        },
+        {
+          "declaration": "Paper.Slack.finite_certificate",
+          "file": "Paper/Endpoints/Rounding/Slack.lean",
+          "source_sha256": "97ca0513674c83bdb2e87136a76c22ebc0c4528fc607061270e7a91a9cfc3bf1"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "prop:planar-rounding",
+      "lean": [
+        {
+          "declaration": "Paper.Proposition2PlanarAudit.planar_rounding",
+          "file": "verification/Proposition2Planar.lean",
+          "source_sha256": "9a98906d848f4f63d5ee80d5ab29f86e575e71154d766dbb09db2052a518e201"
+        },
+        {
+          "declaration": "Paper.Proposition2PlanarAudit.planar_rounding_on_residual",
+          "file": "verification/Proposition2Planar.lean",
+          "source_sha256": "9a98906d848f4f63d5ee80d5ab29f86e575e71154d766dbb09db2052a518e201"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "simp:weighted-solver",
+      "lean": [
+        {
+          "declaration": "Paper.GeneralFractionalBroadcast.parameters",
+          "file": "Paper/Solver/LocalSearch/GeneralFractionalBroadcast.lean",
+          "source_sha256": "fc2e25e9aea9f407bae461551284d46f4917a3f4feccdc6ee260884f498c312a"
+        },
+        {
+          "declaration": "Paper.GeneralFractionalBroadcast.rounds",
+          "file": "Paper/Solver/LocalSearch/GeneralFractionalBroadcast.lean",
+          "source_sha256": "fc2e25e9aea9f407bae461551284d46f4917a3f4feccdc6ee260884f498c312a"
+        },
+        {
+          "declaration": "Paper.GeneralFractionalBroadcast.logarithmic_bits",
+          "file": "Paper/Solver/LocalSearch/GeneralFractionalBroadcast.lean",
+          "source_sha256": "fc2e25e9aea9f407bae461551284d46f4917a3f4feccdc6ee260884f498c312a"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "simp:certificate",
+      "lean": [
+        {
+          "declaration": "Paper.SubgraphCertificates.certificate_optimum",
+          "file": "Paper/Certificates/Counting/SubgraphCertificates.lean",
+          "source_sha256": "c3041739757dfa8316d3dc189959ade97fd58b2d9ee0fef5c51660a350bc6eec"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "simp:integrality-gap",
+      "lean": [
+        {
+          "declaration": "Paper.SubgraphCertificates.integral_optimum",
+          "file": "Paper/Certificates/Counting/SubgraphCertificates.lean",
+          "source_sha256": "c3041739757dfa8316d3dc189959ade97fd58b2d9ee0fef5c51660a350bc6eec"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "simp:local-solver",
+      "lean": [
+        {
+          "declaration": "Paper.BoundedLocalFractionalKT0.local_solver",
+          "file": "Paper/Solver/LocalSearch/BoundedLocalFractionalKT0.lean",
+          "source_sha256": "19d59499f1df916d63259ab8bd07afb58b9ac9f1f19cbf8f92c1f3bad1015d72"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "simp:initializer",
+      "lean": [
+        {
+          "declaration": "Paper.SimpleD0.spec",
+          "file": "Paper/Initialization/Pruning/SimpleD0.lean",
+          "source_sha256": "6be2f4b3c4d37d04483cf67f500ccb72b1939336fce4da0cb049f5a549fd4a93"
+        },
+        {
+          "declaration": "Paper.SimpleD0.weighted_spec",
+          "file": "Paper/Initialization/Pruning/SimpleD0.lean",
+          "source_sha256": "6be2f4b3c4d37d04483cf67f500ccb72b1939336fce4da0cb049f5a549fd4a93"
+        },
+        {
+          "declaration": "Paper.SimpleD0.rounds",
+          "file": "Paper/Initialization/Pruning/SimpleD0.lean",
+          "source_sha256": "6be2f4b3c4d37d04483cf67f500ccb72b1939336fce4da0cb049f5a549fd4a93"
+        },
+        {
+          "declaration": "Paper.SimpleD0.logarithmic_bits",
+          "file": "Paper/Initialization/Pruning/SimpleD0.lean",
+          "source_sha256": "6be2f4b3c4d37d04483cf67f500ccb72b1939336fce4da0cb049f5a549fd4a93"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "simp:list-pairs",
+      "lean": [
+        {
+          "declaration": "Paper.DirectListPairs.card_pairs_le",
+          "file": "Paper/Initialization/Lists/DirectListPairs.lean",
+          "source_sha256": "84ed510da42e87b8db1a75e99bb3a825f7f5a336a5e191562be6dfcf01c87235"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "simp:bounded-lists",
+      "lean": [
+        {
+          "declaration": "Paper.MarkedLists.output_card_le",
+          "file": "Paper/Initialization/Lists/MarkedLists.lean",
+          "source_sha256": "c458273dcc3237defede0406159880bec55b654264e2f4d8d9792c84aa97a295"
+        },
+        {
+          "declaration": "Paper.MarkedLists.output_covers",
+          "file": "Paper/Initialization/Lists/MarkedLists.lean",
+          "source_sha256": "c458273dcc3237defede0406159880bec55b654264e2f4d8d9792c84aa97a295"
+        },
+        {
+          "declaration": "Paper.MarkedBroadcast.correct",
+          "file": "Paper/Initialization/Lists/MarkedBroadcast.lean",
+          "source_sha256": "1db23a8849e95589586d80d882fb301c6e34dbec5f9c486c4b90277cce8fe39b"
+        },
+        {
+          "declaration": "Paper.MarkedBroadcast.rounds",
+          "file": "Paper/Initialization/Lists/MarkedBroadcast.lean",
+          "source_sha256": "1db23a8849e95589586d80d882fb301c6e34dbec5f9c486c4b90277cce8fe39b"
+        },
+        {
+          "declaration": "Paper.MarkedBroadcast.maxBits",
+          "file": "Paper/Initialization/Lists/MarkedBroadcast.lean",
+          "source_sha256": "1db23a8849e95589586d80d882fb301c6e34dbec5f9c486c4b90277cce8fe39b"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "simp:residual-bound",
+      "lean": [
+        {
+          "declaration": "Paper.SuccessorPaths.residual_bound",
+          "file": "Paper/Initialization/Pruning/SuccessorPaths.lean",
+          "source_sha256": "9cfbc9e9c11e22e590a3c9a1ce04ef4791082cdd27ed1d724fdbed0f3ff95a4e"
+        },
+        {
+          "declaration": "Paper.SuccessorPaths.exists_successors",
+          "file": "Paper/Initialization/Pruning/SuccessorPaths.lean",
+          "source_sha256": "9cfbc9e9c11e22e590a3c9a1ce04ef4791082cdd27ed1d724fdbed0f3ff95a4e"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "simp:heavy",
+      "lean": [
+        {
+          "declaration": "Paper.HeavyRepair.count_div",
+          "file": "Paper/Owners/Construction/HeavyRepair.lean",
+          "source_sha256": "f108870feb8db54e97584783b9c97efd7447f733ba66281e8f2cc142a47eb5bc"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "simp:owner-density",
+      "lean": [
+        {
+          "declaration": "Paper.SharpOwnerDensity.augmented_density",
+          "file": "Paper/Owners/Construction/SharpOwnerDensity.lean",
+          "source_sha256": "e9f728be8d5d286869ed330dd2d0a01aca2675934eb37252d7b2d3579ecfa02a"
+        },
+        {
+          "declaration": "Paper.OwnerInteraction.graph_le_augmented",
+          "file": "Paper/Owners/Construction/OwnerInteraction.lean",
+          "source_sha256": "dc9d10e5c09d208c47a4ef1a471f5fe360e71408a5490d832d6e634eaf40208d"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "simp:owner-separator",
+      "lean": [
+        {
+          "declaration": "Paper.SharpOwnerSeparator.published_profile",
+          "file": "Paper/Owners/Separators/SharpOwnerSeparator.lean",
+          "source_sha256": "a266157c1567c24a3146e1e3a229f5a05dba1592fa504b1f64f571e69566067d"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "simp:simulation",
+      "lean": [
+        {
+          "declaration": "Paper.CurrentOwnerSimulation.discovery",
+          "file": "Paper/Owners/Construction/CurrentOwnerSimulation.lean",
+          "source_sha256": "744b45af79d1641496f5596a92b8fba6746f2425d1f606d5b1e5e5582c0e7688"
+        },
+        {
+          "declaration": "Paper.CurrentOwnerSimulation.simulation",
+          "file": "Paper/Owners/Construction/CurrentOwnerSimulation.lean",
+          "source_sha256": "744b45af79d1641496f5596a92b8fba6746f2425d1f606d5b1e5e5582c0e7688"
+        },
+        {
+          "declaration": "Paper.CurrentOwnerSimulation.simulation_KT0",
+          "file": "Paper/Owners/Construction/CurrentOwnerSimulation.lean",
+          "source_sha256": "744b45af79d1641496f5596a92b8fba6746f2425d1f606d5b1e5e5582c0e7688"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "simp:partition",
+      "lean": [
+        {
+          "declaration": "Paper.CurrentFiniteBitPartition.parameters",
+          "file": "Paper/Partitions/Local/CurrentFiniteBitPartition.lean",
+          "source_sha256": "5c728a3676b365248a27cd429fd2ad7ea35b27110b605eed53dfbbeb1bc28302"
+        },
+        {
+          "declaration": "Paper.CurrentFiniteBitPartition.cut_eq",
+          "file": "Paper/Partitions/Local/CurrentFiniteBitPartition.lean",
+          "source_sha256": "5c728a3676b365248a27cd429fd2ad7ea35b27110b605eed53dfbbeb1bc28302"
+        },
+        {
+          "declaration": "Paper.CurrentFiniteBitPartition.bits_per_vertex",
+          "file": "Paper/Partitions/Local/CurrentFiniteBitPartition.lean",
+          "source_sha256": "5c728a3676b365248a27cd429fd2ad7ea35b27110b605eed53dfbbeb1bc28302"
+        },
+        {
+          "declaration": "Paper.CurrentFiniteBitPartition.output_part",
+          "file": "Paper/Partitions/Local/CurrentFiniteBitPartition.lean",
+          "source_sha256": "5c728a3676b365248a27cd429fd2ad7ea35b27110b605eed53dfbbeb1bc28302"
+        },
+        {
+          "declaration": "Paper.CurrentFiniteBitPartition.local_output",
+          "file": "Paper/Partitions/Local/CurrentFiniteBitPartition.lean",
+          "source_sha256": "5c728a3676b365248a27cd429fd2ad7ea35b27110b605eed53dfbbeb1bc28302"
+        },
+        {
+          "declaration": "Paper.CurrentFiniteBitPartition.rounds",
+          "file": "Paper/Partitions/Local/CurrentFiniteBitPartition.lean",
+          "source_sha256": "5c728a3676b365248a27cd429fd2ad7ea35b27110b605eed53dfbbeb1bc28302"
+        },
+        {
+          "declaration": "Paper.CurrentFiniteBitPartition.logarithmic_bits",
+          "file": "Paper/Partitions/Local/CurrentFiniteBitPartition.lean",
+          "source_sha256": "5c728a3676b365248a27cd429fd2ad7ea35b27110b605eed53dfbbeb1bc28302"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "simp:tasks",
+      "lean": [
+        {
+          "declaration": "Paper.TaskCostSum.optimum_bound",
+          "file": "Paper/Averaging/Tasks/TaskCostSum.lean",
+          "source_sha256": "4a2fd8ac206943c59622b729233f24d927111190a4dac90c5a0cc62afb822c70"
+        },
+        {
+          "declaration": "Paper.OwnerTasks.service_disjoint",
+          "file": "Paper/Owners/Construction/OwnerTasks.lean",
+          "source_sha256": "8bbea335d4cfd82bc50a84b6742ac964c16d5671befcef32559dcd812f664a12"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "simp:endpoint:rounding",
+      "lean": [
+        {
+          "declaration": "Paper.CurrentRounding.common_rounding",
+          "file": "Paper/Endpoints/Rounding/CurrentRounding.lean",
+          "source_sha256": "40181c491d90a8179fac9c794e3bc8445e007c6923d89d9fcd6d58e69adacfe3"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "simp:endpoint:paying",
+      "lean": [
+        {
+          "declaration": "Paper.Slack.bounded_components_pay",
+          "file": "Paper/Endpoints/Rounding/Slack.lean",
+          "source_sha256": "97ca0513674c83bdb2e87136a76c22ebc0c4528fc607061270e7a91a9cfc3bf1"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "simp:endpoint:budget",
+      "lean": [
+        {
+          "declaration": "Paper.CurrentBudgetBridge.current_budget_on_residual_lp",
+          "file": "Paper/Endpoints/Rounding/CurrentBudgetBridge.lean",
+          "source_sha256": "e972d1cc6586f370247d11364600e8df74cd25ac3953b6fae4f3a71e477ffa36"
+        },
+        {
+          "declaration": "Paper.CurrentBudgetBridge.residual_optimum_attained",
+          "file": "Paper/Endpoints/Rounding/CurrentBudgetBridge.lean",
+          "source_sha256": "e972d1cc6586f370247d11364600e8df74cd25ac3953b6fae4f3a71e477ffa36"
+        },
+        {
+          "declaration": "Paper.CurrentBudgetBridge.global_fractional_minimum",
+          "file": "Paper/Endpoints/Rounding/CurrentBudgetBridge.lean",
+          "source_sha256": "e972d1cc6586f370247d11364600e8df74cd25ac3953b6fae4f3a71e477ffa36"
+        },
+        {
+          "declaration": "Paper.CurrentBudget.cost_eq_open",
+          "file": "Paper/Endpoints/Rounding/CurrentBudget.lean",
+          "source_sha256": "e3926c98d0b46a859d29570fbf586fde21769cf6171b6279b1791148a3413630"
+        },
+        {
+          "declaration": "Paper.CurrentBudget.cheap_degree_and_not_demand",
+          "file": "Paper/Endpoints/Rounding/CurrentBudget.lean",
+          "source_sha256": "e3926c98d0b46a859d29570fbf586fde21769cf6171b6279b1791148a3413630"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "simp:endpoint:count",
+      "lean": [
+        {
+          "declaration": "Paper.CurrentCountBound.output_card_le",
+          "file": "Paper/Endpoints/Rounding/CurrentCountBound.lean",
+          "source_sha256": "5ce89569837995bc061568ceb3bdfd60ac51a7b39409da732a6609fedbc3ce0e"
+        },
+        {
+          "declaration": "Paper.CurrentCountBound.output_slack",
+          "file": "Paper/Endpoints/Rounding/CurrentCountBound.lean",
+          "source_sha256": "5ce89569837995bc061568ceb3bdfd60ac51a7b39409da732a6609fedbc3ce0e"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "sc:integral-task",
+      "lean": [
+        {
+          "declaration": "Paper.GeneralCoveringTaskIntegral.part_spec",
+          "file": "Paper/Solver/LocalSearch/GeneralCoveringTaskIntegral.lean",
+          "source_sha256": "5756db0d782405927757bea646dfec10837ceb88f50491858cf3e9e0103ea6ff"
+        },
+        {
+          "declaration": "Paper.GeneralCoveringTaskParallel.part_spec",
+          "file": "Paper/Solver/LocalSearch/GeneralCoveringTaskParallel.lean",
+          "source_sha256": "85198019b0977ed712aadaaa40ca1dd713ad20213daaf30e4fa527ba13856e80"
+        },
+        {
+          "declaration": "Paper.GeneralCoveringTaskParallel.rounds",
+          "file": "Paper/Solver/LocalSearch/GeneralCoveringTaskParallel.lean",
+          "source_sha256": "85198019b0977ed712aadaaa40ca1dd713ad20213daaf30e4fa527ba13856e80"
+        },
+        {
+          "declaration": "Paper.GeneralCoveringTaskParallel.logarithmic_bits",
+          "file": "Paper/Solver/LocalSearch/GeneralCoveringTaskParallel.lean",
+          "source_sha256": "85198019b0977ed712aadaaa40ca1dd713ad20213daaf30e4fa527ba13856e80"
+        },
+        {
+          "declaration": "Paper.GeneralCoveringTaskAggregate.solved",
+          "file": "Paper/Solver/LocalSearch/GeneralCoveringTaskAggregate.lean",
+          "source_sha256": "a0d2e3aeb2b31d82395e3e1a31eae0d474985c8f03057b4738b3680b7af96e86"
+        },
+        {
+          "declaration": "Paper.GeneralCoveringTaskAggregate.services_disjoint",
+          "file": "Paper/Solver/LocalSearch/GeneralCoveringTaskAggregate.lean",
+          "source_sha256": "a0d2e3aeb2b31d82395e3e1a31eae0d474985c8f03057b4738b3680b7af96e86"
+        },
+        {
+          "declaration": "Paper.GeneralCoveringTaskAggregate.sum_optimal",
+          "file": "Paper/Solver/LocalSearch/GeneralCoveringTaskAggregate.lean",
+          "source_sha256": "a0d2e3aeb2b31d82395e3e1a31eae0d474985c8f03057b4738b3680b7af96e86"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "sc:det-partition",
+      "lean": [
+        {
+          "declaration": "Paper.DeterministicPartitionEndpoint.sc_det_partition",
+          "file": "Paper/Partitions/Local/DeterministicPartitionEndpoint.lean",
+          "source_sha256": "e192f43c4fc5e704d3a4506ed14935b60c1c68f9110bd6c6e394a3ce32a014f5"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "new:surface-seven",
+      "lean": [
+        {
+          "file": "Paper/Communication/OrdinarySurfacePort.lean",
+          "declaration": "Paper.OrdinarySurfaceAlgorithm.parameters",
+          "source_sha256": "af71384fd0e87d8468e1bd89eab228dc1e319586683eaa16abd25ea13b4ac2f4"
+        },
+        {
+          "file": "GraphTheory/Surfaces/OrdinarySurface.lean",
+          "declaration": "SimpleGraph.OrdinarySurface.ClosedSurface.eulerGenus_eq",
+          "source_sha256": "e46c26b71f46accc0868fa5ed7f50a26ddc10fa2e24a5da2206c07d26e0ffd47"
+        }
+      ],
+      "external_axioms": [
+        "Paper.External.SurfaceTopology.cellulation_euler_eq",
+        "Paper.External.SurfaceTopology.exists_cellulation",
+        "Paper.External.SurfaceTopology.rotation_of_embedding"
+      ]
+    },
+    {
+      "inventory_id": "new:surface-rounding",
+      "lean": [
+        {
+          "file": "Paper/Endpoints/Rounding/OrdinarySurfaceBounds.lean",
+          "declaration": "Paper.OrdinarySurfaceBounds.actual_bounds",
+          "source_sha256": "325e50c8ef6320ca501e9edb10fe7662ef15284d810fb5de5e753d47eb5609eb"
+        },
+        {
+          "file": "GraphTheory/Surfaces/OrdinarySurface.lean",
+          "declaration": "SimpleGraph.OrdinarySurface.ClosedSurface.eulerGenus_eq",
+          "source_sha256": "e46c26b71f46accc0868fa5ed7f50a26ddc10fa2e24a5da2206c07d26e0ffd47"
+        }
+      ],
+      "external_axioms": [
+        "Paper.External.SurfaceTopology.cellulation_euler_eq",
+        "Paper.External.SurfaceTopology.exists_cellulation",
+        "Paper.External.SurfaceTopology.rotation_of_embedding"
+      ]
+    },
+    {
+      "inventory_id": "sc:face",
+      "lean": [
+        {
+          "declaration": "Paper.CurrentPlanarFaceBound.real_edge_bound",
+          "file": "Paper/Endpoints/Girth/CurrentPlanarFaceBound.lean",
+          "source_sha256": "3627ebf07fc7920f3c8034b1bc6c250368e17c797447c19aae08b6cb683f8eac"
+        },
+        {
+          "declaration": "Paper.CurrentPlanarFaceBound.induced_density",
+          "file": "Paper/Endpoints/Girth/CurrentPlanarFaceBound.lean",
+          "source_sha256": "3627ebf07fc7920f3c8034b1bc6c250368e17c797447c19aae08b6cb683f8eac"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "sc:girth:count",
+      "lean": [
+        {
+          "declaration": "Paper.CurrentGirthCounting.incident_bound",
+          "file": "Paper/Endpoints/Girth/CurrentGirthCounting.lean",
+          "source_sha256": "44b306b8566e8769adc29d177d05757038379670e5f9fa2b528e6318bd9f4eb4"
+        },
+        {
+          "declaration": "Paper.CurrentGirthCounting.overlap_bound",
+          "file": "Paper/Endpoints/Girth/CurrentGirthCounting.lean",
+          "source_sha256": "44b306b8566e8769adc29d177d05757038379670e5f9fa2b528e6318bd9f4eb4"
+        },
+        {
+          "declaration": "Paper.CurrentGirthOutput.count_four",
+          "file": "Paper/Endpoints/Girth/CurrentGirthOutput.lean",
+          "source_sha256": "88d86299f6cb4832bd9ba88802b69dc9c21c71808c76484a4f47418d50c0d488"
+        },
+        {
+          "declaration": "Paper.CurrentGirthOutput.count_six",
+          "file": "Paper/Endpoints/Girth/CurrentGirthOutput.lean",
+          "source_sha256": "88d86299f6cb4832bd9ba88802b69dc9c21c71808c76484a4f47418d50c0d488"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "new:forced-selection",
+      "lean": [
+        {
+          "file": "Paper/Preliminaries/LatticeForcedSelection.lean",
+          "declaration": "Paper.LatticeBlock.forced_parameters",
+          "source_sha256": "a5aaccebec21b7715f9762297dc33d7b2ad1ce0f2b949247fe851bb1a128dc86"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "new:ordinary-lower",
+      "lean": [
+        {
+          "file": "Paper/Optimality/LowerBounds/OrdinaryPlanarLower.lean",
+          "declaration": "Paper.OrdinaryPlanarLower.planar",
+          "source_sha256": "ed3d921078a193c19fda5780554130dd0d096c0e504c6cee7aa68fa0c48a38a0"
+        },
+        {
+          "file": "Paper/Optimality/LowerBounds/OrdinaryPlanarLower.lean",
+          "declaration": "Paper.OrdinaryPlanarLower.triangle_free",
+          "source_sha256": "ed3d921078a193c19fda5780554130dd0d096c0e504c6cee7aa68fa0c48a38a0"
+        },
+        {
+          "file": "Paper/Optimality/LowerBounds/TreewidthLocalLower.lean",
+          "declaration": "Paper.TreewidthLocalLower.exact_lower",
+          "source_sha256": "e79c3c1bd34ade59cb62065f8c1629413522c4f944923d14d7de155aa9b9c3aa"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "sc:rounds-lower",
+      "lean": [
+        {
+          "declaration": "Paper.CycleRoundsLower.local_algorithm",
+          "file": "Paper/Optimality/LowerBounds/CycleRoundsLower.lean",
+          "source_sha256": "dd42bff3f0d06cc5d2bbb114253cc8249890940a079f27978006b429b95a4173"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "sc:rounding-all",
+      "lean": [
+        {
+          "declaration": "Paper.CoveringApplications.parameters",
+          "file": "Paper/Endpoints/Rounding/CoveringApplications.lean",
+          "source_sha256": "3f06465ecb519cbb21bd70fcde3bfa7a9e5a05d0f51c3ae9f1dba19331c71a86"
+        },
+        {
+          "declaration": "Paper.CoveringApplicationResources.rounds",
+          "file": "Paper/Endpoints/Rounding/CoveringApplicationResources.lean",
+          "source_sha256": "41e3a9ad58e43c70746257dee578f042006f0f281600b4635a237351791784b4"
+        },
+        {
+          "declaration": "Paper.CoveringApplicationResources.logarithmic_bits",
+          "file": "Paper/Endpoints/Rounding/CoveringApplicationResources.lean",
+          "source_sha256": "41e3a9ad58e43c70746257dee578f042006f0f281600b4635a237351791784b4"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "fv:imp:additive",
+      "lean": [
+        {
+          "declaration": "Paper.AdditiveThresholdProgram.endpoint",
+          "file": "Paper/Communication/AdditiveThresholdProgram.lean",
+          "source_sha256": "5a51784dd18368e0d4d3ed275987a1b50e944b91bff78192b2aa87fa5d2a8ec1"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "fv:imp:lemma",
+      "lean": [
+        {
+          "declaration": "Paper.ImprovedExcessEndpoint.rounding",
+          "file": "Paper/Endpoints/Rounding/ImprovedExcessEndpoint.lean",
+          "source_sha256": "8142a5a79dab13e7e04fcbcc7c34f71ebd31af187a5ee1c6d18c26f3e0d347cc"
+        },
+        {
+          "declaration": "Paper.ImprovedExcess.output_bound_no_excess",
+          "file": "Paper/Endpoints/Rounding/ImprovedExcessRounding.lean",
+          "source_sha256": "068c4289065046c068a2a1904c1baf88771ab6b684543643c0801d98042cb4a5"
+        },
+        {
+          "declaration": "Paper.ImprovedExcessProgram.correct",
+          "file": "Paper/Endpoints/Rounding/ImprovedExcessProgram.lean",
+          "source_sha256": "19f7588bcd689a06ce701aeb7a166a7122dd70084e2f2bfaec98165980a47e18"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "fv:imp:girth",
+      "lean": [
+        {
+          "declaration": "Paper.ImprovedGirth.parameters",
+          "file": "Paper/Endpoints/Girth/ImprovedGirth.lean",
+          "source_sha256": "4d48297dba9dfedca786a09a7d4ad41e154ed83a03a13689f5c43cc80dcb1216"
+        },
+        {
+          "declaration": "Paper.ImprovedGirth.output_eq",
+          "file": "Paper/Endpoints/Girth/ImprovedGirth.lean",
+          "source_sha256": "4d48297dba9dfedca786a09a7d4ad41e154ed83a03a13689f5c43cc80dcb1216"
+        },
+        {
+          "declaration": "Paper.ImprovedGirth.rounds",
+          "file": "Paper/Endpoints/Girth/ImprovedGirth.lean",
+          "source_sha256": "4d48297dba9dfedca786a09a7d4ad41e154ed83a03a13689f5c43cc80dcb1216"
+        },
+        {
+          "declaration": "Paper.ImprovedGirth.logarithmic_bits",
+          "file": "Paper/Endpoints/Girth/ImprovedGirth.lean",
+          "source_sha256": "4d48297dba9dfedca786a09a7d4ad41e154ed83a03a13689f5c43cc80dcb1216"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "fv:imp:exact",
+      "lean": [
+        {
+          "declaration": "Paper.SmallComponentExactEndpoint.endpoint",
+          "file": "Paper/Endpoints/Components/SmallComponentExactEndpoint.lean",
+          "source_sha256": "962ac413b0504107cd6685322d1cab6b013ffc91754aa615ae14f4e0d91657a1"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "fv:imp:absorb",
+      "lean": [
+        {
+          "declaration": "Paper.UniformAbsorption.uniform_absorption",
+          "file": "Paper/Endpoints/Rounding/UniformAbsorption.lean",
+          "source_sha256": "2ed81cbedded264179b910a239ebd1513371be3b28832a20caa24c9047baad3a"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "fv:imp:euler",
+      "lean": [
+        {
+          "file": "Paper/Endpoints/Rounding/OrdinarySurfaceBounds.lean",
+          "declaration": "Paper.OrdinarySurfaceBounds.subgraph_girth_density",
+          "source_sha256": "325e50c8ef6320ca501e9edb10fe7662ef15284d810fb5de5e753d47eb5609eb"
+        },
+        {
+          "file": "Paper/Endpoints/Rounding/OrdinarySurfaceBounds.lean",
+          "declaration": "Paper.OrdinarySurfaceBounds.subgraph_density",
+          "source_sha256": "325e50c8ef6320ca501e9edb10fe7662ef15284d810fb5de5e753d47eb5609eb"
+        },
+        {
+          "file": "Paper/Endpoints/Rounding/OrdinarySurfaceBounds.lean",
+          "declaration": "Paper.OrdinarySurfaceBounds.minor_bound",
+          "source_sha256": "325e50c8ef6320ca501e9edb10fe7662ef15284d810fb5de5e753d47eb5609eb"
+        },
+        {
+          "file": "Paper/Endpoints/Rounding/OrdinarySurfaceBounds.lean",
+          "declaration": "Paper.OrdinarySurfaceBounds.minor_density",
+          "source_sha256": "325e50c8ef6320ca501e9edb10fe7662ef15284d810fb5de5e753d47eb5609eb"
+        },
+        {
+          "file": "GraphTheory/Surfaces/OrdinarySurface.lean",
+          "declaration": "SimpleGraph.OrdinarySurface.ClosedSurface.eulerGenus_eq",
+          "source_sha256": "e46c26b71f46accc0868fa5ed7f50a26ddc10fa2e24a5da2206c07d26e0ffd47"
+        }
+      ],
+      "external_axioms": [
+        "Paper.External.SurfaceTopology.cellulation_euler_eq",
+        "Paper.External.SurfaceTopology.exists_cellulation",
+        "Paper.External.SurfaceTopology.rotation_of_embedding"
+      ]
+    },
+    {
+      "inventory_id": "fv:imp:surface-girth",
+      "lean": [
+        {
+          "file": "Paper/Communication/OrdinarySurfaceGirth.lean",
+          "declaration": "Paper.OrdinarySurfaceGirth.parameters",
+          "source_sha256": "6f286f0abf3c693e7a5e4c687da07ae8bccb63ad721c8f75a22fa1ff5e7b409a"
+        },
+        {
+          "file": "Paper/Communication/OrdinarySurfaceImprovedGirth.lean",
+          "declaration": "Paper.OrdinarySurfaceImprovedGirth.parameters",
+          "source_sha256": "344f3b1555f0d31262e509ba74792872fd0d4205098175ac18f52c4ed3a98506"
+        },
+        {
+          "file": "GraphTheory/Surfaces/OrdinarySurface.lean",
+          "declaration": "SimpleGraph.OrdinarySurface.ClosedSurface.eulerGenus_eq",
+          "source_sha256": "e46c26b71f46accc0868fa5ed7f50a26ddc10fa2e24a5da2206c07d26e0ffd47"
+        },
+        {
+          "file": "Paper/Communication/OrdinarySurfaceGirthBoth.lean",
+          "declaration": "Paper.OrdinarySurfaceGirthBoth.parameters",
+          "source_sha256": "1a7b842c3a6a1f65107b7208775da41e5a01d60e4550629b16e9287e3402b55c"
+        },
+        {
+          "file": "Paper/Communication/OrdinarySurfaceGirthBoth.lean",
+          "declaration": "Paper.OrdinarySurfaceGirthBoth.coefficient_le_basic",
+          "source_sha256": "1a7b842c3a6a1f65107b7208775da41e5a01d60e4550629b16e9287e3402b55c"
+        }
+      ],
+      "external_axioms": [
+        "Paper.External.SurfaceTopology.cellulation_euler_eq",
+        "Paper.External.SurfaceTopology.exists_cellulation",
+        "Paper.External.SurfaceTopology.rotation_of_embedding"
+      ]
+    },
+    {
+      "inventory_id": "fv:total:exact",
+      "lean": [
+        {
+          "declaration": "Paper.TotalDomination.ExactEndpoint.minor_parameters",
+          "file": "Paper/TotalDomination/ExactEndpoint.lean",
+          "source_sha256": "383bcca234576db8a0e7de37c034fc5410ba96d2b82bad2a0dad9540366b5624"
+        },
+        {
+          "declaration": "Paper.TotalDomination.ExactEndpoint.subgraph_parameters",
+          "file": "Paper/TotalDomination/ExactEndpoint.lean",
+          "source_sha256": "383bcca234576db8a0e7de37c034fc5410ba96d2b82bad2a0dad9540366b5624"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "fv:total:rounding",
+      "lean": [
+        {
+          "declaration": "Paper.TotalDomination.output_covers",
+          "file": "Paper/TotalDomination/Rounding.lean",
+          "source_sha256": "3837757f2bf094be9cb105e368066407753e8cc2b98944670f38f2ec179642e6"
+        },
+        {
+          "declaration": "Paper.TotalDomination.output_card_le",
+          "file": "Paper/TotalDomination/Rounding.lean",
+          "source_sha256": "3837757f2bf094be9cb105e368066407753e8cc2b98944670f38f2ec179642e6"
+        },
+        {
+          "declaration": "Paper.TotalDomination.excess_le",
+          "file": "Paper/TotalDomination/Rounding.lean",
+          "source_sha256": "3837757f2bf094be9cb105e368066407753e8cc2b98944670f38f2ec179642e6"
+        },
+        {
+          "declaration": "Paper.TotalDomination.surplus_nonneg",
+          "file": "Paper/TotalDomination/Rounding.lean",
+          "source_sha256": "3837757f2bf094be9cb105e368066407753e8cc2b98944670f38f2ec179642e6"
+        },
+        {
+          "declaration": "Paper.TotalDomination.rounding_saving",
+          "file": "Paper/TotalDomination/CostSaving.lean",
+          "source_sha256": "0188c03aa448d968e839043850d39660f7f008e218e444c129fd3a9470d43721"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "fv:total:noncrit",
+      "lean": [
+        {
+          "declaration": "Paper.TotalDomination.EncodedRounding.rounding_bound",
+          "file": "Paper/TotalDomination/EncodedRounding.lean",
+          "source_sha256": "9dc482d8de4e3c78da446116278fbbae0baa334a3546f98b96e02df0e14eecbe"
+        },
+        {
+          "declaration": "Paper.TotalDomination.RealInputRounding.rounding_bound",
+          "file": "Paper/TotalDomination/RealInputRounding.lean",
+          "source_sha256": "caf1b9811a8b3e581bdc66abbab48a5c5734f0456576d1921f446a02e5e3bb64"
+        },
+        {
+          "declaration": "Paper.TotalDomination.RealInputRounding.resources",
+          "file": "Paper/TotalDomination/RealInputRounding.lean",
+          "source_sha256": "caf1b9811a8b3e581bdc66abbab48a5c5734f0456576d1921f446a02e5e3bb64"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "fv:total:noncrit-cor",
+      "lean": [
+        {
+          "declaration": "Paper.TotalDomination.Noninteger.admissible_iff_le_muMax",
+          "file": "Paper/TotalDomination/MaximumGain.lean",
+          "source_sha256": "a974f3681e1ec96d546d07591b0f44d6edef90320e2e63cb10c85a33f4e941b0"
+        },
+        {
+          "declaration": "Paper.TotalDomination.FractionalSolver.parameters",
+          "file": "Paper/TotalDomination/FractionalSolver.lean",
+          "source_sha256": "8e51622dc75ee2c347d096e29d5546690e754d20f123bb0b73a53d4ef8a336e7"
+        },
+        {
+          "declaration": "Paper.TotalDomination.Noninteger.gain_accuracy_below_max",
+          "file": "Paper/TotalDomination/GainAccuracy.lean",
+          "source_sha256": "1ec82dad9716a7611c7a08701306716404a55069e2fb571acb80e4554567d9f5"
+        },
+        {
+          "declaration": "Paper.TotalDomination.Noninteger.gain_accuracy_near_max",
+          "file": "Paper/TotalDomination/GainAccuracy.lean",
+          "source_sha256": "1ec82dad9716a7611c7a08701306716404a55069e2fb571acb80e4554567d9f5"
+        },
+        {
+          "declaration": "Paper.TotalDomination.NonintegerSolver.parameters",
+          "file": "Paper/TotalDomination/NonintegerSolver.lean",
+          "source_sha256": "93c935f73e283caf14b51e41781f3485dba8ac4b6073b58b9530d1e507a5e004"
+        },
+        {
+          "declaration": "Paper.TotalDomination.Noninteger.parameters_of_gain_rat",
+          "file": "Paper/TotalDomination/GainParameters.lean",
+          "source_sha256": "72c4abbbc85c2d2776d3b8102249a7410296b252941554dbb07683be84be4770"
+        },
+        {
+          "declaration": "Paper.TotalDomination.NonintegerEndpoint.parameters_below_max",
+          "file": "Paper/TotalDomination/NonintegerEndpoint.lean",
+          "source_sha256": "3ebf73c6957119fe1576d59e17bcbd4d6eede43ed51a2c6702cf1b8188b91a72"
+        },
+        {
+          "declaration": "Paper.TotalDomination.NonintegerEndpoint.parameters_near_max",
+          "file": "Paper/TotalDomination/NonintegerEndpoint.lean",
+          "source_sha256": "3ebf73c6957119fe1576d59e17bcbd4d6eede43ed51a2c6702cf1b8188b91a72"
+        },
+        {
+          "declaration": "Paper.TotalDomination.NonintegerEndpoint.parameters_exact_two_a",
+          "file": "Paper/TotalDomination/NonintegerEndpoint.lean",
+          "source_sha256": "3ebf73c6957119fe1576d59e17bcbd4d6eede43ed51a2c6702cf1b8188b91a72"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "fv:total:budget",
+      "lean": [
+        {
+          "declaration": "Paper.TotalDomination.InitialSelection.first_selection_budget",
+          "file": "Paper/TotalDomination/InitialBudget.lean",
+          "source_sha256": "ba7bf330aec3eb5672324753af7f04c9bc305de75d51df5e267541cc1ae14fe6"
+        },
+        {
+          "declaration": "Paper.TotalDomination.InitialSelection.exists_residual_optimum",
+          "file": "Paper/TotalDomination/InitialBudget.lean",
+          "source_sha256": "ba7bf330aec3eb5672324753af7f04c9bc305de75d51df5e267541cc1ae14fe6"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "fv:total:setup",
+      "lean": [
+        {
+          "declaration": "Paper.TotalDomination.IntegerSetup.setup",
+          "file": "Paper/TotalDomination/IntegerLowCoverage.lean",
+          "source_sha256": "c4e25a15d35bd86e70713d8daacc859496387a1709e7740a976a1eb66b8c58cd"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "fv:total:oversupply",
+      "lean": [
+        {
+          "declaration": "Paper.TotalDomination.IntegerSetup.oversupply_bound",
+          "file": "Paper/TotalDomination/IntegerOversupply.lean",
+          "source_sha256": "349e078b1be58438184129e6aef02685d64ee42e5c54663799e2f156e0e254d5"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "fv:total:defects",
+      "lean": [
+        {
+          "declaration": "Paper.TotalDomination.IntegerSetup.minor_defects",
+          "file": "Paper/TotalDomination/IntegerMinorDefects.lean",
+          "source_sha256": "39982a6f824d60ab4190be9a56bd2e176947cd49fe2f2f12b36ce560b492bbb1"
+        },
+        {
+          "declaration": "Paper.TotalDomination.IntegerSetup.planar_defects",
+          "file": "Paper/TotalDomination/IntegerPlanarDefects.lean",
+          "source_sha256": "f9e66509a0d3c98fbe2ba1acd68158155b840cce19411e8d700ee48c48968ac4"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "fv:total:count",
+      "lean": [
+        {
+          "declaration": "Paper.TotalDomination.IntegerSetup.selected_count",
+          "file": "Paper/TotalDomination/IntegerSelectedCount.lean",
+          "source_sha256": "18d07c404776dbfb0224c443a872b1f8bed41fbf27a26d7f6542ba315a00e858"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "fv:total:girth",
+      "lean": [
+        {
+          "file": "Paper/TotalDomination/PlanarGirthEndpoint.lean",
+          "declaration": "Paper.TotalDomination.PlanarGirthEndpoint.parameters",
+          "source_sha256": "fa04b205345a035bb3ee910bfd140b612642148b1855fb07aba11e57a93e2d40"
+        },
+        {
+          "file": "Paper/TotalDomination/PlanarGainEndpoint.lean",
+          "declaration": "Paper.TotalDomination.PlanarGainEndpoint.finite_parameters",
+          "source_sha256": "01cc28a6ea365e65007e119ec65dba7d7525146a4cd45e4217c068551e0076d2"
+        },
+        {
+          "file": "Paper/TotalDomination/PlanarGainEndpoint.lean",
+          "declaration": "Paper.TotalDomination.PlanarGainEndpoint.five_parameters",
+          "source_sha256": "01cc28a6ea365e65007e119ec65dba7d7525146a4cd45e4217c068551e0076d2"
+        },
+        {
+          "file": "Paper/TotalDomination/PlanarGainEndpoint.lean",
+          "declaration": "Paper.TotalDomination.PlanarGainEndpoint.large_parameters",
+          "source_sha256": "01cc28a6ea365e65007e119ec65dba7d7525146a4cd45e4217c068551e0076d2"
+        },
+        {
+          "file": "Paper/TotalDomination/HighGirthEndpoint.lean",
+          "declaration": "Paper.TotalDomination.HighGirthEndpoint.planar_parameters",
+          "source_sha256": "ab9bb888d5c13b001c8c454b052c44a28d2d609c666fe0322499392d0d3feda3"
+        },
+        {
+          "file": "Paper/TotalDomination/PlanarTotalLower.lean",
+          "declaration": "Paper.TotalDomination.PlanarTotalLower.planar",
+          "source_sha256": "8440e57cdda38024d8c5dc8f1374674ab335d7d76e406290e89657915a99c627"
+        },
+        {
+          "file": "Paper/TotalDomination/PlanarTotalLower.lean",
+          "declaration": "Paper.TotalDomination.PlanarTotalLower.triangle_free",
+          "source_sha256": "8440e57cdda38024d8c5dc8f1374674ab335d7d76e406290e89657915a99c627"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "fv:total:treewidth",
+      "lean": [
+        {
+          "declaration": "Paper.TotalDomination.TreewidthEndpoint.parameters",
+          "file": "Paper/TotalDomination/TreewidthEndpoint.lean",
+          "source_sha256": "8db5b17f4721eaf290ed5b9445835bb70307ff20371d1208e148fc54501abb15"
+        },
+        {
+          "declaration": "Paper.TotalDomination.TreewidthFractionalLower.lower",
+          "file": "Paper/TotalDomination/TreewidthFractionalLower.lean",
+          "source_sha256": "6cf359770d862c10f84e95f22ffe83dcccfc45ce52c223342a2c50ad25951985"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "fv:total:lower",
+      "lean": [
+        {
+          "file": "Paper/TotalDomination/PlanarTotalLower.lean",
+          "declaration": "Paper.TotalDomination.PlanarTotalLower.planar",
+          "source_sha256": "8440e57cdda38024d8c5dc8f1374674ab335d7d76e406290e89657915a99c627"
+        },
+        {
+          "file": "Paper/TotalDomination/PlanarTotalLower.lean",
+          "declaration": "Paper.TotalDomination.PlanarTotalLower.triangle_free",
+          "source_sha256": "8440e57cdda38024d8c5dc8f1374674ab335d7d76e406290e89657915a99c627"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "fv:total:lower-tw",
+      "lean": [
+        {
+          "declaration": "Paper.TotalDomination.TreewidthFractionalLower.lower",
+          "file": "Paper/TotalDomination/TreewidthFractionalLower.lean",
+          "source_sha256": "6cf359770d862c10f84e95f22ffe83dcccfc45ce52c223342a2c50ad25951985"
+        },
+        {
+          "declaration": "Paper.TotalDomination.TreewidthIntegralLower.lower",
+          "file": "Paper/TotalDomination/TreewidthIntegralLower.lean",
+          "source_sha256": "c342faf78affa0a6787b525e686e950b443df5d0b63781c5334f6ef72fd41c7e"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "fv:total:forced",
+      "lean": [
+        {
+          "file": "Paper/Preliminaries/LatticeTotalForced.lean",
+          "declaration": "Paper.LatticeBlock.total_forced_parameters",
+          "source_sha256": "da11355b12ca7793e826ccec32cb3326f4bf9c4aa4571dc6e897efdef35258d5"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "fv:hg:budget",
+      "lean": [
+        {
+          "declaration": "Paper.HighGirthBudget.endpoint",
+          "file": "Paper/Endpoints/Girth/HighGirthBudget.lean",
+          "source_sha256": "0d616321f887cc57603de3511d299144ea3464903b9381bb4e6884e1f1d490be"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "fv:hg:saving",
+      "lean": [
+        {
+          "declaration": "Paper.HighGirthSaving.saving_endpoint",
+          "file": "Paper/Endpoints/Girth/HighGirthSaving.lean",
+          "source_sha256": "8185adaa5f24aee3d518c0788c36c605c3fcd8082d1ecd1b32d86fc2ab6cb1ef"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "fv:hg:residual",
+      "lean": [
+        {
+          "declaration": "Paper.HighGirthResidual.residual_endpoint",
+          "file": "Paper/Endpoints/Girth/HighGirthResidual.lean",
+          "source_sha256": "0b63e0541d9ffc9c66c99786bd95854cf31580cdc789792d824173b74fcd1d21"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "fv:hg:free",
+      "lean": [
+        {
+          "declaration": "Paper.HighGirthFree.free_path_endpoint",
+          "file": "Paper/Endpoints/Girth/HighGirthFree.lean",
+          "source_sha256": "7b2b43ff7e5afb189ba3a31d8dd569d7551e6f32130a316f1fda77a5709aa26a"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "fv:hg:half",
+      "lean": [
+        {
+          "declaration": "Paper.HighGirthFewAttachments.few_attachment_endpoint",
+          "file": "Paper/Endpoints/Girth/HighGirthFewAttachments.lean",
+          "source_sha256": "69cafa1c0b69bfa0ecceef2451471376516cc5ec6fc281d77c3665bf1e921060"
+        },
+        {
+          "declaration": "Paper.HighGirthFewAttachments.two_attachment_half_slack",
+          "file": "Paper/Endpoints/Girth/HighGirthFewAttachments.lean",
+          "source_sha256": "69cafa1c0b69bfa0ecceef2451471376516cc5ec6fc281d77c3665bf1e921060"
+        },
+        {
+          "declaration": "Paper.HighGirthFewAttachments.half_slack",
+          "file": "Paper/Endpoints/Girth/HighGirthFewAttachments.lean",
+          "source_sha256": "69cafa1c0b69bfa0ecceef2451471376516cc5ec6fc281d77c3665bf1e921060"
+        },
+        {
+          "declaration": "Paper.HighGirthFewAttachments.count_bound",
+          "file": "Paper/Endpoints/Girth/HighGirthFewAttachments.lean",
+          "source_sha256": "69cafa1c0b69bfa0ecceef2451471376516cc5ec6fc281d77c3665bf1e921060"
+        },
+        {
+          "declaration": "Paper.HighGirthFewAttachments.oneFamily",
+          "file": "Paper/Endpoints/Girth/HighGirthFewAttachments.lean",
+          "source_sha256": "69cafa1c0b69bfa0ecceef2451471376516cc5ec6fc281d77c3665bf1e921060"
+        },
+        {
+          "declaration": "Paper.HighGirthFewAttachments.twoFamily",
+          "file": "Paper/Endpoints/Girth/HighGirthFewAttachments.lean",
+          "source_sha256": "69cafa1c0b69bfa0ecceef2451471376516cc5ec6fc281d77c3665bf1e921060"
+        },
+        {
+          "declaration": "Paper.HighGirthFewAttachments.families",
+          "file": "Paper/Endpoints/Girth/HighGirthFewAttachments.lean",
+          "source_sha256": "69cafa1c0b69bfa0ecceef2451471376516cc5ec6fc281d77c3665bf1e921060"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "fv:hg:count",
+      "lean": [
+        {
+          "declaration": "Paper.HighGirthSelectedCount.selected_vertex_bound",
+          "file": "Paper/Endpoints/Girth/HighGirthSelectedCount.lean",
+          "source_sha256": "101c1e16b3abc060431fe02dba5c6031e758bff0f280efcbcedd0e2f455f9086"
+        },
+        {
+          "declaration": "Paper.HighGirthPathComponentCount.path_component_count",
+          "file": "Paper/Endpoints/Girth/HighGirthPathComponentCount.lean",
+          "source_sha256": "8446ee5ddc13d2332bbc281948b83751e60a6000d7178a6b778fc0101d763e32"
+        },
+        {
+          "declaration": "Paper.HighGirthMiddleMultiplicity.middle_component_multiplicity",
+          "file": "Paper/Endpoints/Girth/HighGirthMiddleMultiplicity.lean",
+          "source_sha256": "d8ba1fbe48de0e83eb7bdbf340717228d5f584c885f52a59d2ea425f1d155ff3"
+        },
+        {
+          "declaration": "Paper.HighGirthAttachmentBudget.component_attachment_budget",
+          "file": "Paper/Endpoints/Girth/HighGirthAttachmentBudget.lean",
+          "source_sha256": "dca8f2989215f6c7a60f3cab083ab6231e9cb427c5af4d3f92864cc8b9468902"
+        },
+        {
+          "declaration": "Paper.HighGirthFreeClassBounds.free_attachment_class_bounds",
+          "file": "Paper/Endpoints/Girth/HighGirthFreeClassBounds.lean",
+          "source_sha256": "bec1e3cf46ebd73628649a646398bda22d620d1d6d146c343b05675bac68c912"
+        },
+        {
+          "declaration": "Paper.HighGirthPathTree.path_component_is_tree",
+          "file": "Paper/Endpoints/Girth/HighGirthPathTree.lean",
+          "source_sha256": "177bbd58710fb4de876f6d7d5542beac6ddb9600ce3a6681eb495ef5b77520f5"
+        },
+        {
+          "declaration": "Paper.HighGirthPathMetric.attachment_radius_two",
+          "file": "Paper/Endpoints/Girth/HighGirthPathMetric.lean",
+          "source_sha256": "a8c0267b1494c463d28281a3babb9083f02cad508f567f4a270b63e9aace025b"
+        },
+        {
+          "declaration": "Paper.HighGirthPathIndices.ordered_index_distance",
+          "file": "Paper/Endpoints/Girth/HighGirthPathIndices.lean",
+          "source_sha256": "55c772534cd7799e58214df17d80ae3fab2b80b495b507fbd81ba426e69964a8"
+        },
+        {
+          "declaration": "Paper.HighGirthAttachmentGap.consecutive_attachment_gap",
+          "file": "Paper/Endpoints/Girth/HighGirthAttachmentGap.lean",
+          "source_sha256": "c620556058372ac9a13f79cde5de0927e0d8d76d0dbaa649aec96f0ddc413f8d"
+        },
+        {
+          "declaration": "Paper.HighGirthAttachmentPositions.positions",
+          "file": "Paper/Endpoints/Girth/HighGirthAttachmentPositions.lean",
+          "source_sha256": "767f973bc4829268fe6d36429f29f1ff16272f5ff2e84de669eb955bfafcbee9"
+        },
+        {
+          "declaration": "Paper.HighGirthAttachmentPositionCount.attachment_positions_count",
+          "file": "Paper/Endpoints/Girth/HighGirthAttachmentPositionCount.lean",
+          "source_sha256": "ddc74d4ae0679cafd6618e7c330f72f195c632250855714ca3b92f6512eb55ef"
+        },
+        {
+          "declaration": "Paper.HighGirthFiniteGapSpan.span_of_gaps",
+          "file": "Paper/Endpoints/Girth/HighGirthFiniteGapSpan.lean",
+          "source_sha256": "dc1e653906823f2caf4a43b36ec8adb99887599e5d6a793fc4e19ae722843907"
+        },
+        {
+          "declaration": "Paper.HighGirthTrimmedPath.indices",
+          "file": "Paper/Endpoints/Girth/HighGirthTrimmedPath.lean",
+          "source_sha256": "445d58af3729f70b0a6a2ddefffd3c3c4faaf7b1950132ee38d23e7b063ffd4d"
+        },
+        {
+          "declaration": "Paper.HighGirthTrimmedPath.vertices",
+          "file": "Paper/Endpoints/Girth/HighGirthTrimmedPath.lean",
+          "source_sha256": "445d58af3729f70b0a6a2ddefffd3c3c4faaf7b1950132ee38d23e7b063ffd4d"
+        },
+        {
+          "declaration": "Paper.HighGirthTrimmedSize.trimmed_path_size_and_attachments",
+          "file": "Paper/Endpoints/Girth/HighGirthTrimmedSize.lean",
+          "source_sha256": "dd0f7e8bdfcb5dea14c903530473d8dc4dc4cbe29e8d9088c7fe26bc722f0409"
+        },
+        {
+          "declaration": "Paper.HighGirthTrimmedSupport.trimmed_path_support",
+          "file": "Paper/Endpoints/Girth/HighGirthTrimmedSupport.lean",
+          "source_sha256": "82134cf4fd40dc79e007805acfd2af2312b98fa6f2ac9098e317e5a19fd954a6"
+        },
+        {
+          "declaration": "Paper.HighGirthTrimmedConnected.trimmed_path_connected",
+          "file": "Paper/Endpoints/Girth/HighGirthTrimmedConnected.lean",
+          "source_sha256": "d4608726ca9cc911c4122758c2943e64a223a38e3553238d56fd1f8b853e975f"
+        },
+        {
+          "declaration": "Paper.HighGirthTrimmedTwoAttachments.two_attachments_trimmed_size",
+          "file": "Paper/Endpoints/Girth/HighGirthTrimmedTwoAttachments.lean",
+          "source_sha256": "a0f9c7cdf8fe95dd75cabca2ff3c17504f18cd268e1a8718f4c19403b029f599"
+        },
+        {
+          "declaration": "Paper.HighGirthFreeTrim.exists_trim",
+          "file": "Paper/Endpoints/Girth/HighGirthFreeTrim.lean",
+          "source_sha256": "27afd9a702ff27203d6080bb46325ad2479cdd93f5aaa3c5524174e73caa0745"
+        },
+        {
+          "declaration": "Paper.HighGirthRetainedParts.retained_component_parts_exist",
+          "file": "Paper/Endpoints/Girth/HighGirthRetainedParts.lean",
+          "source_sha256": "7300e17ef272dd504d139b846bc97c9efa2e5a2169d52b9229d61a90a6618adf"
+        },
+        {
+          "declaration": "Paper.HighGirthRetainedSet.parts",
+          "file": "Paper/Endpoints/Girth/HighGirthRetainedSet.lean",
+          "source_sha256": "68f463698f29d067fb87292164eaf382c06b51c0bbbe82adc8289e2a7112ee91"
+        },
+        {
+          "declaration": "Paper.HighGirthRetainedSet.parts_spec",
+          "file": "Paper/Endpoints/Girth/HighGirthRetainedSet.lean",
+          "source_sha256": "68f463698f29d067fb87292164eaf382c06b51c0bbbe82adc8289e2a7112ee91"
+        },
+        {
+          "declaration": "Paper.HighGirthRetainedSet.vertices",
+          "file": "Paper/Endpoints/Girth/HighGirthRetainedSet.lean",
+          "source_sha256": "68f463698f29d067fb87292164eaf382c06b51c0bbbe82adc8289e2a7112ee91"
+        },
+        {
+          "declaration": "Paper.HighGirthRetainedPartition.retained_set_partition",
+          "file": "Paper/Endpoints/Girth/HighGirthRetainedPartition.lean",
+          "source_sha256": "573fe97d68c93aee41853bcdfbf03a6c7c1a6096ea5b76dd3485603f1d5d2ace"
+        },
+        {
+          "declaration": "Paper.HighGirthComponentBalls.adjacent_member",
+          "file": "Paper/Endpoints/Girth/HighGirthComponentBalls.lean",
+          "source_sha256": "a0bbbfdefd485a75ec5844ae5707ad024ccd7ff9abc958b0ed0f29b48652c9ba"
+        },
+        {
+          "declaration": "Paper.HighGirthComponentBalls.ball_stays_in_component",
+          "file": "Paper/Endpoints/Girth/HighGirthComponentBalls.lean",
+          "source_sha256": "a0bbbfdefd485a75ec5844ae5707ad024ccd7ff9abc958b0ed0f29b48652c9ba"
+        },
+        {
+          "declaration": "Paper.HighGirthNonfreeRegion.freeVertices",
+          "file": "Paper/Endpoints/Girth/HighGirthNonfreeRegion.lean",
+          "source_sha256": "5c229ebab96ce356b1df7ad735518cffa26411110e22ab7bf69d7dde33de9793"
+        },
+        {
+          "declaration": "Paper.HighGirthNonfreeRegion.vertices",
+          "file": "Paper/Endpoints/Girth/HighGirthNonfreeRegion.lean",
+          "source_sha256": "5c229ebab96ce356b1df7ad735518cffa26411110e22ab7bf69d7dde33de9793"
+        },
+        {
+          "declaration": "Paper.HighGirthNonfreeRegion.attachments",
+          "file": "Paper/Endpoints/Girth/HighGirthNonfreeRegion.lean",
+          "source_sha256": "5c229ebab96ce356b1df7ad735518cffa26411110e22ab7bf69d7dde33de9793"
+        },
+        {
+          "declaration": "Paper.HighGirthNonfreeSize.nonfree_region_size_bound",
+          "file": "Paper/Endpoints/Girth/HighGirthNonfreeSize.lean",
+          "source_sha256": "737cee6f305ac25fa9080f2c27442740e3add6b55ff82e8dd21a01b5e8784814"
+        },
+        {
+          "declaration": "Paper.HighGirthSplitAttachmentBudget.nonfree_and_free_attachment_budget",
+          "file": "Paper/Endpoints/Girth/HighGirthSplitAttachmentBudget.lean",
+          "source_sha256": "2d57459f465736a8fddb8b7eb94c56cb3ee992aae0160ced757207fd3b5ecda2"
+        },
+        {
+          "declaration": "Paper.HighGirthRetainedSize.retained_set_size_bound",
+          "file": "Paper/Endpoints/Girth/HighGirthRetainedSize.lean",
+          "source_sha256": "e74e8e5d6b7605d2a285e4a7e87dd861d0330b8bd7d58ff254f5c08ea8835649"
+        },
+        {
+          "declaration": "Paper.HighGirthRetainedPathEdges.retained_path_is_tree_and_edge_count",
+          "file": "Paper/Endpoints/Girth/HighGirthRetainedPathEdges.lean",
+          "source_sha256": "9a9784d2ff144abdc42eefa2fba8bb26d373ee23f71bd54da24e07bea8c6fa16"
+        },
+        {
+          "declaration": "Paper.HighGirthSpanningCycleEdges.spanning_cycle_edges",
+          "file": "Paper/Endpoints/Girth/HighGirthSpanningCycleEdges.lean",
+          "source_sha256": "b8b253dbcde6cf7528fcdbf567dd0fee803206dd46202ded37543941aec0cddd"
+        },
+        {
+          "declaration": "Paper.HighGirthRetainedCycleEdges.retained_nonpath_edge_count",
+          "file": "Paper/Endpoints/Girth/HighGirthRetainedCycleEdges.lean",
+          "source_sha256": "f0f42115dd59a747e8f319801ef7cedec96e0f0bbd829f098342812c86a87124"
+        },
+        {
+          "declaration": "Paper.HighGirthInducedEdgeSets.edges",
+          "file": "Paper/Endpoints/Girth/HighGirthInducedEdgeSets.lean",
+          "source_sha256": "9569591469d13c144e2e7e0c92d47fcda26cc9b192c3eb867d57bfd1140940ea"
+        },
+        {
+          "declaration": "Paper.HighGirthInducedEdgeSets.edges_card",
+          "file": "Paper/Endpoints/Girth/HighGirthInducedEdgeSets.lean",
+          "source_sha256": "9569591469d13c144e2e7e0c92d47fcda26cc9b192c3eb867d57bfd1140940ea"
+        },
+        {
+          "declaration": "Paper.HighGirthRetainedEdgeSum.retained_edge_card_sum",
+          "file": "Paper/Endpoints/Girth/HighGirthRetainedEdgeSum.lean",
+          "source_sha256": "2b2bb159fe130e82e32aaaeab5f11723295870b48c248e2403ada53140e469d0"
+        },
+        {
+          "declaration": "Paper.HighGirthRetainedEdgeCount.retained_edge_count",
+          "file": "Paper/Endpoints/Girth/HighGirthRetainedEdgeCount.lean",
+          "source_sha256": "981f10cf3e34fe49277a99cf6eddc2d9500ad445fe19634c7b5da4bb480c793b"
+        },
+        {
+          "declaration": "Paper.HighGirthRetainedDensity.retained_density_bound",
+          "file": "Paper/Endpoints/Girth/HighGirthRetainedDensity.lean",
+          "source_sha256": "083350f5701ecb682f1755b89649f1647f7a5404a2570e368b8ed15c4b1f16f6"
+        },
+        {
+          "declaration": "Paper.HighGirthCountEndpoint.selected_vertex_count_bounds",
+          "file": "Paper/Endpoints/Girth/HighGirthCountEndpoint.lean",
+          "source_sha256": "74ae02896fa8f8066991a600cab74b959888d222d3f8bce7bbc1f1bb04bc0c30"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "fv:hg:three",
+      "lean": [
+        {
+          "declaration": "Paper.HighGirthCountEnvelope.actual_count_envelope",
+          "file": "Paper/Endpoints/Girth/HighGirthCountEnvelope.lean",
+          "source_sha256": "60200f1c96f286e9f3cccb547c42a8d8312e9a484abd556644ac5855fa91732f"
+        },
+        {
+          "declaration": "Paper.HighGirthRoundingSlack.actual_rounding_slack",
+          "file": "Paper/Endpoints/Girth/HighGirthRoundingSlack.lean",
+          "source_sha256": "5aef03657fbacdfc44793273f5121609f47b0fc4c05093c7c0c54616930aa383"
+        },
+        {
+          "declaration": "Paper.HighGirthSlackParameter.beta",
+          "file": "Paper/Endpoints/Girth/HighGirthSlackParameter.lean",
+          "source_sha256": "920d7ddf614c5a61bb6a42300478f67a5fc43aca8d90eece1557ea0468a3b0c1"
+        },
+        {
+          "declaration": "Paper.HighGirthSlackParameter.bw",
+          "file": "Paper/Endpoints/Girth/HighGirthSlackParameter.lean",
+          "source_sha256": "920d7ddf614c5a61bb6a42300478f67a5fc43aca8d90eece1557ea0468a3b0c1"
+        },
+        {
+          "declaration": "Paper.HighGirthSlackParameter.bl",
+          "file": "Paper/Endpoints/Girth/HighGirthSlackParameter.lean",
+          "source_sha256": "920d7ddf614c5a61bb6a42300478f67a5fc43aca8d90eece1557ea0468a3b0c1"
+        },
+        {
+          "declaration": "Paper.HighGirthSlackParameter.bP",
+          "file": "Paper/Endpoints/Girth/HighGirthSlackParameter.lean",
+          "source_sha256": "920d7ddf614c5a61bb6a42300478f67a5fc43aca8d90eece1557ea0468a3b0c1"
+        },
+        {
+          "declaration": "Paper.HighGirthSlackParameter.bO",
+          "file": "Paper/Endpoints/Girth/HighGirthSlackParameter.lean",
+          "source_sha256": "920d7ddf614c5a61bb6a42300478f67a5fc43aca8d90eece1557ea0468a3b0c1"
+        },
+        {
+          "declaration": "Paper.HighGirthSlackParameter.delta",
+          "file": "Paper/Endpoints/Girth/HighGirthSlackParameter.lean",
+          "source_sha256": "920d7ddf614c5a61bb6a42300478f67a5fc43aca8d90eece1557ea0468a3b0c1"
+        },
+        {
+          "declaration": "Paper.HighGirthSlackParameter.delta_cast",
+          "file": "Paper/Endpoints/Girth/HighGirthSlackParameter.lean",
+          "source_sha256": "920d7ddf614c5a61bb6a42300478f67a5fc43aca8d90eece1557ea0468a3b0c1"
+        },
+        {
+          "declaration": "Paper.HighGirthSlackParameter.at_seventeen_fifteenths",
+          "file": "Paper/Endpoints/Girth/HighGirthSlackParameter.lean",
+          "source_sha256": "920d7ddf614c5a61bb6a42300478f67a5fc43aca8d90eece1557ea0468a3b0c1"
+        },
+        {
+          "declaration": "Paper.HighGirthStaticThree.coefficient_three_static",
+          "file": "Paper/Endpoints/Girth/HighGirthStaticThree.lean",
+          "source_sha256": "d63d2d3651d6b4af710044ece28d43587b2b6b1ef22050dec8ad4cc99f951877"
+        },
+        {
+          "declaration": "Paper.HighGirthPortObservation.program",
+          "file": "Paper/Endpoints/Girth/HighGirthPortObservation.lean",
+          "source_sha256": "c1aaab9cbd4137de3b5f23ef729f3a2e852c0e141f0a64311a62e3ba5790089d"
+        },
+        {
+          "declaration": "Paper.HighGirthPortObservation.rounds",
+          "file": "Paper/Endpoints/Girth/HighGirthPortObservation.lean",
+          "source_sha256": "c1aaab9cbd4137de3b5f23ef729f3a2e852c0e141f0a64311a62e3ba5790089d"
+        },
+        {
+          "declaration": "Paper.HighGirthPortObservation.maxBits",
+          "file": "Paper/Endpoints/Girth/HighGirthPortObservation.lean",
+          "source_sha256": "c1aaab9cbd4137de3b5f23ef729f3a2e852c0e141f0a64311a62e3ba5790089d"
+        },
+        {
+          "declaration": "Paper.HighGirthPortObservation.port_neighbor_count",
+          "file": "Paper/Endpoints/Girth/HighGirthPortObservation.lean",
+          "source_sha256": "c1aaab9cbd4137de3b5f23ef729f3a2e852c0e141f0a64311a62e3ba5790089d"
+        },
+        {
+          "declaration": "Paper.HighGirthPortObservationCorrect.encoded_closed_observation_correct",
+          "file": "Paper/Endpoints/Girth/HighGirthPortObservationCorrect.lean",
+          "source_sha256": "8e1ac3b96fc8a08d51a2a4f8d85e217243b6bb70114dee4a077cb69a440ac7d8"
+        },
+        {
+          "declaration": "Paper.HighGirthSelectionProgram.rounds",
+          "file": "Paper/Endpoints/Girth/HighGirthSelectionProgram.lean",
+          "source_sha256": "ee4553da91d1f8005abfbfc78b0517f4eca3dc85bd19d2376abbfe68b69aa9c8"
+        },
+        {
+          "declaration": "Paper.HighGirthSelectionProgram.maxBits",
+          "file": "Paper/Endpoints/Girth/HighGirthSelectionProgram.lean",
+          "source_sha256": "ee4553da91d1f8005abfbfc78b0517f4eca3dc85bd19d2376abbfe68b69aa9c8"
+        },
+        {
+          "declaration": "Paper.HighGirthSelectionProgram.threshold",
+          "file": "Paper/Endpoints/Girth/HighGirthSelectionProgram.lean",
+          "source_sha256": "ee4553da91d1f8005abfbfc78b0517f4eca3dc85bd19d2376abbfe68b69aa9c8"
+        },
+        {
+          "declaration": "Paper.HighGirthSelectionProgram.count_zero_iff",
+          "file": "Paper/Endpoints/Girth/HighGirthSelectionProgram.lean",
+          "source_sha256": "ee4553da91d1f8005abfbfc78b0517f4eca3dc85bd19d2376abbfe68b69aa9c8"
+        },
+        {
+          "declaration": "Paper.HighGirthSelectionProgram.start_correct",
+          "file": "Paper/Endpoints/Girth/HighGirthSelectionProgram.lean",
+          "source_sha256": "ee4553da91d1f8005abfbfc78b0517f4eca3dc85bd19d2376abbfe68b69aa9c8"
+        },
+        {
+          "declaration": "Paper.HighGirthSelectionCorrect.encoded_three_round_selection_correct",
+          "file": "Paper/Endpoints/Girth/HighGirthSelectionCorrect.lean",
+          "source_sha256": "34795475bf841874f6baecb646d490a2ea9b663ebbb64a029b877a63df45b129"
+        },
+        {
+          "declaration": "Paper.HighGirthInitializationProgram.rounds",
+          "file": "Paper/Endpoints/Girth/HighGirthInitializationProgram.lean",
+          "source_sha256": "499e5b334bac8e529244ba66dae320e9a2bf1de1beb850e6ca32418879dd120f"
+        },
+        {
+          "declaration": "Paper.HighGirthInitializationProgram.maxBits",
+          "file": "Paper/Endpoints/Girth/HighGirthInitializationProgram.lean",
+          "source_sha256": "499e5b334bac8e529244ba66dae320e9a2bf1de1beb850e6ca32418879dd120f"
+        },
+        {
+          "declaration": "Paper.HighGirthInitializationProgram.start_correct",
+          "file": "Paper/Endpoints/Girth/HighGirthInitializationProgram.lean",
+          "source_sha256": "499e5b334bac8e529244ba66dae320e9a2bf1de1beb850e6ca32418879dd120f"
+        },
+        {
+          "declaration": "Paper.HighGirthInitializationProgram.count_pos_iff",
+          "file": "Paper/Endpoints/Girth/HighGirthInitializationProgram.lean",
+          "source_sha256": "499e5b334bac8e529244ba66dae320e9a2bf1de1beb850e6ca32418879dd120f"
+        },
+        {
+          "declaration": "Paper.HighGirthInitializationProgram.closed_count",
+          "file": "Paper/Endpoints/Girth/HighGirthInitializationProgram.lean",
+          "source_sha256": "499e5b334bac8e529244ba66dae320e9a2bf1de1beb850e6ca32418879dd120f"
+        },
+        {
+          "declaration": "Paper.HighGirthInitializationCorrect.encoded_initialization_correct",
+          "file": "Paper/Endpoints/Girth/HighGirthInitializationCorrect.lean",
+          "source_sha256": "b9f3e96ed469d8579594dda5341f51b0898075d9c13b8fe8847638d7b8897ee8"
+        },
+        {
+          "declaration": "Paper.HighGirthFullProgram.rounds",
+          "file": "Paper/Endpoints/Girth/HighGirthFullProgram.lean",
+          "source_sha256": "d84c22be1ba118424596aca0e4aed0da923e8b638016777bcd56f775234600c2"
+        },
+        {
+          "declaration": "Paper.HighGirthFullProgram.maxBits",
+          "file": "Paper/Endpoints/Girth/HighGirthFullProgram.lean",
+          "source_sha256": "d84c22be1ba118424596aca0e4aed0da923e8b638016777bcd56f775234600c2"
+        },
+        {
+          "declaration": "Paper.HighGirthFullProgram.thresholdBit_correct",
+          "file": "Paper/Endpoints/Girth/HighGirthFullProgram.lean",
+          "source_sha256": "d84c22be1ba118424596aca0e4aed0da923e8b638016777bcd56f775234600c2"
+        },
+        {
+          "declaration": "Paper.HighGirthFullProgram.selection_state_correct",
+          "file": "Paper/Endpoints/Girth/HighGirthFullProgram.lean",
+          "source_sha256": "d84c22be1ba118424596aca0e4aed0da923e8b638016777bcd56f775234600c2"
+        },
+        {
+          "declaration": "Paper.HighGirthFullProgram.first_threshold_eq",
+          "file": "Paper/Endpoints/Girth/HighGirthFullProgram.lean",
+          "source_sha256": "d84c22be1ba118424596aca0e4aed0da923e8b638016777bcd56f775234600c2"
+        },
+        {
+          "declaration": "Paper.HighGirthFullProgram.output_threshold_eq",
+          "file": "Paper/Endpoints/Girth/HighGirthFullProgram.lean",
+          "source_sha256": "d84c22be1ba118424596aca0e4aed0da923e8b638016777bcd56f775234600c2"
+        },
+        {
+          "declaration": "Paper.HighGirthThreeEndpoint.coefficient_three_encoded",
+          "file": "Paper/Endpoints/Girth/HighGirthThreeEndpoint.lean",
+          "source_sha256": "8c66e57d582f2ecea220ea147888abacc223ad1185ee1035227bfc8ffe5a363c"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "fv:hg:planar17",
+      "lean": [
+        {
+          "declaration": "Paper.HighGirthMaskedInput.weight_pos",
+          "file": "Paper/Endpoints/Girth/HighGirthMaskedInput.lean",
+          "source_sha256": "716038fdc9040b11d181e0fce5556b5e808ed6a51ad885d442ca7721b721681f"
+        },
+        {
+          "declaration": "Paper.HighGirthMaskedInput.weight_at",
+          "file": "Paper/Endpoints/Girth/HighGirthMaskedInput.lean",
+          "source_sha256": "716038fdc9040b11d181e0fce5556b5e808ed6a51ad885d442ca7721b721681f"
+        },
+        {
+          "declaration": "Paper.HighGirthMaskedInput.closed_at_demand",
+          "file": "Paper/Endpoints/Girth/HighGirthMaskedInput.lean",
+          "source_sha256": "716038fdc9040b11d181e0fce5556b5e808ed6a51ad885d442ca7721b721681f"
+        },
+        {
+          "declaration": "Paper.HighGirthMaskedCap.masked_capped_solver_input",
+          "file": "Paper/Endpoints/Girth/HighGirthMaskedCap.lean",
+          "source_sha256": "e993cba8c9b0fa3c51510361f21cf9632ae0f0325a1dee79277e485c666e6b5e"
+        },
+        {
+          "declaration": "Paper.HighGirthMaskedLPBridge.auxiliary_to_masked",
+          "file": "Paper/Endpoints/Girth/HighGirthMaskedLPBridge.lean",
+          "source_sha256": "b2a96a9a7fbc3e24a766329c12c14ddea73b1c77917809417d7754c249eab997"
+        },
+        {
+          "declaration": "Paper.HighGirthMaskedLPBridge.auxiliary_objective",
+          "file": "Paper/Endpoints/Girth/HighGirthMaskedLPBridge.lean",
+          "source_sha256": "b2a96a9a7fbc3e24a766329c12c14ddea73b1c77917809417d7754c249eab997"
+        },
+        {
+          "declaration": "Paper.HighGirthMaskedLPBridge.auxiliary_costs_nonempty",
+          "file": "Paper/Endpoints/Girth/HighGirthMaskedLPBridge.lean",
+          "source_sha256": "b2a96a9a7fbc3e24a766329c12c14ddea73b1c77917809417d7754c249eab997"
+        },
+        {
+          "declaration": "Paper.HighGirthMaskedLPBridge.auxiliary_costs_bddBelow",
+          "file": "Paper/Endpoints/Girth/HighGirthMaskedLPBridge.lean",
+          "source_sha256": "b2a96a9a7fbc3e24a766329c12c14ddea73b1c77917809417d7754c249eab997"
+        },
+        {
+          "declaration": "Paper.HighGirthMaskedOptimum.masked_number_eq_auxiliary",
+          "file": "Paper/Endpoints/Girth/HighGirthMaskedOptimum.lean",
+          "source_sha256": "f763fb8f3857030bc5b5461a2b0c88893249ca69ddfd4980c8b5b71588f6d894"
+        },
+        {
+          "declaration": "Paper.HighGirthNearOptimalInput.transfer",
+          "file": "Paper/Endpoints/Girth/HighGirthNearOptimalInput.lean",
+          "source_sha256": "1bf5bb094ec464f0cf4f725008e4fb626f18d44f45de1eba40736c6b5e943261"
+        },
+        {
+          "declaration": "Paper.HighGirthNearOptimalInput.masked_planar_density",
+          "file": "Paper/Endpoints/Girth/HighGirthNearOptimalInput.lean",
+          "source_sha256": "1bf5bb094ec464f0cf4f725008e4fb626f18d44f45de1eba40736c6b5e943261"
+        },
+        {
+          "declaration": "Paper.HighGirthNearOptimalInput.weighted_solver_guarantee",
+          "file": "Paper/Endpoints/Girth/HighGirthNearOptimalInput.lean",
+          "source_sha256": "1bf5bb094ec464f0cf4f725008e4fb626f18d44f45de1eba40736c6b5e943261"
+        },
+        {
+          "declaration": "Paper.HighGirthSolverParameters.planar_solver_input_parameters",
+          "file": "Paper/Endpoints/Girth/HighGirthSolverParameters.lean",
+          "source_sha256": "3a08c9a5e82e6494df3e58150b0924e4a5466dc2e1f26f9bc8db92b4f33e8c72"
+        },
+        {
+          "declaration": "Paper.HighGirthPhysicalSolver.rounds",
+          "file": "Paper/Endpoints/Girth/HighGirthPhysicalSolver.lean",
+          "source_sha256": "f56e7c4df9d4b1b1888d32b132fb1bcb5c61e7a365d60293e17a2a86186bd367"
+        },
+        {
+          "declaration": "Paper.HighGirthPhysicalSolver.maxBits",
+          "file": "Paper/Endpoints/Girth/HighGirthPhysicalSolver.lean",
+          "source_sha256": "f56e7c4df9d4b1b1888d32b132fb1bcb5c61e7a365d60293e17a2a86186bd367"
+        },
+        {
+          "declaration": "Paper.HighGirthPhysicalSolver.inputWeight_correct",
+          "file": "Paper/Endpoints/Girth/HighGirthPhysicalSolver.lean",
+          "source_sha256": "f56e7c4df9d4b1b1888d32b132fb1bcb5c61e7a365d60293e17a2a86186bd367"
+        },
+        {
+          "declaration": "Paper.HighGirthPhysicalSolverCorrect.kernel_correct",
+          "file": "Paper/Endpoints/Girth/HighGirthPhysicalSolverCorrect.lean",
+          "source_sha256": "80801ecb2dbc5096c8a4d771b1c865f1e2fe03ce17b48c180bed998639e1ba31"
+        },
+        {
+          "declaration": "Paper.HighGirthPhysicalSolverCorrect.core_correct",
+          "file": "Paper/Endpoints/Girth/HighGirthPhysicalSolverCorrect.lean",
+          "source_sha256": "80801ecb2dbc5096c8a4d771b1c865f1e2fe03ce17b48c180bed998639e1ba31"
+        },
+        {
+          "declaration": "Paper.HighGirthPhysicalSolverCorrect.physical_solver_encoded_correct",
+          "file": "Paper/Endpoints/Girth/HighGirthPhysicalSolverCorrect.lean",
+          "source_sha256": "80801ecb2dbc5096c8a4d771b1c865f1e2fe03ce17b48c180bed998639e1ba31"
+        },
+        {
+          "declaration": "Paper.HighGirthPhysicalRounding.rounds",
+          "file": "Paper/Endpoints/Girth/HighGirthPhysicalRounding.lean",
+          "source_sha256": "a4e5a9ec3b7a654cb10a8b76ce763027a36f123ed4ab2f37c09f0f119721838c"
+        },
+        {
+          "declaration": "Paper.HighGirthPhysicalRounding.maxBits",
+          "file": "Paper/Endpoints/Girth/HighGirthPhysicalRounding.lean",
+          "source_sha256": "a4e5a9ec3b7a654cb10a8b76ce763027a36f123ed4ab2f37c09f0f119721838c"
+        },
+        {
+          "declaration": "Paper.HighGirthPhysicalRounding.threshold_cap",
+          "file": "Paper/Endpoints/Girth/HighGirthPhysicalRounding.lean",
+          "source_sha256": "a4e5a9ec3b7a654cb10a8b76ce763027a36f123ed4ab2f37c09f0f119721838c"
+        },
+        {
+          "declaration": "Paper.HighGirthPhysicalRounding.squeeze_correct",
+          "file": "Paper/Endpoints/Girth/HighGirthPhysicalRounding.lean",
+          "source_sha256": "a4e5a9ec3b7a654cb10a8b76ce763027a36f123ed4ab2f37c09f0f119721838c"
+        },
+        {
+          "declaration": "Paper.HighGirthFullOutput.encoded_output",
+          "file": "Paper/Endpoints/Girth/HighGirthFullOutput.lean",
+          "source_sha256": "b513dfa06d086f5b02190bfdb884b8362f9277d1d5a9ffd9d0b294ee8199c363"
+        },
+        {
+          "declaration": "Paper.HighGirthPhysicalRoundingCorrect.physical_rounding_encoded_correct",
+          "file": "Paper/Endpoints/Girth/HighGirthPhysicalRoundingCorrect.lean",
+          "source_sha256": "c5db23070d7ca3acd3cc1453b450b91ddfd5d8f814339967b8cd448978f82cb4"
+        },
+        {
+          "declaration": "Paper.HighGirthPlanar17Program.rounds",
+          "file": "Paper/Endpoints/Girth/HighGirthPlanar17Program.lean",
+          "source_sha256": "f3564edffdd4459010046e258741381522f0744430ce93fa45ec582a6b7bbab8"
+        },
+        {
+          "declaration": "Paper.HighGirthPlanar17Program.logarithmic_bits",
+          "file": "Paper/Endpoints/Girth/HighGirthPlanar17Program.lean",
+          "source_sha256": "f3564edffdd4459010046e258741381522f0744430ce93fa45ec582a6b7bbab8"
+        },
+        {
+          "declaration": "Paper.HighGirthPlanar17Program.output_eq",
+          "file": "Paper/Endpoints/Girth/HighGirthPlanar17Program.lean",
+          "source_sha256": "f3564edffdd4459010046e258741381522f0744430ce93fa45ec582a6b7bbab8"
+        },
+        {
+          "declaration": "Paper.HighGirthPlanar17Program.girth_density",
+          "file": "Paper/Endpoints/Girth/HighGirthPlanar17Program.lean",
+          "source_sha256": "f3564edffdd4459010046e258741381522f0744430ce93fa45ec582a6b7bbab8"
+        },
+        {
+          "declaration": "Paper.HighGirthPlanar17Program.uniform_solver_input",
+          "file": "Paper/Endpoints/Girth/HighGirthPlanar17Program.lean",
+          "source_sha256": "f3564edffdd4459010046e258741381522f0744430ce93fa45ec582a6b7bbab8"
+        },
+        {
+          "declaration": "Paper.HighGirthPlanar17Upper.planar_girth_seventeen_upper",
+          "file": "Paper/Endpoints/Girth/HighGirthPlanar17Upper.lean",
+          "source_sha256": "05ba74fde756a23471f8ffe74d1c2bc50a0c44eede7652678f04191621406a9b"
+        },
+        {
+          "declaration": "Paper.HighGirthPathFamily.first_power_eq_path",
+          "file": "Paper/Endpoints/Girth/HighGirthPathFamily.lean",
+          "source_sha256": "f673ce5ecaca3a483930dc4b7f3cc6643adcb40a8bd55b1291941feb9566609c"
+        },
+        {
+          "declaration": "Paper.HighGirthPathFamily.acyclic",
+          "file": "Paper/Endpoints/Girth/HighGirthPathFamily.lean",
+          "source_sha256": "f673ce5ecaca3a483930dc4b7f3cc6643adcb40a8bd55b1291941feb9566609c"
+        },
+        {
+          "declaration": "Paper.HighGirthPathFamily.planar",
+          "file": "Paper/Endpoints/Girth/HighGirthPathFamily.lean",
+          "source_sha256": "f673ce5ecaca3a483930dc4b7f3cc6643adcb40a8bd55b1291941feb9566609c"
+        },
+        {
+          "declaration": "Paper.HighGirthPathFamily.girth",
+          "file": "Paper/Endpoints/Girth/HighGirthPathFamily.lean",
+          "source_sha256": "f673ce5ecaca3a483930dc4b7f3cc6643adcb40a8bd55b1291941feb9566609c"
+        },
+        {
+          "declaration": "Paper.HighGirthPlanar17Lower.planar_girth_seventeen_lower",
+          "file": "Paper/Endpoints/Girth/HighGirthPlanar17Lower.lean",
+          "source_sha256": "28bd65ffbeca02ef31b379072f90769026d5e69bd474b327431a6d006dbf3c2b"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "fv:hg:dilute",
+      "lean": [
+        {
+          "declaration": "Paper.HighGirthCenters.exists_centers",
+          "file": "Paper/Endpoints/Girth/HighGirthCenters.lean",
+          "source_sha256": "db8b0dde7844449a39afc7cea8dc0f7797eb4591d961d9fea57e67384a0d71d4"
+        },
+        {
+          "declaration": "Paper.HighGirthCenters.centers_nonempty",
+          "file": "Paper/Endpoints/Girth/HighGirthCenters.lean",
+          "source_sha256": "db8b0dde7844449a39afc7cea8dc0f7797eb4591d961d9fea57e67384a0d71d4"
+        },
+        {
+          "declaration": "Paper.HighGirthVoronoi.exists_best",
+          "file": "Paper/Endpoints/Girth/HighGirthVoronoi.lean",
+          "source_sha256": "27d0c475d82c12db0dcbb624b3aa16119cd9e568235c03eb11c0b3b0d78dca92"
+        },
+        {
+          "declaration": "Paper.HighGirthVoronoi.best_unique",
+          "file": "Paper/Endpoints/Girth/HighGirthVoronoi.lean",
+          "source_sha256": "27d0c475d82c12db0dcbb624b3aa16119cd9e568235c03eb11c0b3b0d78dca92"
+        },
+        {
+          "declaration": "Paper.HighGirthVoronoi.owner_radius",
+          "file": "Paper/Endpoints/Girth/HighGirthVoronoi.lean",
+          "source_sha256": "27d0c475d82c12db0dcbb624b3aa16119cd9e568235c03eb11c0b3b0d78dca92"
+        },
+        {
+          "declaration": "Paper.HighGirthVoronoi.owner_center",
+          "file": "Paper/Endpoints/Girth/HighGirthVoronoi.lean",
+          "source_sha256": "27d0c475d82c12db0dcbb624b3aa16119cd9e568235c03eb11c0b3b0d78dca92"
+        },
+        {
+          "declaration": "Paper.HighGirthVoronoi.owner_toward",
+          "file": "Paper/Endpoints/Girth/HighGirthVoronoi.lean",
+          "source_sha256": "27d0c475d82c12db0dcbb624b3aa16119cd9e568235c03eb11c0b3b0d78dca92"
+        },
+        {
+          "declaration": "Paper.HighGirthVoronoi.exists_step",
+          "file": "Paper/Endpoints/Girth/HighGirthVoronoi.lean",
+          "source_sha256": "27d0c475d82c12db0dcbb624b3aa16119cd9e568235c03eb11c0b3b0d78dca92"
+        },
+        {
+          "declaration": "Paper.HighGirthVoronoi.cluster_walk",
+          "file": "Paper/Endpoints/Girth/HighGirthVoronoi.lean",
+          "source_sha256": "27d0c475d82c12db0dcbb624b3aa16119cd9e568235c03eb11c0b3b0d78dca92"
+        },
+        {
+          "declaration": "Paper.HighGirthVoronoi.cluster_connected",
+          "file": "Paper/Endpoints/Girth/HighGirthVoronoi.lean",
+          "source_sha256": "27d0c475d82c12db0dcbb624b3aa16119cd9e568235c03eb11c0b3b0d78dca92"
+        },
+        {
+          "declaration": "Paper.HighGirthVoronoi.center_ball_subset",
+          "file": "Paper/Endpoints/Girth/HighGirthVoronoi.lean",
+          "source_sha256": "27d0c475d82c12db0dcbb624b3aa16119cd9e568235c03eb11c0b3b0d78dca92"
+        },
+        {
+          "declaration": "Paper.HighGirthClusterSize.ball_card",
+          "file": "Paper/Endpoints/Girth/HighGirthClusterSize.lean",
+          "source_sha256": "6b736dd01e5f86e3ce12a526a1968f205705f9649bab2b93930776e2c59f3e7f"
+        },
+        {
+          "declaration": "Paper.HighGirthClusterSize.cluster_card",
+          "file": "Paper/Endpoints/Girth/HighGirthClusterSize.lean",
+          "source_sha256": "6b736dd01e5f86e3ce12a526a1968f205705f9649bab2b93930776e2c59f3e7f"
+        },
+        {
+          "declaration": "Paper.HighGirthClusterSize.cluster_sum",
+          "file": "Paper/Endpoints/Girth/HighGirthClusterSize.lean",
+          "source_sha256": "6b736dd01e5f86e3ce12a526a1968f205705f9649bab2b93930776e2c59f3e7f"
+        },
+        {
+          "declaration": "Paper.HighGirthClusterSize.center_count",
+          "file": "Paper/Endpoints/Girth/HighGirthClusterSize.lean",
+          "source_sha256": "6b736dd01e5f86e3ce12a526a1968f205705f9649bab2b93930776e2c59f3e7f"
+        },
+        {
+          "declaration": "Paper.HighGirthRadiusTree.acyclic",
+          "file": "Paper/Endpoints/Girth/HighGirthRadiusTree.lean",
+          "source_sha256": "3f8090bc120c6902eb7719095f4f7e33d4800e8cc5487752378508aaac8b6bd6"
+        },
+        {
+          "declaration": "Paper.HighGirthRadiusTree.subgraph",
+          "file": "Paper/Endpoints/Girth/HighGirthRadiusTree.lean",
+          "source_sha256": "3f8090bc120c6902eb7719095f4f7e33d4800e8cc5487752378508aaac8b6bd6"
+        },
+        {
+          "declaration": "Paper.HighGirthRadiusTree.root_walk",
+          "file": "Paper/Endpoints/Girth/HighGirthRadiusTree.lean",
+          "source_sha256": "3f8090bc120c6902eb7719095f4f7e33d4800e8cc5487752378508aaac8b6bd6"
+        },
+        {
+          "declaration": "Paper.HighGirthRadiusTree.connected",
+          "file": "Paper/Endpoints/Girth/HighGirthRadiusTree.lean",
+          "source_sha256": "3f8090bc120c6902eb7719095f4f7e33d4800e8cc5487752378508aaac8b6bd6"
+        },
+        {
+          "declaration": "Paper.HighGirthRadiusTree.short_walk",
+          "file": "Paper/Endpoints/Girth/HighGirthRadiusTree.lean",
+          "source_sha256": "3f8090bc120c6902eb7719095f4f7e33d4800e8cc5487752378508aaac8b6bd6"
+        },
+        {
+          "declaration": "Paper.HighGirthRadiusTree.short_cycle_of_extra_edge",
+          "file": "Paper/Endpoints/Girth/HighGirthRadiusTree.lean",
+          "source_sha256": "3f8090bc120c6902eb7719095f4f7e33d4800e8cc5487752378508aaac8b6bd6"
+        },
+        {
+          "declaration": "Paper.HighGirthRadiusTree.acyclic_of_radius_girth",
+          "file": "Paper/Endpoints/Girth/HighGirthRadiusTree.lean",
+          "source_sha256": "3f8090bc120c6902eb7719095f4f7e33d4800e8cc5487752378508aaac8b6bd6"
+        },
+        {
+          "declaration": "Paper.HighGirthClusterTree.induced_radius",
+          "file": "Paper/Endpoints/Girth/HighGirthClusterTree.lean",
+          "source_sha256": "3e3429377c9f88f8859fa6ae5110a73199c8efd0fa1edae65d2ca5d634129e3c"
+        },
+        {
+          "declaration": "Paper.HighGirthClusterTree.induced_tree",
+          "file": "Paper/Endpoints/Girth/HighGirthClusterTree.lean",
+          "source_sha256": "3e3429377c9f88f8859fa6ae5110a73199c8efd0fa1edae65d2ca5d634129e3c"
+        },
+        {
+          "declaration": "Paper.HighGirthDisjointPaths.cross_cycle",
+          "file": "Paper/Endpoints/Girth/HighGirthDisjointPaths.lean",
+          "source_sha256": "714709ece188e6f68618f5273c164a9b987041772d8762ddb3342f1edf32d8db"
+        },
+        {
+          "declaration": "Paper.HighGirthClusterCross.cluster_path",
+          "file": "Paper/Endpoints/Girth/HighGirthClusterCross.lean",
+          "source_sha256": "eb39d5cdb198743fab67544f9aed80c192c00e7d76524e4e709b4b83f9ac90b4"
+        },
+        {
+          "declaration": "Paper.HighGirthClusterCross.unique_cross_edge",
+          "file": "Paper/Endpoints/Girth/HighGirthClusterCross.lean",
+          "source_sha256": "eb39d5cdb198743fab67544f9aed80c192c00e7d76524e4e709b4b83f9ac90b4"
+        },
+        {
+          "declaration": "Paper.HighGirthClusterMinor.isMinor",
+          "file": "Paper/Endpoints/Girth/HighGirthClusterMinor.lean",
+          "source_sha256": "99ecc4b17f5cf469c33c67c7d99ba6cc5946293f0bae6399d835a6a9119da315"
+        },
+        {
+          "declaration": "Paper.HighGirthClusterMinor.internal_card",
+          "file": "Paper/Endpoints/Girth/HighGirthClusterMinor.lean",
+          "source_sha256": "99ecc4b17f5cf469c33c67c7d99ba6cc5946293f0bae6399d835a6a9119da315"
+        },
+        {
+          "declaration": "Paper.HighGirthClusterMinor.partition_card",
+          "file": "Paper/Endpoints/Girth/HighGirthClusterMinor.lean",
+          "source_sha256": "99ecc4b17f5cf469c33c67c7d99ba6cc5946293f0bae6399d835a6a9119da315"
+        },
+        {
+          "declaration": "Paper.HighGirthClusterMinor.cross_card_le",
+          "file": "Paper/Endpoints/Girth/HighGirthClusterMinor.lean",
+          "source_sha256": "99ecc4b17f5cf469c33c67c7d99ba6cc5946293f0bae6399d835a6a9119da315"
+        },
+        {
+          "declaration": "Paper.HighGirthDilutionConnected.internal_sum",
+          "file": "Paper/Endpoints/Girth/HighGirthDilutionConnected.lean",
+          "source_sha256": "7413209d12ac5374dc6c4ab15ff58d9ea58c9800856c8f4920182f4d1059dfcf"
+        },
+        {
+          "declaration": "Paper.HighGirthDilutionConnected.density_connected",
+          "file": "Paper/Endpoints/Girth/HighGirthDilutionConnected.lean",
+          "source_sha256": "7413209d12ac5374dc6c4ab15ff58d9ea58c9800856c8f4920182f4d1059dfcf"
+        },
+        {
+          "declaration": "Paper.HighGirthDensityPartitions.induced_card",
+          "file": "Paper/Endpoints/Girth/HighGirthDensityPartitions.lean",
+          "source_sha256": "5741bdfb56680f4bb25196fc6d58185fd5898502257876a0740cbb082234d3fa"
+        },
+        {
+          "declaration": "Paper.HighGirthDensityPartitions.edge_split",
+          "file": "Paper/Endpoints/Girth/HighGirthDensityPartitions.lean",
+          "source_sha256": "5741bdfb56680f4bb25196fc6d58185fd5898502257876a0740cbb082234d3fa"
+        },
+        {
+          "declaration": "Paper.HighGirthDensityPartitions.vertex_split",
+          "file": "Paper/Endpoints/Girth/HighGirthDensityPartitions.lean",
+          "source_sha256": "5741bdfb56680f4bb25196fc6d58185fd5898502257876a0740cbb082234d3fa"
+        },
+        {
+          "declaration": "Paper.HighGirthDilution.minor_induce",
+          "file": "Paper/Endpoints/Girth/HighGirthDilution.lean",
+          "source_sha256": "095e975b58a964528676345c6ebe211680af37c02db07635e83d7a4d7d5ec1f0"
+        },
+        {
+          "declaration": "Paper.HighGirthDilution.girth_induce",
+          "file": "Paper/Endpoints/Girth/HighGirthDilution.lean",
+          "source_sha256": "095e975b58a964528676345c6ebe211680af37c02db07635e83d7a4d7d5ec1f0"
+        },
+        {
+          "declaration": "Paper.HighGirthDilution.density",
+          "file": "Paper/Endpoints/Girth/HighGirthDilution.lean",
+          "source_sha256": "095e975b58a964528676345c6ebe211680af37c02db07635e83d7a4d7d5ec1f0"
+        },
+        {
+          "declaration": "Paper.HighGirthDilution.minor_of_injective",
+          "file": "Paper/Endpoints/Girth/HighGirthDilution.lean",
+          "source_sha256": "095e975b58a964528676345c6ebe211680af37c02db07635e83d7a4d7d5ec1f0"
+        },
+        {
+          "declaration": "Paper.HighGirthDilution.subgraph_density",
+          "file": "Paper/Endpoints/Girth/HighGirthDilution.lean",
+          "source_sha256": "095e975b58a964528676345c6ebe211680af37c02db07635e83d7a4d7d5ec1f0"
+        },
+        {
+          "declaration": "Paper.HighGirthDilution.all_subgraphs",
+          "file": "Paper/Endpoints/Girth/HighGirthDilution.lean",
+          "source_sha256": "095e975b58a964528676345c6ebe211680af37c02db07635e83d7a4d7d5ec1f0"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "fv:hg:minor-three",
+      "lean": [
+        {
+          "declaration": "Paper.HighGirthMinorParameters.radius_integer_formula",
+          "file": "Paper/Endpoints/Girth/HighGirthMinorParameters.lean",
+          "source_sha256": "48a238b968f4ef42fe0bffd42635cb6c83e6bfa80206b79dff96fd0832849f0e"
+        },
+        {
+          "declaration": "Paper.HighGirthMinorParameters.radius_pos",
+          "file": "Paper/Endpoints/Girth/HighGirthMinorParameters.lean",
+          "source_sha256": "48a238b968f4ef42fe0bffd42635cb6c83e6bfa80206b79dff96fd0832849f0e"
+        },
+        {
+          "declaration": "Paper.HighGirthMinorParameters.girth_strict",
+          "file": "Paper/Endpoints/Girth/HighGirthMinorParameters.lean",
+          "source_sha256": "48a238b968f4ef42fe0bffd42635cb6c83e6bfa80206b79dff96fd0832849f0e"
+        },
+        {
+          "declaration": "Paper.HighGirthMinorParameters.density_range",
+          "file": "Paper/Endpoints/Girth/HighGirthMinorParameters.lean",
+          "source_sha256": "48a238b968f4ef42fe0bffd42635cb6c83e6bfa80206b79dff96fd0832849f0e"
+        },
+        {
+          "declaration": "Paper.HighGirthMinorParameters.delta_pos",
+          "file": "Paper/Endpoints/Girth/HighGirthMinorParameters.lean",
+          "source_sha256": "48a238b968f4ef42fe0bffd42635cb6c83e6bfa80206b79dff96fd0832849f0e"
+        },
+        {
+          "declaration": "Paper.HighGirthMinorParameters.accuracy_pos",
+          "file": "Paper/Endpoints/Girth/HighGirthMinorParameters.lean",
+          "source_sha256": "48a238b968f4ef42fe0bffd42635cb6c83e6bfa80206b79dff96fd0832849f0e"
+        },
+        {
+          "declaration": "Paper.HighGirthMinorParameters.planar_parameters",
+          "file": "Paper/Endpoints/Girth/HighGirthMinorParameters.lean",
+          "source_sha256": "48a238b968f4ef42fe0bffd42635cb6c83e6bfa80206b79dff96fd0832849f0e"
+        },
+        {
+          "declaration": "Paper.HighGirthMinorUpper.uniform_input",
+          "file": "Paper/Endpoints/Girth/HighGirthMinorUpper.lean",
+          "source_sha256": "eef44e90cd79c48f9c25d290ebeef98a564b81403474585c7843a0140684acb3"
+        },
+        {
+          "declaration": "Paper.HighGirthMinorUpper.diluted_density",
+          "file": "Paper/Endpoints/Girth/HighGirthMinorUpper.lean",
+          "source_sha256": "eef44e90cd79c48f9c25d290ebeef98a564b81403474585c7843a0140684acb3"
+        },
+        {
+          "declaration": "Paper.HighGirthMinorUpper.upper",
+          "file": "Paper/Endpoints/Girth/HighGirthMinorUpper.lean",
+          "source_sha256": "eef44e90cd79c48f9c25d290ebeef98a564b81403474585c7843a0140684acb3"
+        },
+        {
+          "declaration": "Paper.HighGirthProperClass.rational_density",
+          "file": "Paper/Endpoints/Girth/HighGirthProperClass.lean",
+          "source_sha256": "71ee93e25991ce92177b8edee9b35d5cfdbfc801a900ec4b92b9f6643c3d9556"
+        },
+        {
+          "declaration": "Paper.HighGirthProperClass.excluded_finite_witness",
+          "file": "Paper/Endpoints/Girth/HighGirthProperClass.lean",
+          "source_sha256": "71ee93e25991ce92177b8edee9b35d5cfdbfc801a900ec4b92b9f6643c3d9556"
+        },
+        {
+          "declaration": "Paper.HighGirthClassEndpoints.proper_upper",
+          "file": "Paper/Endpoints/Girth/HighGirthClassEndpoints.lean",
+          "source_sha256": "2864232605bc1840e7270099b6a10e59569f272baa527171e2b3d5a5d4f611b3"
+        },
+        {
+          "declaration": "Paper.HighGirthClassEndpoints.all_paths_lower",
+          "file": "Paper/Endpoints/Girth/HighGirthClassEndpoints.lean",
+          "source_sha256": "2864232605bc1840e7270099b6a10e59569f272baa527171e2b3d5a5d4f611b3"
+        },
+        {
+          "declaration": "Paper.HighGirthMinorPaths.density",
+          "file": "Paper/Endpoints/Girth/HighGirthMinorPaths.lean",
+          "source_sha256": "ba158d13bb082ec9303fd5c9b6e1a40966666d3707f8ecdf4bf282a0dca7e7c9"
+        },
+        {
+          "declaration": "Paper.HighGirthMinorLower.minor_density_large_girth_lower",
+          "file": "Paper/Endpoints/Girth/HighGirthMinorLower.lean",
+          "source_sha256": "f7423ec72f19e894d9b35fb2c6b892a52db3758d4babcc36e3eb887863516ade"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "fv:hg:t-budget",
+      "lean": [
+        {
+          "file": "Paper/TotalDomination/HighGirthBudget.lean",
+          "declaration": "Paper.TotalDomination.HighGirthSelection.exterior_budget",
+          "source_sha256": "1df12af84c729256534882d644799e31290d6a7700596feecede7a42ba1ed56d"
+        },
+        {
+          "file": "Paper/TotalDomination/HighGirthBudget.lean",
+          "declaration": "Paper.TotalDomination.HighGirthSelection.exists_residual_optimum",
+          "source_sha256": "1df12af84c729256534882d644799e31290d6a7700596feecede7a42ba1ed56d"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "fv:hg:t-saving",
+      "lean": [
+        {
+          "file": "Paper/TotalDomination/HighGirthSaving.lean",
+          "declaration": "Paper.TotalDomination.HighGirthSetup.rounding_saving",
+          "source_sha256": "6cefee9f2d136ed79eec7f2d6850372a7d678de17e8ed50e86f519041ac38200"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "fv:hg:t-residual",
+      "lean": [
+        {
+          "file": "Paper/TotalDomination/HighGirthResidualGeometry.lean",
+          "declaration": "Paper.TotalDomination.HighGirthSetup.low_residual_degree",
+          "source_sha256": "61e75718afca1ea3eb9f72166d665f93c307ad6f681fc715b851e70e9bc8a564"
+        },
+        {
+          "file": "Paper/TotalDomination/HighGirthResidualGeometry.lean",
+          "declaration": "Paper.TotalDomination.HighGirthSetup.core_neighbor_partition",
+          "source_sha256": "61e75718afca1ea3eb9f72166d665f93c307ad6f681fc715b851e70e9bc8a564"
+        },
+        {
+          "file": "Paper/TotalDomination/HighGirthResidualGeometry.lean",
+          "declaration": "Paper.TotalDomination.HighGirthSetup.core_components_path_or_cycle",
+          "source_sha256": "61e75718afca1ea3eb9f72166d665f93c307ad6f681fc715b851e70e9bc8a564"
+        },
+        {
+          "file": "Paper/TotalDomination/HighGirthResidualGeometry.lean",
+          "declaration": "Paper.TotalDomination.HighGirthSetup.outside_neighbor_connector",
+          "source_sha256": "61e75718afca1ea3eb9f72166d665f93c307ad6f681fc715b851e70e9bc8a564"
+        },
+        {
+          "file": "Paper/TotalDomination/HighGirthResidualGeometry.lean",
+          "declaration": "Paper.TotalDomination.HighGirthSetup.branch_attachment",
+          "source_sha256": "61e75718afca1ea3eb9f72166d665f93c307ad6f681fc715b851e70e9bc8a564"
+        },
+        {
+          "file": "Paper/TotalDomination/HighGirthResidualEndpoint.lean",
+          "declaration": "Paper.TotalDomination.HighGirthSetup.component_access",
+          "source_sha256": "4a48724fe15a5d6f7643ffd937ad7637acc18a0813119fe699ecd609e2b248ff"
+        },
+        {
+          "file": "Paper/TotalDomination/HighGirthResidualSize.lean",
+          "declaration": "Paper.TotalDomination.HighGirthSetup.residual_size_edges",
+          "source_sha256": "60a69b2d576cdea5d128d7398b964640a0f761dd9217adbaa5c1c92871570155"
+        },
+        {
+          "file": "Paper/TotalDomination/HighGirthResidualSize.lean",
+          "declaration": "Paper.TotalDomination.HighGirthSetup.attachment_edge_correspondence",
+          "source_sha256": "60a69b2d576cdea5d128d7398b964640a0f761dd9217adbaa5c1c92871570155"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "fv:hg:t-free",
+      "lean": [
+        {
+          "file": "Paper/TotalDomination/HighGirthFreeComponents.lean",
+          "declaration": "Paper.TotalDomination.HighGirthSetup.free_external_connectors",
+          "source_sha256": "69594a8faab119e7323915176700d6224598769cd98630e7f16b2b3a3d58f5e3"
+        },
+        {
+          "file": "Paper/TotalDomination/HighGirthFreeComponents.lean",
+          "declaration": "Paper.TotalDomination.HighGirthSetup.connectors_cost_two",
+          "source_sha256": "69594a8faab119e7323915176700d6224598769cd98630e7f16b2b3a3d58f5e3"
+        },
+        {
+          "file": "Paper/TotalDomination/HighGirthFreeComponents.lean",
+          "declaration": "Paper.TotalDomination.HighGirthSetup.free_cost_two",
+          "source_sha256": "69594a8faab119e7323915176700d6224598769cd98630e7f16b2b3a3d58f5e3"
+        },
+        {
+          "file": "Paper/TotalDomination/HighGirthFreeComponents.lean",
+          "declaration": "Paper.TotalDomination.HighGirthSetup.free_all_neighbors_internal",
+          "source_sha256": "69594a8faab119e7323915176700d6224598769cd98630e7f16b2b3a3d58f5e3"
+        },
+        {
+          "file": "Paper/TotalDomination/HighGirthResidualGeometry.lean",
+          "declaration": "Paper.TotalDomination.HighGirthSetup.branch_attachment",
+          "source_sha256": "61e75718afca1ea3eb9f72166d665f93c307ad6f681fc715b851e70e9bc8a564"
+        },
+        {
+          "file": "Paper/TotalDomination/HighGirthFreeAccess.lean",
+          "declaration": "Paper.TotalDomination.HighGirthSetup.free_short_access",
+          "source_sha256": "1d7dfa483620c406ce9688e1ef173a42dd18e899a95b6bc44ad71b5e1fa40cb1"
+        },
+        {
+          "file": "Paper/TotalDomination/HighGirthFreeComponents.lean",
+          "declaration": "Paper.TotalDomination.HighGirthSetup.free_branch_weight",
+          "source_sha256": "69594a8faab119e7323915176700d6224598769cd98630e7f16b2b3a3d58f5e3"
+        },
+        {
+          "file": "Paper/TotalDomination/HighGirthFreePathEnds.lean",
+          "declaration": "Paper.TotalDomination.HighGirthSetup.free_path_end_hits",
+          "source_sha256": "fa306bf386c27346ce3de860c5c22346a762a977520421f2fab437e50476fdf2"
+        },
+        {
+          "file": "Paper/TotalDomination/HighGirthFreePathEnds.lean",
+          "declaration": "Paper.TotalDomination.HighGirthSetup.nontrivial_path_ends_terms",
+          "source_sha256": "fa306bf386c27346ce3de860c5c22346a762a977520421f2fab437e50476fdf2"
+        },
+        {
+          "file": "Paper/TotalDomination/HighGirthFreePathEnds.lean",
+          "declaration": "Paper.TotalDomination.HighGirthSetup.positive_charge_vertex",
+          "source_sha256": "fa306bf386c27346ce3de860c5c22346a762a977520421f2fab437e50476fdf2"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "fv:hg:t-bad",
+      "lean": [
+        {
+          "file": "Paper/TotalDomination/HighGirthBadPaths.lean",
+          "declaration": "Paper.TotalDomination.HighGirthSetup.bad_paths_endpoint",
+          "source_sha256": "1a22d59d9bfbf73b53e196c58cec3ef3758756afeda41d527dac6b549cedd8c8"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "fv:hg:t-count",
+      "lean": [
+        {
+          "file": "Paper/TotalDomination/HighGirthCountEndpoint.lean",
+          "declaration": "Paper.TotalDomination.HighGirthSetup.count_endpoint",
+          "source_sha256": "4a236df47f824a52882aa000789a7aa69397a0ec689460192c1a16726ea06372"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "fv:hg:total-two",
+      "lean": [
+        {
+          "file": "Paper/TotalDomination/HighGirthVectorRounding.lean",
+          "declaration": "Paper.TotalDomination.HighGirthVectorRounding.outcome",
+          "source_sha256": "3808bf3c5d42f78f13a4d281a8c655c61f7807533cc9dd32d3f52ae22148c2e7"
+        },
+        {
+          "file": "Paper/TotalDomination/HighGirthSlackArithmetic.lean",
+          "declaration": "Paper.TotalDomination.HighGirthSlackArithmetic.rational_accuracy_positive",
+          "source_sha256": "e89600645b69e11424279dc18bd765d9bcad73d76e56de9401dc2fb6e14668bf"
+        },
+        {
+          "file": "Paper/TotalDomination/HighGirthSlackArithmetic.lean",
+          "declaration": "Paper.TotalDomination.HighGirthSlackArithmetic.rational_accuracy_numerical",
+          "source_sha256": "e89600645b69e11424279dc18bd765d9bcad73d76e56de9401dc2fb6e14668bf"
+        },
+        {
+          "file": "Paper/TotalDomination/HighGirthEndpoint.lean",
+          "declaration": "Paper.TotalDomination.HighGirthEndpoint.planar_parameters",
+          "source_sha256": "ab9bb888d5c13b001c8c454b052c44a28d2d609c666fe0322499392d0d3feda3"
+        },
+        {
+          "file": "Paper/TotalDomination/HighGirthOptimality.lean",
+          "declaration": "Paper.TotalDomination.HighGirthOptimality.lower",
+          "source_sha256": "44988fdee24f8fb1ceaf5dba09eede26a310e5eeb057cb40999a7c26a4abf117"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "fv:hg:minor-total-two",
+      "lean": [
+        {
+          "file": "Paper/TotalDomination/HighGirthMinorParameters.lean",
+          "declaration": "Paper.TotalDomination.HighGirthMinorParameters.radius_integer_formula",
+          "source_sha256": "761dc3a3ef98490bb6baf3a7917b2fbd1ffe53c3342dbfef5bf4770c5ca66961"
+        },
+        {
+          "file": "Paper/TotalDomination/HighGirthMinorParameters.lean",
+          "declaration": "Paper.TotalDomination.HighGirthMinorParameters.density_range",
+          "source_sha256": "761dc3a3ef98490bb6baf3a7917b2fbd1ffe53c3342dbfef5bf4770c5ca66961"
+        },
+        {
+          "file": "Paper/TotalDomination/HighGirthMinorEndpoint.lean",
+          "declaration": "Paper.TotalDomination.HighGirthMinorEndpoint.parameters",
+          "source_sha256": "0ba117c461a46645dcbb137c1c65e8ddc32d8f65f1c6297c2967e5d04dbe002b"
+        },
+        {
+          "file": "Paper/TotalDomination/HighGirthOptimality.lean",
+          "declaration": "Paper.TotalDomination.HighGirthOptimality.lower",
+          "source_sha256": "44988fdee24f8fb1ceaf5dba09eede26a310e5eeb057cb40999a7c26a4abf117"
+        },
+        {
+          "file": "Paper/TotalDomination/HighGirthOptimality.lean",
+          "declaration": "Paper.TotalDomination.HighGirthOptimality.class_lower",
+          "source_sha256": "44988fdee24f8fb1ceaf5dba09eede26a310e5eeb057cb40999a7c26a4abf117"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "fv:rb:upper",
+      "lean": [
+        {
+          "file": "Paper/RedBlue/FractionalEndpoint.lean",
+          "declaration": "Paper.RedBlue.fractional_parameters",
+          "source_sha256": "f3cd11d3e86e69c702617574f66290dfd23935e90a5935e79a432619315b73b0"
+        },
+        {
+          "file": "Paper/RedBlue/IntegralEndpoint.lean",
+          "declaration": "Paper.RedBlue.integral_parameters",
+          "source_sha256": "f1aae5a88800f17de71a92fa73d1bf955b8dc5d7ecc4dea3d3cf9fc3a0c603c1"
+        },
+        {
+          "file": "Paper/RedBlue/Resources.lean",
+          "declaration": "Paper.RedBlue.integral_round_bound",
+          "source_sha256": "9c8b756dec11cd83311345d79f865a0df5c6716d480662eceaf48b1d2528c0db"
+        },
+        {
+          "file": "Paper/RedBlue/Resources.lean",
+          "declaration": "Paper.RedBlue.integral_logarithmic_bits",
+          "source_sha256": "9c8b756dec11cd83311345d79f865a0df5c6716d480662eceaf48b1d2528c0db"
+        },
+        {
+          "file": "Paper/RedBlue/Schemes.lean",
+          "declaration": "Paper.RedBlue.randomized_parameters",
+          "source_sha256": "3a996df083dd318da84484a60cfe2df64371d455bfabf82ceab6ec48c4971751"
+        },
+        {
+          "file": "Paper/RedBlue/Schemes.lean",
+          "declaration": "Paper.RedBlue.deterministic_parameters",
+          "source_sha256": "3a996df083dd318da84484a60cfe2df64371d455bfabf82ceab6ec48c4971751"
+        },
+        {
+          "file": "Paper/RedBlue/Schemes.lean",
+          "declaration": "Paper.RedBlue.covers_iff",
+          "source_sha256": "3a996df083dd318da84484a60cfe2df64371d455bfabf82ceab6ec48c4971751"
+        },
+        {
+          "file": "Paper/RedBlue/SolverInput.lean",
+          "declaration": "Paper.RedBlue.admissible_subset_blue",
+          "source_sha256": "23c9847b70c9f65538c549adde7ae360ee519b282274c98d0a893c39860e91f4"
+        },
+        {
+          "file": "Paper/RedBlue/Benchmarks.lean",
+          "declaration": "Paper.RedBlue.fractional_benchmark",
+          "source_sha256": "e6a8250e5e4d4d6d0040a2d33619c8aab2e88764bcc2009063884076e7feb281"
+        },
+        {
+          "file": "Paper/RedBlue/Benchmarks.lean",
+          "declaration": "Paper.RedBlue.all_integral_benchmarks",
+          "source_sha256": "e6a8250e5e4d4d6d0040a2d33619c8aab2e88764bcc2009063884076e7feb281"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "fv:rb:lower",
+      "lean": [
+        {
+          "file": "Paper/RedBlue/OddRedBlueLower.lean",
+          "declaration": "Paper.OddRedBlue.lower",
+          "source_sha256": "86961901188f4535dfde85ed6b1ff5e23feb13b049c7934626f6e9dcbadb9bff"
+        },
+        {
+          "file": "Paper/RedBlue/OddRedBlueOptima.lean",
+          "declaration": "Paper.OddRedBlue.exact_optima",
+          "source_sha256": "675471764bd8b081df39dea3839d4bf9d8ed8f6d654bb63d9d9cbab9319be39c"
+        },
+        {
+          "file": "Paper/Preliminaries/OddPathDegree.lean",
+          "declaration": "Paper.OddPathPower.degree_le_four",
+          "source_sha256": "4b44b51d47e2134018b90c03e7f61d717217c22a71235739c7bfbb42d0f522f3"
+        },
+        {
+          "file": "Paper/Optimality/LowerBounds/BipartiteTwin.lean",
+          "declaration": "Paper.BipartiteTwin.run_eq",
+          "source_sha256": "18bb6ab63599168931bc58364bb26b81cd7ceab56c2310394c76a846132c1abf"
+        }
+      ],
+      "external_axioms": []
+    },
+    {
+      "inventory_id": "fv:rb:surface",
+      "lean": [
+        {
+          "file": "Paper/RedBlue/OrdinarySurface.lean",
+          "declaration": "Paper.RedBlueOrdinarySurface.additive_parameters",
+          "source_sha256": "49937c9b593892e6ab329ea68aea26f9b3c48bf178f5c70ce83ead07d51f2419"
+        },
+        {
+          "file": "Paper/RedBlue/OrdinarySurface.lean",
+          "declaration": "Paper.RedBlueOrdinarySurface.large_optimum_parameters",
+          "source_sha256": "49937c9b593892e6ab329ea68aea26f9b3c48bf178f5c70ce83ead07d51f2419"
+        },
+        {
+          "file": "Paper/RedBlue/SurfacePort.lean",
+          "declaration": "Paper.RedBlue.surface_port_rounds",
+          "source_sha256": "e9ab7f29f55a4df21fa020acc7dee51e3b81c6430aaff0fd0f13d8c0bf8adda2"
+        },
+        {
+          "file": "Paper/RedBlue/SurfacePort.lean",
+          "declaration": "Paper.RedBlue.surface_port_bits",
+          "source_sha256": "e9ab7f29f55a4df21fa020acc7dee51e3b81c6430aaff0fd0f13d8c0bf8adda2"
+        },
+        {
+          "file": "Paper/RedBlue/SurfaceResources.lean",
+          "declaration": "Paper.RedBlue.surface_integral_round_bound",
+          "source_sha256": "87bed30ae3d47c826ee6cc01161631813d70a7f43c2fda40374be4c8b4bfeed2"
+        },
+        {
+          "file": "GraphTheory/Surfaces/OrdinarySurface.lean",
+          "declaration": "SimpleGraph.OrdinarySurface.ClosedSurface.eulerGenus_eq",
+          "source_sha256": "e46c26b71f46accc0868fa5ed7f50a26ddc10fa2e24a5da2206c07d26e0ffd47"
+        }
+      ],
+      "external_axioms": [
+        "Paper.External.SurfaceTopology.cellulation_euler_eq",
+        "Paper.External.SurfaceTopology.exists_cellulation",
+        "Paper.External.SurfaceTopology.rotation_of_embedding"
+      ]
+    },
+    {
+      "inventory_id": "fv:rb:surface-opt",
+      "lean": [
+        {
+          "file": "Paper/RedBlue/OrdinarySurface.lean",
+          "declaration": "Paper.RedBlueOrdinarySurface.absorbed_parameters",
+          "source_sha256": "49937c9b593892e6ab329ea68aea26f9b3c48bf178f5c70ce83ead07d51f2419"
+        },
+        {
+          "file": "Paper/RedBlue/AbsorbedPort.lean",
+          "declaration": "Paper.RedBlueSurfaceAbsorption.port_rounds",
+          "source_sha256": "36fa489050b063f6bd505421745863e9ecb1cbccaf1ffded251b5875d96fce8e"
+        },
+        {
+          "file": "Paper/RedBlue/AbsorbedPort.lean",
+          "declaration": "Paper.RedBlueSurfaceAbsorption.port_bits",
+          "source_sha256": "36fa489050b063f6bd505421745863e9ecb1cbccaf1ffded251b5875d96fce8e"
+        },
+        {
+          "file": "GraphTheory/Surfaces/OrdinarySurface.lean",
+          "declaration": "SimpleGraph.OrdinarySurface.ClosedSurface.eulerGenus_eq",
+          "source_sha256": "e46c26b71f46accc0868fa5ed7f50a26ddc10fa2e24a5da2206c07d26e0ffd47"
+        }
+      ],
+      "external_axioms": [
+        "Paper.External.SurfaceTopology.cellulation_euler_eq",
+        "Paper.External.SurfaceTopology.exists_cellulation",
+        "Paper.External.SurfaceTopology.rotation_of_embedding"
+      ]
+    },
+    {
+      "inventory_id": "sc:gap",
+      "lean": [
+        {
+          "declaration": "Paper.SplitGraphGap.fractionalNumber_le_two",
+          "file": "Paper/Optimality/Examples/SplitGraphGap.lean",
+          "source_sha256": "24ed56071d862cc50daf04aa3976dfacbf05bcf6ad47122bf9eac1a848c2fcda"
+        },
+        {
+          "declaration": "Paper.SplitGraphGap.dominationNumber_eq_fifteen",
+          "file": "Paper/Optimality/Examples/SplitGraphGap.lean",
+          "source_sha256": "24ed56071d862cc50daf04aa3976dfacbf05bcf6ad47122bf9eac1a848c2fcda"
+        },
+        {
+          "declaration": "Paper.SplitGraphGap.strict_gap_above_seven",
+          "file": "Paper/Optimality/Examples/SplitGraphGap.lean",
+          "source_sha256": "24ed56071d862cc50daf04aa3976dfacbf05bcf6ad47122bf9eac1a848c2fcda"
+        }
+      ],
+      "external_axioms": []
+    }
+  ]
+}

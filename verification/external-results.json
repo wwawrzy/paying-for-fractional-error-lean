@@ -1,0 +1,195 @@
+{
+  "schema_version": 1,
+  "entries": [
+    {
+      "name": "Paper.External.Mader1968.k7_edge_bound",
+      "source": "Paper/External/Mader1968.lean",
+      "source_sha256": "0db6e2114b66e18f9af4d2f2068e20b5d4e0303109a785daddc98ea7fc5f004e",
+      "citation": "Mader (1968), Part II (8), p.164; definitions p.161; r=5",
+      "doi": "10.1007/BF01350657",
+      "allowed_roots": [
+        "Paper.SevenCliqueMader.edge_bound",
+        "Paper.SevenCliqueMader.weak_bound",
+        "Paper.SevenCliqueMader.minor_density",
+        "Paper.SevenCliqueMader.exact_KT0",
+        "Paper.ExcludedCliqueDensity.edge_bound",
+        "Paper.ExcludedCliqueDensity.minor_density",
+        "Paper.ExcludedCliqueDensity.exact_KT0"
+      ],
+      "definition_sources": [
+        {
+          "file": "GraphTheory/SimpleGraph/Minor/Defs.lean",
+          "sha256": "e521962ac2a0e816787f179a7ffca844fa1b0c97910f93e59afb584f29ed6f09"
+        }
+      ]
+    },
+    {
+      "name": "Paper.External.CliqueDensity.k8_edge_bound",
+      "source": "Paper/External/CliqueDensity.lean",
+      "source_sha256": "c521887fd10e610018bd6e42e9e5d3faf878d1e2fb1ed0281a36019c24a3b05d",
+      "citation": "Jørgensen (1994), all-order weak corollary; Song–Thomas author version Theorem1.2, p2",
+      "doi": "10.1002/jgt.3190180502",
+      "allowed_roots": [
+        "Paper.ExcludedCliqueDensity.edge_bound",
+        "Paper.ExcludedCliqueDensity.minor_density",
+        "Paper.ExcludedCliqueDensity.exact_KT0"
+      ],
+      "definition_sources": [
+        {
+          "file": "GraphTheory/SimpleGraph/Minor/Defs.lean",
+          "sha256": "e521962ac2a0e816787f179a7ffca844fa1b0c97910f93e59afb584f29ed6f09"
+        }
+      ]
+    },
+    {
+      "name": "Paper.External.CliqueDensity.k9_edge_bound",
+      "source": "Paper/External/CliqueDensity.lean",
+      "source_sha256": "c521887fd10e610018bd6e42e9e5d3faf878d1e2fb1ed0281a36019c24a3b05d",
+      "citation": "Song–Thomas (2006), all-order weak corollary of Theorem1.3, author version p2",
+      "doi": "10.1016/j.jctb.2005.07.008",
+      "allowed_roots": [
+        "Paper.ExcludedCliqueDensity.edge_bound",
+        "Paper.ExcludedCliqueDensity.minor_density",
+        "Paper.ExcludedCliqueDensity.exact_KT0"
+      ],
+      "definition_sources": [
+        {
+          "file": "GraphTheory/SimpleGraph/Minor/Defs.lean",
+          "sha256": "e521962ac2a0e816787f179a7ffca844fa1b0c97910f93e59afb584f29ed6f09"
+        }
+      ]
+    },
+    {
+      "name": "Paper.External.SurfaceTopology.exists_cellulation",
+      "source": "Paper/External/SurfaceTopology.lean",
+      "source_sha256": "eb355a10debec5147d189ab4b94102c59e7ebfeedbf32a42d2b63bf965a50496",
+      "citation": "Doyle--Moran (1968), pp.160--162; triangulation and transport into mathlib CW",
+      "allowed_roots": [
+        "Paper.OrdinarySurfaceAlgorithm.parameters",
+        "Paper.OrdinarySurfaceBounds.actual_bounds",
+        "Paper.OrdinarySurfaceBounds.minor_bound",
+        "Paper.OrdinarySurfaceBounds.minor_density",
+        "Paper.OrdinarySurfaceBounds.subgraph_density",
+        "Paper.OrdinarySurfaceBounds.subgraph_girth_density",
+        "Paper.OrdinarySurfaceGirth.parameters",
+        "Paper.OrdinarySurfaceGirthBoth.parameters",
+        "Paper.OrdinarySurfaceImprovedGirth.parameters",
+        "Paper.OrdinarySurfaceLocalLower.integral",
+        "Paper.OrdinarySurfaceTwoFractional.parameters",
+        "Paper.RedBlueOrdinarySurface.absorbed_parameters",
+        "Paper.RedBlueOrdinarySurface.additive_parameters",
+        "Paper.RedBlueOrdinarySurface.large_optimum_parameters",
+        "Paper.RedBlueOrdinarySurfaceLower.lower",
+        "SimpleGraph.OrdinarySurface.ClosedSurface.eulerGenus_eq",
+        "SimpleGraph.OrdinarySurface.signedRotation_of_genus",
+        "SimpleGraph.OrdinarySurface.signedRotation_real"
+      ],
+      "definition_sources": [
+        {
+          "file": "GraphTheory/Topology/ClosedSurface.lean",
+          "sha256": "b54be3ceedffc09dc066d51b8495f8667c103d5a182e8344ce2586a70d74e751"
+        },
+        {
+          "file": "GraphTheory/Topology/GraphRealization.lean",
+          "sha256": "046ccc4fb0aff0d0aca94240a1047da634ca6cc2e0ae66e3833dc938de26e9c9"
+        },
+        {
+          "file": "GraphTheory/Surfaces/SignedRotation.lean",
+          "sha256": "7e2440ce01c586d24bd9786d4bcd9f13f5b75b608ce24c14e9fb4755f8aa86ea"
+        }
+      ]
+    },
+    {
+      "name": "Paper.External.SurfaceTopology.cellulation_euler_eq",
+      "source": "Paper/External/SurfaceTopology.lean",
+      "source_sha256": "eb355a10debec5147d189ab4b94102c59e7ebfeedbf32a42d2b63bf965a50496",
+      "citation": "Hatcher, Algebraic Topology, Theorem 2.44, pp.146--147",
+      "allowed_roots": [
+        "SimpleGraph.OrdinarySurface.ClosedSurface.eulerGenus_eq"
+      ],
+      "definition_sources": [
+        {
+          "file": "GraphTheory/Topology/ClosedSurface.lean",
+          "sha256": "b54be3ceedffc09dc066d51b8495f8667c103d5a182e8344ce2586a70d74e751"
+        },
+        {
+          "file": "GraphTheory/Topology/GraphRealization.lean",
+          "sha256": "046ccc4fb0aff0d0aca94240a1047da634ca6cc2e0ae66e3833dc938de26e9c9"
+        },
+        {
+          "file": "GraphTheory/Surfaces/SignedRotation.lean",
+          "sha256": "7e2440ce01c586d24bd9786d4bcd9f13f5b75b608ce24c14e9fb4755f8aa86ea"
+        }
+      ]
+    },
+    {
+      "name": "Paper.External.SurfaceTopology.rotation_of_embedding",
+      "source": "Paper/External/SurfaceTopology.lean",
+      "source_sha256": "eb355a10debec5147d189ab4b94102c59e7ebfeedbf32a42d2b63bf965a50496",
+      "citation": "Doyle--Moran arc thickening; Epstein Appendix A; Kociumaka--Pilipczuk (2019) Section3.1; reviewed finite-graph regular-neighborhood/capping/flag synthesis",
+      "allowed_roots": [
+        "Paper.OrdinarySurfaceAlgorithm.parameters",
+        "Paper.OrdinarySurfaceBounds.actual_bounds",
+        "Paper.OrdinarySurfaceBounds.minor_bound",
+        "Paper.OrdinarySurfaceBounds.minor_density",
+        "Paper.OrdinarySurfaceBounds.subgraph_density",
+        "Paper.OrdinarySurfaceBounds.subgraph_girth_density",
+        "Paper.OrdinarySurfaceGirth.parameters",
+        "Paper.OrdinarySurfaceGirthBoth.parameters",
+        "Paper.OrdinarySurfaceImprovedGirth.parameters",
+        "Paper.OrdinarySurfaceTwoFractional.parameters",
+        "Paper.RedBlueOrdinarySurface.absorbed_parameters",
+        "Paper.RedBlueOrdinarySurface.additive_parameters",
+        "Paper.RedBlueOrdinarySurface.large_optimum_parameters",
+        "SimpleGraph.OrdinarySurface.signedRotation_of_genus",
+        "SimpleGraph.OrdinarySurface.signedRotation_real"
+      ],
+      "definition_sources": [
+        {
+          "file": "GraphTheory/Topology/ClosedSurface.lean",
+          "sha256": "b54be3ceedffc09dc066d51b8495f8667c103d5a182e8344ce2586a70d74e751"
+        },
+        {
+          "file": "GraphTheory/Topology/GraphRealization.lean",
+          "sha256": "046ccc4fb0aff0d0aca94240a1047da634ca6cc2e0ae66e3833dc938de26e9c9"
+        },
+        {
+          "file": "GraphTheory/Surfaces/SignedRotation.lean",
+          "sha256": "7e2440ce01c586d24bd9786d4bcd9f13f5b75b608ce24c14e9fb4755f8aa86ea"
+        }
+      ]
+    },
+    {
+      "name": "Paper.External.Planarity.planar_euler_zero",
+      "source": "Paper/External/Planarity.lean",
+      "source_sha256": "ef5e51c113b6d7c81c128b0c9ad8882de23335e1da64575052bae1eabe9c9e6d",
+      "citation": "Kuratowski (1930), Theorem A p278; elementary subdivision-to-minor implication, followed by sphere/CW-genus transport. Wagner (1937) p570 attributes the characterization to Kuratowski.",
+      "allowed_roots": [
+        "Paper.OrdinarySurfaceLocalLower.integral",
+        "Paper.RedBlueOrdinarySurfaceLower.lower"
+      ],
+      "definition_sources": [
+        {
+          "file": "GraphTheory/SimpleGraph/Planar/Basic.lean",
+          "sha256": "7cdf55847ac92a14762e31e6f6e67b2462a60c1189b80ac87448965af1d80ae3"
+        },
+        {
+          "file": "GraphTheory/SimpleGraph/Minor/Defs.lean",
+          "sha256": "e521962ac2a0e816787f179a7ffca844fa1b0c97910f93e59afb584f29ed6f09"
+        },
+        {
+          "file": "GraphTheory/Surfaces/OrdinarySurface.lean",
+          "sha256": "e46c26b71f46accc0868fa5ed7f50a26ddc10fa2e24a5da2206c07d26e0ffd47"
+        },
+        {
+          "file": "GraphTheory/Topology/ClosedSurface.lean",
+          "sha256": "b54be3ceedffc09dc066d51b8495f8667c103d5a182e8344ce2586a70d74e751"
+        },
+        {
+          "file": "GraphTheory/Topology/GraphRealization.lean",
+          "sha256": "046ccc4fb0aff0d0aca94240a1047da634ca6cc2e0ae66e3833dc938de26e9c9"
+        }
+      ]
+    }
+  ]
+}

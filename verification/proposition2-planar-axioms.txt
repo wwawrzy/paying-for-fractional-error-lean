@@ -1,0 +1,2 @@
+'Paper.Proposition2PlanarAudit.planar_rounding' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Paper.Proposition2PlanarAudit.planar_rounding_on_residual' depends on axioms: [propext, Classical.choice, Quot.sound]

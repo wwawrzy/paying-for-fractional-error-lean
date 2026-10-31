@@ -1,0 +1,270 @@
+{
+  "scope": "Comment-only source cleanup after the archived compilation. Original build hashes are retained; the non-comment text was compared before and after each edit. This is not a new Lean compilation.",
+  "files": {
+    "GraphTheory/MinorFreeDensity.lean": {
+      "compiled_source_sha256": "594eb9ca1e84e8ecebc427e4ab2da7e646236347a6c57c3ecb84e56128d211c3",
+      "current_source_sha256": "46e3eafe9ba25ebfa06d55756569885814933d8c4cbd4225b6a8f2a4cb4ca89c",
+      "code_sha256": "1f2312cb86e20bf0df84f23a72b4d273627405920a615cb1b2f129bb4f8f4129"
+    },
+    "GraphTheory/SimpleGraph/Connectivity/Menger.lean": {
+      "compiled_source_sha256": "9715fa7398234a856271f68b30ed6cc808a813157e547c665313b6cb27a4b284",
+      "current_source_sha256": "8f5a49d52ff7c07e84a59de367dd511c09770aa1f8330775dbcc8e8608f1a32e",
+      "code_sha256": "4fdad943cd4032e391785475394eaee32d02c126d4df51b1da53b660182834c8"
+    },
+    "Paper/Averaging.lean": {
+      "compiled_source_sha256": "b5fd85483b02496746609a255fdc2888569529695c35f11b39feefde682820e2",
+      "current_source_sha256": "7d6c820df5f1c9a9f8a1783db8197b6def09cee3b21e96e2272dd32ca8585dbd",
+      "code_sha256": "6d9d705a3e20e1025f3a4a5e2e09063b02d428041ed9ceae485293a38ffa1fac"
+    },
+    "Paper/Certificates.lean": {
+      "compiled_source_sha256": "9cde266cd0c4bc95738558fbbcd89d04db600d775fdf6441d0bf22256a5d36f5",
+      "current_source_sha256": "be7dbfb58afe658178a2374d2efb0dd3246568bda476f18ce689aeaa523ef0bd",
+      "code_sha256": "5fc8af424dbf1da48b1befcb29491ac0b2164bf6db1711d760ef4c1c542523c7"
+    },
+    "Paper/Certificates/Counting/CoreHitting.lean": {
+      "compiled_source_sha256": "3d14c265070aa54dac3cbe2651011cdad5dc0cd56054c86075226daeec8f26e3",
+      "current_source_sha256": "1aa2ae028854e180201006906d6720638e8957547176e67c81634b171e876475",
+      "code_sha256": "f592a68ff94dfec24624890bee83e32d0673eac7db0286c9491476e654dabfac"
+    },
+    "Paper/Certificates/Counting/HallOrientation.lean": {
+      "compiled_source_sha256": "2814696fbd8356cc1bd98e64830c606c4b297b12e72d9af77c6dc608a5310dc1",
+      "current_source_sha256": "aebafa52d1dfc485481f8082397b2498ed7f6f5b9764f2ec41f39cbc3c575ab7",
+      "code_sha256": "2871e3076b964d3038efcb7689891a9fdf8572ca27977265cebc50d33a0b67bb"
+    },
+    "Paper/Certificates/Counting/WeightedCertificate.lean": {
+      "compiled_source_sha256": "b7f6d453d1f0b68bb7c99eadcb28991ddc2b030bdf2b617623b73f22271cf960",
+      "current_source_sha256": "8b24bc48232ba2499e454967ddd6732dabe3064dda48963e4616b727aaff535d",
+      "code_sha256": "afe876058f8bd6bcab46edb5fcea120345079b6d71a710edf86a84b34376e500"
+    },
+    "Paper/Endpoints.lean": {
+      "compiled_source_sha256": "bb65b1014ce4a4618a0eb7519eaade7dcc27dd3d6ff0c2dcdd205a4b73bc7496",
+      "current_source_sha256": "358950eababc234503e8ffe4f744a8a997e547281886b2ddca20be27485ade55",
+      "code_sha256": "e05754a9e016adb27747264754a7f1618a99b850df1bc13a07bbaf6f08a0b950"
+    },
+    "Paper/Endpoints/Bounds/CurrentCriticalKT0.lean": {
+      "compiled_source_sha256": "aadcb6f6b19fc760e5f4354d53b2df6511f6b9e0fa22f54cdd5f9ac879a46f59",
+      "current_source_sha256": "5858893a624fa19fbfc13a721b0a61c1ed79d36fb69f2ca361618ec576b03480",
+      "code_sha256": "b206041e21815e0e3d0f582d083a735d435e0ea2bac079069a0b05bc6fd6304f"
+    },
+    "Paper/Endpoints/Bounds/CurrentDensityFromFractional.lean": {
+      "compiled_source_sha256": "666f7da930eb3dcf586e48425806068d2e9a4ad748b4b7cf63bce9c00653b071",
+      "current_source_sha256": "87a264194568641fbb28d67e9cb0e79411eff279787aec1b078474c52252b3c3",
+      "code_sha256": "9f2d0e018410314a986904482698c0b5b4b98f6566d0ecee0ab7406516dfaba0"
+    },
+    "Paper/Endpoints/Girth/CurrentGirthOutput.lean": {
+      "compiled_source_sha256": "0ceac4a4d4a54f5b3f10b03845846b4c41be3cc6e430ca5fb5111b1879e8aa34",
+      "current_source_sha256": "88d86299f6cb4832bd9ba88802b69dc9c21c71808c76484a4f47418d50c0d488",
+      "code_sha256": "c1abb75de0f439ae540280fcd238bb8e43fc66979014bd2dad11c3962d0ca860"
+    },
+    "Paper/Endpoints/Girth/CurrentPlanarFaceBound.lean": {
+      "compiled_source_sha256": "96ecb5c5bb2b78949da40fbdfd58c86993ec00ddfc953d4efd5e3c1eeb78cfdf",
+      "current_source_sha256": "3627ebf07fc7920f3c8034b1bc6c250368e17c797447c19aae08b6cb683f8eac",
+      "code_sha256": "8e4e7d45e0db6601f62c2e93afcf5f840c9ec5d64d19412038a7f2879f0e5761"
+    },
+    "Paper/Endpoints/Girth/ImprovedGirth.lean": {
+      "compiled_source_sha256": "24dab25129f90d1c18882fb12b536946cdd9a1334ee11a837de4c8eb871851a7",
+      "current_source_sha256": "4d48297dba9dfedca786a09a7d4ad41e154ed83a03a13689f5c43cc80dcb1216",
+      "code_sha256": "3e6b5490ebc986720722081af7911e48c638eac320925ae32dff89d498f6257c"
+    },
+    "Paper/Endpoints/Rounding/AuxiliaryFromMasked.lean": {
+      "compiled_source_sha256": "644e69885fdee141cf055b91aabdd13ae2b1acca77610fa768391913eebae2bf",
+      "current_source_sha256": "199f7f562c44ec63b033da9aedb391a5b27e63947bfc2271b5fad71ef3ad17f4",
+      "code_sha256": "0d7aa4bfc1342d3cdd4089ead90d4975223521200d021a710ab6b161edc1ff0a"
+    },
+    "Paper/Endpoints/Rounding/ComponentMinor.lean": {
+      "compiled_source_sha256": "79a35aaab55902c79667c312e118d7e3b9cecd03ea5ee881bd4a351424622c06",
+      "current_source_sha256": "31d8a927c2fa7bfaac0c336edf3b69469141127b2e7c8e9a889fff759b54739d",
+      "code_sha256": "73b72ba7b75db7dcff73de4dca27d5b4ca9df27d3a8ffada6468a5229562abb5"
+    },
+    "Paper/Endpoints/Rounding/CurrentBudget.lean": {
+      "compiled_source_sha256": "9c698a542350ff2a7fe98e803ccac42510cf7eaa62cf52da0d09a223a974d75f",
+      "current_source_sha256": "e3926c98d0b46a859d29570fbf586fde21769cf6171b6279b1791148a3413630",
+      "code_sha256": "65f12a25cfae3c7f97fd01f5ffd34a0bbc724a61bf061f9e9b872b040836df4c"
+    },
+    "Paper/Endpoints/Rounding/CurrentBudgetBridge.lean": {
+      "compiled_source_sha256": "ec1a00cc4a15a556e0f0af323b1e182172b3c4483f293ddf5012db7cfb505cce",
+      "current_source_sha256": "e972d1cc6586f370247d11364600e8df74cd25ac3953b6fae4f3a71e477ffa36",
+      "code_sha256": "2287efd93803c5193a533c872ca8ddf6ebc4398b1b4171c33fafc34b747e7c05"
+    },
+    "Paper/Endpoints/Rounding/CurrentCountBound.lean": {
+      "compiled_source_sha256": "df5bc125ffe947f08c278968b65ed44f41929bec288382c76a4a75651b07827e",
+      "current_source_sha256": "5ce89569837995bc061568ceb3bdfd60ac51a7b39409da732a6609fedbc3ce0e",
+      "code_sha256": "40bd8c2a590d42c1b53e4e547d5b1dced1b41cef31442e819031664063097d9a"
+    },
+    "Paper/Endpoints/Rounding/CurrentCounting.lean": {
+      "compiled_source_sha256": "fbfc9afac48bc4d927c1cfc6871d291e680c71210939e70514ab17dccf4d7bb2",
+      "current_source_sha256": "218c7758f9f23c0f477945bde896f6b0fe2c268b09262cd42dee25694a7c2088",
+      "code_sha256": "ad6b720d095f87be3cf2336cf5f9e3b543ada499d9bf1779d01a3cddbb4f971e"
+    },
+    "Paper/Endpoints/Rounding/CurrentNonintegerTransformation.lean": {
+      "compiled_source_sha256": "174081c2b73cf3dc1b6ae6e1cfe576bfed277f7ad86906ce288dfb84f8efd611",
+      "current_source_sha256": "01bf82b17b5bf7751dabe5e972bea5fa9b66a2de578d8fc1daa2f6316f24fc83",
+      "code_sha256": "30b00a57994ac0e2188ceb2fc86c686bfb95ab7c7975483993042cb299f9a76b"
+    },
+    "Paper/Endpoints/Rounding/ImprovedExcessEndpoint.lean": {
+      "compiled_source_sha256": "faac238b317a766859ebeee38bb334a2ab78cebf8d8ae908128a466488a3058c",
+      "current_source_sha256": "8142a5a79dab13e7e04fcbcc7c34f71ebd31af187a5ee1c6d18c26f3e0d347cc",
+      "code_sha256": "eaba352826b14a2bb5aca9821c17d1f211b6ed2839ad299b321ac984b3d2ed9d"
+    },
+    "Paper/Endpoints/Rounding/ImprovedExcessGeometry.lean": {
+      "compiled_source_sha256": "78ad487054d5da36389c49dc693d6e37557332a83bc0eef379dd39eee25ab2cb",
+      "current_source_sha256": "73ced7cf2ce97a74cf19036e077701b1f552e2be66f92c06fffe17c2beff9662",
+      "code_sha256": "72a8b44c0a482960beda2a9b82ec907df3225ae8713d723e7ef9153ce0e9452f"
+    },
+    "Paper/Endpoints/Rounding/ImprovedExcessMaximumGain.lean": {
+      "compiled_source_sha256": "065e00ea4a880f6591f7f775edd029bbdf546c4c86fad66fd2e518e62db0af42",
+      "current_source_sha256": "05de0549b2d23ca764f86296de7c1867854c97ac76630a215cfa9e63cf092102",
+      "code_sha256": "c6ce52bca4d115404bbc66f7435df4e5e5bbace91e8c1bd2588b6baae662d277"
+    },
+    "Paper/Endpoints/Rounding/ImprovedExcessRounding.lean": {
+      "compiled_source_sha256": "c24f09dfd4a7e5fe6044f8335ea7e63d438a0a9252015457607092e867cf43ad",
+      "current_source_sha256": "068c4289065046c068a2a1904c1baf88771ab6b684543643c0801d98042cb4a5",
+      "code_sha256": "fb3bd3160cadaf0d0b5dce0a8e4c306ee329af9d584edddc63b368949458a44e"
+    },
+    "Paper/Endpoints/Rounding/SelectionGeometry.lean": {
+      "compiled_source_sha256": "0e0d1f78ed00854dc8843a7f96c55875d4868511c8c5eded4743986fae7f2250",
+      "current_source_sha256": "3a57f402b224a99d95bb49f6d5824b6f2d4568929a556cc59ae0308c81a8d133",
+      "code_sha256": "2de6945550b1919df6161414a5276eb4386ffd9acd8ca33c975f703c1238b621"
+    },
+    "Paper/External/CliqueDensity.lean": {
+      "compiled_source_sha256": "063fa657e966af5b4cf18a06f6d14d9a881ae7b07518937b5b44b273a48cc018",
+      "current_source_sha256": "c521887fd10e610018bd6e42e9e5d3faf878d1e2fb1ed0281a36019c24a3b05d",
+      "code_sha256": "a00e4c75356ec25c3c6581e943c9d4977643c24b2108ae34fc5ce6d997527316"
+    },
+    "Paper/External/Mader1968.lean": {
+      "compiled_source_sha256": "e6bf5e29c0757b642e49edb5b5dae9d7b95c410bd297b62c13ae861f24c528df",
+      "current_source_sha256": "0db6e2114b66e18f9af4d2f2068e20b5d4e0303109a785daddc98ea7fc5f004e",
+      "code_sha256": "a5a3cb476ee49d8973827880ff50f9bf97f9935735ae93b9709c01c31fb6f66d"
+    },
+    "Paper/External/Planarity.lean": {
+      "compiled_source_sha256": "4eeb41a2627bb0a6b75b01666a6855bd35e065077353c44c23ff6d3422c37a23",
+      "current_source_sha256": "ef5e51c113b6d7c81c128b0c9ad8882de23335e1da64575052bae1eabe9c9e6d",
+      "code_sha256": "2feb936370d43e29d383ffa162126c1f9b350f1e78dc0388cf370ff19cc563bd"
+    },
+    "Paper/External/SurfaceTopology.lean": {
+      "compiled_source_sha256": "6cc5929d055203b444eefc4836a314ab40a8f534a899e8ae3e5942ea5aff892a",
+      "current_source_sha256": "eb355a10debec5147d189ab4b94102c59e7ebfeedbf32a42d2b63bf965a50496",
+      "code_sha256": "b4416b858f734d88e76a0fc4c086e7622378c7553516321fc86fac30f25126a1"
+    },
+    "Paper/Initialization.lean": {
+      "compiled_source_sha256": "c1b5c3d73ea68a832a8374f70b03a4b33cfbebcbe7d965934a262f19cea22742",
+      "current_source_sha256": "df6d086dcacbcddfd50f748620630ad56337aa909becd35c529880dc4e28878f",
+      "code_sha256": "f4a6223a593b48f46c2e505671e7882946e0fdad3e7636340d0391068c2aa9c6"
+    },
+    "Paper/Initialization/Lists/SunflowerLists.lean": {
+      "compiled_source_sha256": "3668f99bba499565884ed86fa40f360288e91e8ee8985b4e5eef103a38350c9f",
+      "current_source_sha256": "299b7947e406119b56b918e4c49b679aa5ba30c3f0050e18f8b0207303ab38a3",
+      "code_sha256": "55d7f489cb639fd263bb7d025a0b7dd2b786a1aff8d08dda7a94f5c751220b40"
+    },
+    "Paper/Optimality.lean": {
+      "compiled_source_sha256": "205ded3d2a48c0909547a858577abc01e0260a7a11c709dd2dd19f15d6d460dd",
+      "current_source_sha256": "f614a3b571a7a43107cedd0b2d2d75745c9687c260bd21dd71edc1518c4469e6",
+      "code_sha256": "6605ad3f4a6bb74d58621d940a3a7917a7400bd88fcd23f411bb002fca5cf593"
+    },
+    "Paper/Optimality/LowerBounds/CycleForcedDomination.lean": {
+      "compiled_source_sha256": "0f48423dcedf9bbc6261a1c1b12811f6ce30d13ade99b7ad2c3eb1e2bb9231c9",
+      "current_source_sha256": "fe61d66d1617e9e8bfcfb37c25564ddffe66afeb27ab5d5b51d2cca278043654",
+      "code_sha256": "ef64db3cff472fb81dc35e2c83ca3373a049f2bc3087c44bb05a29997e35773b"
+    },
+    "Paper/Owners.lean": {
+      "compiled_source_sha256": "390324dd448be3f16f46daa0b206355368f101423ea0d32fec281759a5db2d50",
+      "current_source_sha256": "103dbf182d34429651bab4a31ebb7afaddd8a6a8c1cb747a7bea5f9757058d87",
+      "code_sha256": "f0dd432dd63305bc8ee74cf0537aa79de45b2bfd4f65b95a11921b554e3f7d81"
+    },
+    "Paper/Owners/Construction/CurrentOwnerSimulation.lean": {
+      "compiled_source_sha256": "9b31566ff5dc5c1ddff6a4c86d1ab5c4931d829b2bc70312b38205a3d0d84c88",
+      "current_source_sha256": "744b45af79d1641496f5596a92b8fba6746f2425d1f606d5b1e5e5582c0e7688",
+      "code_sha256": "78082d66e35e4c0512a1fa49b0c313138a0fb484e5d7a33345ca880c99ec7810"
+    },
+    "Paper/Owners/Construction/OwnerDensity.lean": {
+      "compiled_source_sha256": "bcebf70b4c841f2774c4a08b531db4656fc4dd8ffea03586102ad50a20fcc9f8",
+      "current_source_sha256": "11f93d3df13ad34a3737a6156f2c0f3d8f6b0907589b7c470a76cbfbdaa299d5",
+      "code_sha256": "a67f13fb9faebbd4907fec959c5972cb4df2d2102a94f024b2be2fc990fd9afa"
+    },
+    "Paper/Partitions.lean": {
+      "compiled_source_sha256": "bbe59ef92c0b615d19c873164db0719819115f4464e1f4b761d366b5d47b059f",
+      "current_source_sha256": "efd4fa40ee367d55071cdb498a33b3e98a8bf7e6e3c6868a5d0ea288431ecd16",
+      "code_sha256": "8707ead5410d784714abe4e0a51046ff35cedf84c8cd8d1c5a7412cebc345fa4"
+    },
+    "Paper/Partitions/Local/HumanPartition.lean": {
+      "compiled_source_sha256": "d2bddcac7109075fbf2c85109d53685628aa68faa122df74c7c4f3e139c27c4a",
+      "current_source_sha256": "19b1a67a61863a6503d942cf1582dedb9e973809305fe0887a94b4c450002dc7",
+      "code_sha256": "67c54127cd9855e2e6620eaa990a9f5752278d6e1ce740f85795be93fccfc05c"
+    },
+    "Paper/Preliminaries/CoreHierarchy.lean": {
+      "compiled_source_sha256": "c12188b2b343a07e7ffee4da037764843d906684dd7ec9bef1180e9eb296ae61",
+      "current_source_sha256": "92c7e2e0179754ca8c7d5d86037ba20ed90e632e8b6b289c2482e29ef87c1b1b",
+      "code_sha256": "6108a6b65f078e69de335f095d40b7d7b73d9b0a9284c961fda417a5fe9c4ba4"
+    },
+    "Paper/Preliminaries/Incidence.lean": {
+      "compiled_source_sha256": "a02d62123c6f50786482074697d3189b6b0ce6463d917ace8fd79491dcf68653",
+      "current_source_sha256": "7a45f4e7db6c5a9cb37c9fa7a17336b19425d096fdbaa31970ea20b95a96fdef",
+      "code_sha256": "8a451033805938f8b248cd8ea8c058db0edcd239466e5468b57f11180e375921"
+    },
+    "Paper/Preliminaries/MinorDensity.lean": {
+      "compiled_source_sha256": "5e0eb74300068ff51434ecce0434e3b93787f9421b8304bb982c22d866b5571b",
+      "current_source_sha256": "e6edc17381ed1d3f1b6b033df0bcb2a15607ab3619040e106560d5bced748dff",
+      "code_sha256": "bcc71b79b6a0257cc731ccfacba3ad1faf6aaa223810baa08fb5dfd7ee442af6"
+    },
+    "Paper/Preliminaries/WeightedIntegrality.lean": {
+      "compiled_source_sha256": "c7b90a5c3602ef82bf52ec386572af05cbeedad013ca54d9a7f0cfa6e7c5e405",
+      "current_source_sha256": "65061cca8ac87a9b59b1279747efd68c6eadf60c3df939a578059ffef4c0d098",
+      "code_sha256": "ea452770f423300f56421e083e558df5159536ea3c189afd951d671351f4f011"
+    },
+    "Paper/Solver.lean": {
+      "compiled_source_sha256": "974acff09210a8aa24141307d348bfce99855902873a09683360c942da82e375",
+      "current_source_sha256": "a0748ee6dd86e94e03faad385c1306791e230a2e609b1b12c590f3ad484b7772",
+      "code_sha256": "07cc6935977fdbe3a1caa3a92d7599c434d73e047f724fc566e0d0ec9a44eadd"
+    },
+    "Paper/Solver/Density/CappedRoundComplexity.lean": {
+      "compiled_source_sha256": "96c7c2765d2d1f4c6554c3d0b60b24c3a0b72a1a6722cf46e1ec9092d401fd5c",
+      "current_source_sha256": "af38bd893ffcd8850c32adf66e22574fc51748e0254b3760890c9adc21e5ea53",
+      "code_sha256": "37f0b1df9d7fab2bcccd53104e5beb8b598f4eadb7d269d42a6c1812a0b5537a"
+    },
+    "Paper/Solver/Density/CappedSilentParameters.lean": {
+      "compiled_source_sha256": "c2211a134967007a7e4518a7965ee023bb53dad9616543706c22e48d6f6008ee",
+      "current_source_sha256": "3d7ed833e883bcdb079b7059f060c2e1661f52efa6d1a83185711a1fadbada56",
+      "code_sha256": "e49ab09bb2dba789d6cf5c40d417b61fb07f4fe0ed5d653c3774466006879bee"
+    },
+    "Paper/Solver/Density/CappedUniformParameters.lean": {
+      "compiled_source_sha256": "823316a2d2dd0d24eaba662e63b949ba53012f8f56017132e44d7218a3d9711c",
+      "current_source_sha256": "8c122a6631900a26bcaad3ebdf2021714ba88d254446932bf982626c3a97502e",
+      "code_sha256": "5a7d621e9872c9a2844ffbcc656951862c726580aa28ca65868f8ea63c939a56"
+    },
+    "Paper/Solver/LocalSearch/GeneralCoveringDeterministicApproximation.lean": {
+      "compiled_source_sha256": "dc2fce15bcc001fe039216779ee1e7092589516acf2bbc92b542fa903aeea567",
+      "current_source_sha256": "2d2a59312d5fd5de05c47391210c2f87249b46cfeeb6fd07a5dce650e5fa346f",
+      "code_sha256": "216eeea80e95f7e85338ae709d5403c3d180ccbbf15fdaacb08ff6134b1bf8b4"
+    },
+    "Paper/TotalDomination/EncodedRounding.lean": {
+      "compiled_source_sha256": "67b3c080904e7584ee6b9c49a7cd3e492fab3747036a77c1eae7ebb320d5fa31",
+      "current_source_sha256": "9dc482d8de4e3c78da446116278fbbae0baa334a3546f98b96e02df0e14eecbe",
+      "code_sha256": "759dc824dbc59c65ae1a9fdf2307970fea4da5d56f6cb08ef512e5635b258b75"
+    },
+    "Paper/TotalDomination/IntegerCountObstruction.lean": {
+      "compiled_source_sha256": "0154c6fca074ef46673f8268d1db17eeac412acfa202aa09a88f8fd4ee13610a",
+      "current_source_sha256": "7869402fbf8ffbd47a86314f247f60e09faf6b0a4920ff6ff9cfff6813ee6953",
+      "code_sha256": "2f05c1a261f1e451d8c6ae8cdb40cda1e1c6d0a35f1f32d158cafe68a878423a"
+    },
+    "Paper/TotalDomination/MaximumGain.lean": {
+      "compiled_source_sha256": "964471963424d35c96af145adc33fb9ed0216d995439f681fadb7d5f09ba256b",
+      "current_source_sha256": "a974f3681e1ec96d546d07591b0f44d6edef90320e2e63cb10c85a33f4e941b0",
+      "code_sha256": "079aeeaeb37813e399bda6870c2413ef9c7b2d539a736669bbf1ee3fc6394186"
+    },
+    "Paper/TotalDomination/Noninteger.lean": {
+      "compiled_source_sha256": "9796db4e2d757e42ae95742df32a044b141ade16992e5f52b4f75ac2fff511cd",
+      "current_source_sha256": "692b3bc46ef9902d72b82e12b0c5624caf1efa0a03e0be132db249fab59e178a",
+      "code_sha256": "fced9dfdb1446328139d2774cef573996cb8b573c4aceca8666cafca9027349f"
+    },
+    "Paper/TotalDomination/NonintegerEndpoint.lean": {
+      "compiled_source_sha256": "c5e07a61d944c340fee65aece44329cd36ca1746535690c4183d2067ab6df7e6",
+      "current_source_sha256": "3ebf73c6957119fe1576d59e17bcbd4d6eede43ed51a2c6702cf1b8188b91a72",
+      "code_sha256": "b2c4997394cc157057706b2cb6e267bcef9144589b622453f01fdb9c5762de2b"
+    },
+    "Paper/TotalDomination/NonintegerParameters.lean": {
+      "compiled_source_sha256": "43c5a3278a10ad67a9af819c533a0210d0448a40e651de650101d446d330183c",
+      "current_source_sha256": "da7f533af34cd7c72c6316403a120fe11bc8efe24207e2b3acb9a31cd20190d0",
+      "code_sha256": "fbb9df4bce783678de03e2c2f34b1527b2d3ad55ddffa47cd08c92c57b367447"
+    }
+  }
+}

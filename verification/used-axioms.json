@@ -1,0 +1,147 @@
+{
+  "scope": "Exactly the transitive axiom dependencies of the selected paper proof and algorithm declarations in verification/roots.json. Unused imports and unrelated inherited library assumptions are excluded.",
+  "selected_roots": 2592,
+  "used_axioms": 10,
+  "standard_Lean_axioms": 3,
+  "selected_audit_log_sha256": "a2107b52e3d0ae65a4045c03122127b4a34fe0923509c4674d139a9efab8d5d9",
+  "records": [
+    {
+      "name": "propext",
+      "kind": "standard_Lean_foundation",
+      "statement": "Logically equivalent propositions are equal (propositional extensionality).",
+      "selected_root_count": 2576
+    },
+    {
+      "name": "Classical.choice",
+      "kind": "standard_Lean_foundation",
+      "statement": "Every nonempty type admits a chosen element (classical choice).",
+      "selected_root_count": 2513
+    },
+    {
+      "name": "Quot.sound",
+      "kind": "standard_Lean_foundation",
+      "statement": "Related representatives have equal images in the quotient.",
+      "selected_root_count": 2568
+    },
+    {
+      "name": "Paper.External.Mader1968.k7_edge_bound",
+      "kind": "external_mathematics",
+      "statement": "For a finite simple K7-minor-free graph with n >= 5 vertices and m edges, m + 15 <= 5*n.",
+      "selected_root_count": 7,
+      "source": "Paper/External/Mader1968.lean",
+      "source_sha256": "0db6e2114b66e18f9af4d2f2068e20b5d4e0303109a785daddc98ea7fc5f004e",
+      "allowed_roots": [
+        "Paper.SevenCliqueMader.edge_bound",
+        "Paper.SevenCliqueMader.weak_bound",
+        "Paper.SevenCliqueMader.minor_density",
+        "Paper.SevenCliqueMader.exact_KT0",
+        "Paper.ExcludedCliqueDensity.edge_bound",
+        "Paper.ExcludedCliqueDensity.minor_density",
+        "Paper.ExcludedCliqueDensity.exact_KT0"
+      ]
+    },
+    {
+      "name": "Paper.External.CliqueDensity.k8_edge_bound",
+      "kind": "external_mathematics",
+      "statement": "For every finite simple K8-minor-free graph, m <= 6*n, including all exceptional and small-order cases.",
+      "selected_root_count": 3,
+      "source": "Paper/External/CliqueDensity.lean",
+      "source_sha256": "c521887fd10e610018bd6e42e9e5d3faf878d1e2fb1ed0281a36019c24a3b05d",
+      "allowed_roots": [
+        "Paper.ExcludedCliqueDensity.edge_bound",
+        "Paper.ExcludedCliqueDensity.minor_density",
+        "Paper.ExcludedCliqueDensity.exact_KT0"
+      ]
+    },
+    {
+      "name": "Paper.External.CliqueDensity.k9_edge_bound",
+      "kind": "external_mathematics",
+      "statement": "For every finite simple K9-minor-free graph, m <= 7*n, including all exceptional and small-order cases.",
+      "selected_root_count": 3,
+      "source": "Paper/External/CliqueDensity.lean",
+      "source_sha256": "c521887fd10e610018bd6e42e9e5d3faf878d1e2fb1ed0281a36019c24a3b05d",
+      "allowed_roots": [
+        "Paper.ExcludedCliqueDensity.edge_bound",
+        "Paper.ExcludedCliqueDensity.minor_density",
+        "Paper.ExcludedCliqueDensity.exact_KT0"
+      ]
+    },
+    {
+      "name": "Paper.External.SurfaceTopology.exists_cellulation",
+      "kind": "external_mathematics",
+      "statement": "Every genuine compact connected closed topological surface admits a finite CW cellulation of dimension at most two.",
+      "selected_root_count": 18,
+      "source": "Paper/External/SurfaceTopology.lean",
+      "source_sha256": "eb355a10debec5147d189ab4b94102c59e7ebfeedbf32a42d2b63bf965a50496",
+      "allowed_roots": [
+        "Paper.OrdinarySurfaceAlgorithm.parameters",
+        "Paper.OrdinarySurfaceBounds.actual_bounds",
+        "Paper.OrdinarySurfaceBounds.minor_bound",
+        "Paper.OrdinarySurfaceBounds.minor_density",
+        "Paper.OrdinarySurfaceBounds.subgraph_density",
+        "Paper.OrdinarySurfaceBounds.subgraph_girth_density",
+        "Paper.OrdinarySurfaceGirth.parameters",
+        "Paper.OrdinarySurfaceGirthBoth.parameters",
+        "Paper.OrdinarySurfaceImprovedGirth.parameters",
+        "Paper.OrdinarySurfaceLocalLower.integral",
+        "Paper.OrdinarySurfaceTwoFractional.parameters",
+        "Paper.RedBlueOrdinarySurface.absorbed_parameters",
+        "Paper.RedBlueOrdinarySurface.additive_parameters",
+        "Paper.RedBlueOrdinarySurface.large_optimum_parameters",
+        "Paper.RedBlueOrdinarySurfaceLower.lower",
+        "SimpleGraph.OrdinarySurface.ClosedSurface.eulerGenus_eq",
+        "SimpleGraph.OrdinarySurface.signedRotation_of_genus",
+        "SimpleGraph.OrdinarySurface.signedRotation_real"
+      ]
+    },
+    {
+      "name": "Paper.External.SurfaceTopology.cellulation_euler_eq",
+      "kind": "external_mathematics",
+      "statement": "Any two such cellulations of the same closed surface have the same integer Euler characteristic.",
+      "selected_root_count": 1,
+      "source": "Paper/External/SurfaceTopology.lean",
+      "source_sha256": "eb355a10debec5147d189ab4b94102c59e7ebfeedbf32a42d2b63bf965a50496",
+      "allowed_roots": [
+        "SimpleGraph.OrdinarySurface.ClosedSurface.eulerGenus_eq"
+      ]
+    },
+    {
+      "name": "Paper.External.SurfaceTopology.rotation_of_embedding",
+      "kind": "external_mathematics",
+      "statement": "A finite graph genuinely embedded in a closed surface admits a signed rotation with Euler genus at most 2 minus the Euler characteristic of the supplied cellulation.",
+      "selected_root_count": 15,
+      "source": "Paper/External/SurfaceTopology.lean",
+      "source_sha256": "eb355a10debec5147d189ab4b94102c59e7ebfeedbf32a42d2b63bf965a50496",
+      "allowed_roots": [
+        "Paper.OrdinarySurfaceAlgorithm.parameters",
+        "Paper.OrdinarySurfaceBounds.actual_bounds",
+        "Paper.OrdinarySurfaceBounds.minor_bound",
+        "Paper.OrdinarySurfaceBounds.minor_density",
+        "Paper.OrdinarySurfaceBounds.subgraph_density",
+        "Paper.OrdinarySurfaceBounds.subgraph_girth_density",
+        "Paper.OrdinarySurfaceGirth.parameters",
+        "Paper.OrdinarySurfaceGirthBoth.parameters",
+        "Paper.OrdinarySurfaceImprovedGirth.parameters",
+        "Paper.OrdinarySurfaceTwoFractional.parameters",
+        "Paper.RedBlueOrdinarySurface.absorbed_parameters",
+        "Paper.RedBlueOrdinarySurface.additive_parameters",
+        "Paper.RedBlueOrdinarySurface.large_optimum_parameters",
+        "SimpleGraph.OrdinarySurface.signedRotation_of_genus",
+        "SimpleGraph.OrdinarySurface.signedRotation_real"
+      ]
+    },
+    {
+      "name": "Paper.External.Planarity.planar_euler_zero",
+      "kind": "external_mathematics",
+      "statement": "A finite simple graph excluding K5 and K3,3 as ordinary minors embeds in an ordinary surface of Euler genus zero (the classical planarity-to-sphere corollary, with the reviewed representation/CW steps).",
+      "selected_root_count": 2,
+      "source": "Paper/External/Planarity.lean",
+      "source_sha256": "ef5e51c113b6d7c81c128b0c9ad8882de23335e1da64575052bae1eabe9c9e6d",
+      "allowed_roots": [
+        "Paper.OrdinarySurfaceLocalLower.integral",
+        "Paper.RedBlueOrdinarySurfaceLower.lower"
+      ]
+    }
+  ],
+  "external_axioms": 7
+}

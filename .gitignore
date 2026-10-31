@@ -1,0 +1,10 @@
+.lake/
+__pycache__/
+verification/compiler-logs/
+!verification/axioms.log
+!verification/full-axioms.log
+
+# Keep the verification package limited to code and supporting metadata.
+*.tex
+*.pdf
+*.tikz

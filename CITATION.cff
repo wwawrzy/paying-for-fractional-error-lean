@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this formalization, please cite the accompanying paper below."
+title: "Paying for Fractional Error — Lean verification"
+type: software
+authors:
+  - family-names: Amiri
+    given-names: Saeed
+  - family-names: Siebertz
+    given-names: Sebastian
+  - family-names: Wawrzyniak
+    given-names: Wojciech
+repository-code: "https://github.com/wwawrzy/paying-for-fractional-error-lean"
+license: Apache-2.0
+preferred-citation:
+  type: unpublished
+  title: "Paying for Fractional Error: Tight Constant-Round Approximation of Covering Problems with Short Broadcasts"
+  authors:
+    - family-names: Amiri
+      given-names: Saeed
+    - family-names: Siebertz
+      given-names: Sebastian
+    - family-names: Wawrzyniak
+      given-names: Wojciech
