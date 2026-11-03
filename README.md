@@ -1,7 +1,7 @@
 # Paying for Fractional Error — Lean verification
 
-Formalization of **Paying for Fractional Error: Tight Constant-Round
-Approximation of Covering Problems with Short Broadcasts**.
+Formalization of [**Paying for Fractional Error: Tight Constant-Round
+Approximation of Covering Problems with Short Broadcasts**](https://arxiv.org/pdf/2611.02057).
 
 ## Verify
 
